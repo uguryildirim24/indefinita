@@ -8,8 +8,8 @@ No mechanism I found gets near the cognitive enhancement profile (onset in minut
 
 Three findings carry the verdict.
 
-1. In healthy humans, everything that clearly beats baseline does so by small amounts in narrow domains. Where pooled effects are reported they run from about 0.1 to 0.4 standardized units: sleep-cued memory reactivation 0.29, acoustic sleep stimulation 0.25, nicotine 0.16 to 0.44, methylphenidate 0.21, modafinil 0.12, acute exercise about 0.1.
-2. The big effects live in animals, or in people with a deficit (older adults, impaired memory, sleep loss). Even the animal "enhancements" mostly work by boosting a process that was weak at that moment, not by lifting a ceiling. Human closed-loop stimulation shows the same pattern: gains are concentrated where baseline function was poor.
+1. In the healthy-human evidence reviewed here, the better-supported gains are small and selective. Where pooled effects are reported they run from about 0.1 to 0.4 standardized units: sleep-cued memory reactivation 0.29, acoustic sleep stimulation 0.25, nicotine 0.16 to 0.44, methylphenidate 0.21, modafinil 0.12, acute exercise about 0.1.
+2. Larger enhancement-like findings here come mainly from animals or clinical participants, with some selective gains in healthy older adults. Age alone does not establish a deficit: beating an age-matched healthy control is enhancement in that population. The animal experiments do not measure a general cognitive ceiling. Human closed-loop encoding gains are often concentrated where baseline function was poor.
 3. The route with the most headroom on paper is opening a plasticity window (psychedelic-type, ketamine-type, HDAC-inhibitor-type agents). In rodents it is real, fast and measurable. In healthy humans I found no performance gain, and the acute state impairs cognition. I found no study that runs the test that would show whether it helps healthy people learn faster.
 
 The route with the best demonstrated fit for "above baseline, hours, reversible" is sleep-stage-targeted memory consolidation. It is small and narrow.
@@ -22,7 +22,7 @@ An large-scale effect in healthy adults is **not established**. The evidence als
 - **Contested**: positive findings exist but they are small, inconsistent, or hit by bias or failed replication.
 - **Speculative**: mechanism plausible, direct evidence missing or limited to animals or single small studies.
 
-Each candidate also says whether it lifts a healthy person above baseline or restores a deficit. I read abstracts for almost every source, through Europe PMC, and the full text only for Nardou 2023. Effect sizes below are the ones the abstracts report. See "Limits" at the end for what I could not check.
+Each candidate also says whether it lifts a healthy person above baseline or restores a deficit. I read abstracts for almost every source, through Europe PMC, and the full text for Nardou 2023. The reviewer additionally opened Wang 2014's full text. Effect sizes below are the ones the abstracts report. Reversibility means return of the enhancement-producing state, not erasure of learned memories. Stopping input or clearing a drug does not establish that all after-effects resolve. See "Limits" at the end for what I could not check.
 
 ## 1. Rapid plasticity
 
@@ -80,23 +80,24 @@ A 2025 review of 70 articles calls the preclinical plasticity evidence consisten
 - Chemogenetic activation in healthy mice improved memory. Activating hippocampal astrocytes during learning improved recall the next day, while directly raising neuronal activity badly impaired memory (Adamsky 2018). Activating CCK-expressing inhibitory neurons enhanced social recognition, contextual fear conditioning, object recognition and puzzle-box problem solving, with little effect on emotional behaviour (Whissell 2019). Activating orexin neurons improved short-term spatial memory but not non-spatial object recognition (Aitta-Aho 2016).
 - A constitutive genetic example, outside the acute profile: mice overexpressing NR2B in forebrain showed superior learning on several tasks (Tang 1999).
 
-Abstracts mostly give no effect sizes, and I can't tell how close to ceiling the tasks were. The common thread: stimulation locked to the brain's own rhythm helps and unlocked stimulation does not (ripples, spindles), one result is a rescue by design (Maingret), and blunt activation can hurt (Adamsky's neuronal result). I read that as help where the endogenous process was weak or mistimed, not a raised ceiling.
+Abstracts mostly give no effect sizes, and I can't tell how close to ceiling the tasks were. The common thread: stimulation locked to the brain's own rhythm helps and unlocked stimulation does not (ripples, spindles), one result is a rescue by design (Maingret), and blunt activation can hurt (Adamsky's neuronal result). One interpretation is improved timing or allocation of an endogenous process, but these studies do not establish that the process was deficient beforehand. They show task-level gains above controls, not a measured rise in a general cognitive ceiling.
 
 **Where humans stand.**
 
 - Implanted-electrode patients: closed-loop stimulation of lateral temporal cortex rescued periods of poor encoding and improved later recall (Ezzyat 2018). Theta-burst microstimulation of the right entorhinal area during learning improved memory specificity in 13 neurosurgical patients (Titiz 2017). A hippocampal prosthesis in monkeys facilitated performance on difficult trials (Hampson 2013). In the human version, memory changed significantly in 22.4% of patient and category combinations, increases outnumbered decreases about two to one overall, and nearly all gains came from patients with impaired memory receiving bilateral stimulation (Roeder 2024). So the human prosthesis literature is a deficit-restoration literature that sometimes makes memory worse.
-- Noninvasive: 25 minutes of frequency-tuned theta stimulation raised working memory in adults aged 60 to 76 for at least 50 minutes after (Reinhart and Nguyen 2019). Four days of tACS in 65 to 88 year olds produced working-memory and long-term-memory gains still present at one month, larger in those with lower baseline function (Grover 2022). Multi-session targeted electromagnetic stimulation increased cortical-hippocampal connectivity and associative memory for about 24 hours (Wang 2014). Against this, a quantitative review of single-session tDCS in healthy adults found no significant effect in any of 59 analyses, including working memory (Horvath 2015). Stimulating the vagus nerve after learning enhanced word recognition in epilepsy patients (Clark 1999), and a single session of noninvasive vagus stimulation raised hits on a face-name task in 30 older adults (Jacobs 2015, single-blind pilot).
+- Noninvasive: 25 minutes of frequency-tuned theta stimulation raised working memory in adults aged 60 to 76 for at least 50 minutes after (Reinhart and Nguyen 2019). Four days of tACS in 65 to 88 year olds produced working-memory and long-term-memory gains still present at one month, larger in those with lower baseline function (Grover 2022). Targeted electromagnetic stimulation over five consecutive days increased cortical-hippocampal connectivity and associative memory in 16 healthy adults, with effects present about 24 hours after stimulation (Wang 2014, full text). This is selective enhancement above a healthy control condition, not deficit rescue or a minutes-to-hours intervention. Against this, a quantitative review of single-session tDCS in healthy adults found no significant effect in any of 59 analyses, including working memory (Horvath 2015). Stimulating the vagus nerve after learning enhanced word recognition in epilepsy patients (Clark 1999), and a single session of noninvasive vagus stimulation raised hits on a face-name task in 30 older adults (Jacobs 2015, single-blind pilot).
 
-**How it could translate.** Light-gated and designer-receptor methods need gene delivery into neurons, which does not fit an acute, reversible profile for healthy people. I found no human route for them and I would treat them as a way to identify targets. They did point at specific cell types and signalling routes (astrocytic Gq signalling, CCK interneurons, orexin, locus coeruleus co-release) that other, less invasive methods might one day reach. The nearest translations are timing-based and noninvasive: acoustic stimulation and cueing during sleep, frequency-tuned stimulation, and vagus stimulation paired with learning. Their human effects are small or tested mainly in older adults.
+**How it could translate.** Light-gated and designer-receptor methods need gene delivery into neurons, which does not fit an acute, reversible profile for healthy people. I found no human route for them and I would treat them as a way to identify targets. They did point at specific cell types and signalling routes (astrocytic Gq signalling, CCK interneurons, orexin, locus coeruleus co-release) that other, less invasive methods might one day reach. The nearest translations are timing-based and noninvasive: acoustic stimulation and cueing during sleep, frequency-tuned stimulation, and vagus stimulation paired with learning. Their human effects are selective, often small, or tested mainly in older adults. Healthy older participants must not be relabeled impaired without evidence.
 
 ## 4. Ranking against the cognitive enhancement profile
 
-Ranked by how much of the profile each route has demonstrated in people. I do not claim that any of them is large.
+Ranked by how much of the profile each route has demonstrated in people. I do not claim that any of them is large or broadly effective. The onset and reversibility notes distinguish short-lived input from persistent plasticity; full reversibility is not established for these candidate families.
 
 **1. Sleep-stage-targeted consolidation (cueing, closed-loop acoustic stimulation, spindle-boosting drugs).**
 *Grade:* cueing is established but small; closed-loop acoustic is contested; the drug approach is contested (one study, with a tradeoff).
 *Effects:* g = 0.29 for cueing; g = 0.25 (p = 0.07) for acoustic, 0.36 and 0.44 in the phase-locked subgroups.
 *Baseline status:* above baseline in healthy sleepers.
+*Onset / reversibility:* benefit after a nap or night, not an immediate waking state; sound and cues can stop, while consolidation persists. Drug-induced sleep changes and repeated-use recovery require separate evidence.
 *Cost:* needs sleep after learning; benefit shown on trained or cued items; spindle boosting cost perceptual learning; the benefit appears the next day, so onset is "hours" only loosely.
 *Biggest gap:* whether gains persist and accumulate across weeks and transfer beyond the cued items.
 
@@ -104,6 +105,7 @@ Ranked by how much of the profile each route has demonstrated in people. I do no
 *Grade:* small attention and memory effects are established; faster learning is contested (single trials, publication bias flagged).
 *Effects:* methylphenidate 0.21, modafinil 0.12, nicotine 0.16 to 0.44; levodopa and donepezil effect sizes not given in the abstracts.
 *Baseline status:* small lift above baseline in healthy people, bigger where baseline is poor (sleep loss).
+*Onset / reversibility:* acute performance changes can occur within hours; the cited learning trials also used five-day courses. Clearance does not establish recovery of sleep, mood or all downstream effects, and learned skills may persist.
 *Cost:* inverted-U; donepezil made learning more specific, not broader; other costs are outside this review.
 *Biggest gap:* whether any of them speeds up multi-day learning in people with an intact baseline, and whether the donepezil and levodopa findings replicate.
 
@@ -111,6 +113,7 @@ Ranked by how much of the profile each route has demonstrated in people. I do no
 *Grade:* animal mechanism established (spines, synapse markers, critical-period reopening); human performance gain speculative, with null or negative evidence so far.
 *Effects:* about 10% spine size and density in mouse cortex; 4.4% and 9.24% synaptic marker density in pig brain; no cognitive gain in blinded human microdosing studies; acute impairment at full effect.
 *Baseline status:* in mice, the assayed behaviour returns to a juvenile-like state, which is above the adult baseline for that assay only; in humans, restoration in patients at best.
+*Onset / reversibility:* structural changes can begin within hours to a day, but critical-period and spine changes last days to weeks or longer. Ending intoxication is not ending the plasticity window; full washout of that state is not established.
 *Cost:* hours of altered state and impaired cognition; psychological risks not reviewed here.
 *Biggest gap:* I found no placebo-controlled test of learning rate in healthy adults after a full-effect session.
 
@@ -118,13 +121,15 @@ Ranked by how much of the profile each route has demonstrated in people. I do no
 *Grade:* established in rodents; established as deficit rescue in implanted patients; speculative above baseline in healthy humans.
 *Effects:* mostly not given in abstracts; the human prosthesis gave increases to decreases of about 2:1 overall.
 *Baseline status:* animals, partly above baseline; humans, restoration.
+*Onset / reversibility:* stimulation can operate trial-by-trial after preparation, with memory outcomes measured later. Electrical or optical input can stop rapidly, but retained learning, synaptic changes and implantation/gene-delivery prerequisites are not thereby reversed.
 *Cost:* invasive; can lower performance.
 *Biggest gap:* any demonstration in a healthy human with intact memory.
 
 **5. Locus coeruleus, vagus and basal-forebrain gating of plasticity.**
 *Grade:* established in animals for plasticity effects; speculative to contested in humans.
 *Effects:* none given for animals in abstracts; the human pilot reported more hits in 30 older adults.
-*Baseline status:* animals, boosts weak memories and speeds adaptation; humans, older adults or patients.
+*Baseline status:* animals, boosts weak memories and speeds adaptation; humans, healthy older adults or patients, which are distinct populations.
+*Onset / reversibility:* gating can occur during learning; acquisition and retention emerge over trials or later testing. Stopping stimulation does not demonstrate reversal of the induced learning state or of implanted hardware.
 *Cost:* implanted or skin-surface stimulation; effects depend on timing relative to learning.
 *Biggest gap:* a replicated gain in healthy young adults.
 
@@ -132,15 +137,17 @@ Ranked by how much of the profile each route has demonstrated in people. I do no
 *Grade:* established in rodents; speculative in humans (one small valproate study).
 *Effects:* human sample size not retrieved.
 *Baseline status:* animals, reinstated juvenile-like plasticity; humans, above baseline on one critical-period task.
+*Onset / reversibility:* the human valproate finding used a treatment/training course, and fluoxetine is chronic; neither establishes a minutes-to-hours cognitive switch. Matrix digestion and altered learning can persist after input ends; full reversibility is unestablished.
 *Cost:* chronic dosing, invasive enzyme, or drug risks not reviewed; narrow task.
 *Biggest gap:* replication in humans and any sign of generalization beyond pitch.
 
 **7. Noninvasive brain stimulation in healthy adults (tDCS, tACS, targeted electromagnetic stimulation).**
 *Grade:* contested. tDCS single session is null in healthy adults (59 analyses); tACS and network-targeted stimulation worked in small studies, mostly in older adults.
 *Effects:* tDCS: none significant; others not given in abstracts.
-*Baseline status:* restoration in older adults; above baseline in healthy young adults not shown.
-*Cost:* low; reliability poor.
-*Biggest gap:* whether the older-adult gains appear in healthy young adults at all.
+*Baseline status:* selective gains in healthy older adults and, in Wang 2014, healthy adults; these are not automatically deficit rescue. Broad enhancement in healthy young adults is not shown.
+*Onset / reversibility:* some tACS effects appear within a session; Grover and Wang used multi-day courses. Effects can persist for roughly a day or a month, so switching off stimulation does not establish immediate or full state reversal.
+*Cost:* reliability uncertain; TMS requires specialist equipment and supervision, and risks vary by modality.
+*Biggest gap:* independently replicated broad gains in healthy young adults, with acute onset and measured recovery.
 
 ## 5. The largest open gap
 
@@ -156,7 +163,7 @@ Why it decides the question:
 
 ## Limits
 
-- I could not open the Nature, Science or PubMed pages directly (cookie or redirect walls). I got abstracts through Europe PMC and the full text of Nardou 2023 through its open-access copy (PMC10284704). Everything else is abstract-level, so I report no number that the abstracts do not give.
+- I could not open the Nature, Science or PubMed pages directly (cookie or redirect walls). I got abstracts through Europe PMC and the full text of Nardou 2023 through its open-access copy (PMC10284704). The reviewer opened Wang 2014 at https://pmc.ncbi.nlm.nih.gov/articles/PMC4307924/ after its Europe PMC XML endpoint returned HTTP 500, verifying 16 healthy adults, five consecutive treatment days and selective associative-memory effects. Other sources remain abstract-level.
 - PDF copies of Roberts 2020 and Hu 2020 came back as binary and I did not parse them, and the Ilieva 2015 PDF link returned 404. Their numbers come from the abstracts.
 - Battleday and Brem 2015 (modafinil in non-sleep-deprived adults) came back with no abstract, so I did not use it.
 - Raval 2020 is a preprint. I did not check whether the peer-reviewed version changed the numbers.
@@ -229,7 +236,7 @@ DOIs resolve at `https://doi.org/<doi>`.
 - Titiz AS et al. (2017). Theta-burst microstimulation in the human entorhinal area improves memory specificity. eLife 6:e29515. doi:10.7554/eLife.29515
 - Reinhart RMG, Nguyen JA (2019). Working memory revived in older adults by synchronizing rhythmic brain circuits. Nature Neuroscience 22:820-827. doi:10.1038/s41593-019-0371-x
 - Grover S et al. (2022). Long-lasting, dissociable improvements in working memory and long-term memory in older adults with repetitive neuromodulation. Nature Neuroscience 25:1237-1246. doi:10.1038/s41593-022-01132-3
-- Wang JX et al. (2014). Targeted enhancement of cortical-hippocampal brain networks and associative memory. Science 345:1054-1057. doi:10.1126/science.1252900
+- Wang JX et al. (2014). Targeted enhancement of cortical-hippocampal brain networks and associative memory. Science 345:1054-1057. doi:10.1126/science.1252900. Reviewer-opened full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC4307924/
 - Horvath JC, Forte JD, Carter O (2015). Quantitative review finds no evidence of cognitive effects in healthy populations from single-session transcranial direct current stimulation (tDCS). Brain Stimulation 8:535-550. doi:10.1016/j.brs.2015.01.400
 - Clark KB et al. (1999). Enhanced recognition memory following vagus nerve stimulation in human subjects. Nature Neuroscience 2:94-98. doi:10.1038/4600
 - Jacobs HIL et al. (2015). Transcutaneous vagus nerve stimulation boosts associative memory in older individuals. Neurobiology of Aging 36:1860-1867. doi:10.1016/j.neurobiolaging.2015.02.023
