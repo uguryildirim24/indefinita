@@ -169,36 +169,183 @@ If Rolf wants to systematically explore high-impact cognitive interventions, whe
 
 ---
 
-## 5. Source List
+## 5. Where a Search Could Look Beyond the Literature
+
+Rolf's premise is sound: an cognition-enhancing compound will not be found in the published cognitive-enhancer literature. That literature focuses heavily on known monoaminergic stimulants, cholinergics, and marginal nootropics that run directly into the biological ceilings established above.
+
+If an undiscovered chemical entity or biological mechanism exists that dramatically influences cognitive function, discovering it requires stepping outside traditional neuroenhancement papers. For a project operating without a wet lab, the only viable search strategy is computational data mining across open high-throughput repositories.
+
+Below are four primary discovery routes, plus an integrated dry-lab strategy. Each evaluates the specific open datasets accessible to a no-wet-lab effort, what the route can and cannot find, its empirical track record, and verified access requirements.
+
+---
+
+### Route 1: Human Genetics of Exceptional Cognition and Phenotypic Extremes
+
+#### Strategy and Logic
+Instead of studying average populations or disease pathology, this route mines genomic data from individuals at the extreme upper tail of cognitive performance (e.g., top 0.1% fluid intelligence, mathematical prodigies, cognitive super-agers). The goal is identifying rare coding variants, protective loss-of-function mutations, or novel target pathways where natural human variation produces superior processing speed or cognitive resilience without lethal pleiotropy.
+
+#### Accessible Datasets and Verified Access
+* **UK Biobank (UKB-RAP):** Deep phenotyping of 500,000 UK participants, including standardized cognitive batteries (fluid intelligence, reaction time, pairs matching, prospective memory) linked to Whole Exome Sequencing (WES, 470k individuals) and Whole Genome Sequencing (WGS, 500k individuals).
+  * *Access:* Open to bona fide researchers globally for health-related research in the public interest. Requires registration via the Access Management System (AMS) and an approved project application. Data access fees cover a 3-year term (£3,000 for Tier 1 basic phenotypes up to £9,000 for Tier 3 full WGS/imaging; reduced fee of £500 available for students and low-income countries). Analysis must run securely on the cloud-based UKB Research Analysis Platform (DNAnexus/AWS), where new users receive a £40 compute credit.
+* **IEU OpenGWAS Database (University of Bristol / MRC):** Curated repository of over 40,000 complete GWAS summary statistics, including large-scale meta-analyses of general cognitive function (Davies et al., 2018; Savage et al., 2018) and educational attainment (Lee et al., 2018).
+  * *Access:* Completely free programmatic access via REST API (`api.opengwas.io`) or the R package `ieugwasr`. Requires generating a free JSON Web Token (JWT) linked to an authenticated GitHub or Google account (renewable every 14 days).
+* **NIH All of Us Research Program:** Diverse US cohort of >750,000 participants (>400,000 with linked genomic and EHR data).
+  * *Access:* Tiered model. The Public Tier (Data Browser) is freely accessible without login for aggregate stats. Registered and Controlled Tiers (individual-level genomic and EHR data) require an institutional Data Use and Registration Agreement (DURA) and verified identity, with analysis restricted to the cloud Researcher Workbench.
+* **gnomAD (Genome Aggregation Database):** 800,000+ sequenced human exomes/genomes.
+  * *Access:* Fully open and public without registration via `gnomad.broadinstitute.org` or Google Cloud/AWS open datasets. Ideal for evaluating variant constraint and loss-of-function intolerance (pLI scores).
+
+#### What It Can and Cannot Find
+* **Can find:** Causal, genetically validated human biological targets (enzymes, ion channels, GPCRs) where modulation correlates with cognitive capacity or resilience. Drug targets with human genetic support have more than double the clinical approval rate of unsupported targets (Nelson et al., 2015; King et al., 2019).
+* **Cannot find:** Small-molecule drugs, immediate lead compounds, or kinetic dosing parameters. It reveals biology, not chemistry. Furthermore, it cannot resolve high-order non-linear epistatic interactions or omnigenic networks where cognitive variance is fragmented across tens of thousands of common variants with microscopic effect sizes ($R^2 < 0.05\%$).
+* **Track record:** Excellent for target identification in cardiovascular disease (e.g., PCSK9 loss-of-function variants leading to PCSK9 inhibitors) and bone density. In cognition, large GWAS have mapped >1,000 associated genomic loci, but extreme-phenotype sequencing (e.g., Zabaneh et al., 2018) has failed to isolate single high-effect "genius" variants that elevate healthy baseline cognition without severe trade-offs.
+
+---
+
+### Route 2: Real-World Drug Outcomes, EHR Mining, and Biobank PheWAS
+
+#### Strategy and Logic
+Millions of humans take thousands of approved, bioactive small molecules for non-cognitive indications. This route uses electronic health records (EHR), prescription registries, and post-marketing pharmacovigilance databases to identify serendipitous cognitive signals: drugs that unexpectedly protect against cognitive decline, alter neurodegenerative trajectories, or trigger paradoxical cognitive enhancement as an off-target effect.
+
+#### Accessible Datasets and Verified Access
+* **FDA Adverse Event Reporting System (FAERS) via openFDA:** Millions of post-marketing adverse and off-target event reports collected from 2004 to present.
+  * *Access:* Fully open, free public REST API (`https://api.fda.gov/drug/event.json`). No authentication required for basic queries (up to 240 requests/minute with a free API key; max 1,000 records per call). Downloadable quarterly raw JSON/ASCII files are also freely available.
+* **UK Biobank Linked Primary Care & Hospital Inpatient Records (HES):** Prescription histories (GP records) linked longitudinally with repeat cognitive testing (~20,000 to 50,000 participants who completed follow-up cognitive assessments).
+  * *Access:* Available under approved UKB-RAP project applications (Tiers 1–2).
+* **TriNetX / All of Us EHR:** Federated de-identified electronic health record networks covering tens of millions of patients across hospital networks.
+  * *Access:* TriNetX requires an enterprise/institutional data subscription; All of Us EHR requires an institutional DURA on the Researcher Workbench.
+
+#### What It Can and Cannot Find
+* **Can find:** Approved or late-stage clinical compounds with established human safety profiles that exhibit unexpected cognitive preservation or enhancement signals across real-world patient populations (reverse translation).
+* **Cannot find:** Novel, unpatented chemical scaffolds. It also cannot detect cognitive enhancement in healthy, high-functioning young adults, because clinical EHR and pharmacovigilance databases almost exclusively capture sick, elderly, or symptomatic individuals seeking medical care. Furthermore, observational EHR signals are heavily corrupted by indication bias, compliance confounding, and healthy-user effects.
+* **Track record:** High success in identifying neuroprotective repurposing candidates. For example, observational EHR mining identified cognitive protection signals in patients taking GLP-1 receptor agonists (semaglutide) and SGLT2 inhibitors for diabetes, as well as phosphodiesterase-5 (PDE5) inhibitors (sildenafil). However, its track record for discovering acute, performance-enhancing compounds for healthy individuals is essentially zero.
+
+---
+
+### Route 3: Perturbation Biology and High-Throughput Transcriptomic Screening
+
+#### Strategy and Logic
+This route matches molecular "signatures" of desirable cognitive states against vast databases of cellular perturbations. If you can define an optimal molecular signature—such as the transcriptional profile of enhanced synaptic plasticity, juvenile critical-period reopening, or neuroprotective metabolic switching—you can query perturbational databases to find small molecules that induce that exact transcriptomic profile.
+
+#### Accessible Datasets and Verified Access
+* **Broad Institute Connectivity Map (CMap) / NIH LINCS L1000:** The largest public perturbational database in the world, containing over 1.3 million gene expression profiles capturing responses to >40,000 small molecules, gene knockouts (shRNA/CRISPR), and cDNA overexpressions across diverse human cell lines.
+  * *Access:* Completely free access via the CLUE web environment (`clue.io`) and the CLUE REST API (`clue.io/api`). Large-scale programmatic querying (>3 million profiles) is hosted on Google BigQuery via the open-source `cmapbq` Python package. Complete Level 1–4 matrix data is deposited openly in NCBI GEO (GSE70138 and GSE92742). Free account registration required.
+* **ChEMBL (EMBL-EBI) & PubChem (NIH):** Massive open-access databases containing over 2.4 million bioactive compounds, 15,000 biological targets, and tens of millions of measured binding affinities ($K_i, IC_{50}$).
+  * *Access:* 100% free and open public REST APIs (`https://www.ebi.ac.uk/chembl/api/data/` and `https://pubchem.ncbi.nlm.nih.gov/rest/pug/`), with downloadable PostgreSQL dumps and programmatic Python packages (`chembl_webresource_client`).
+* **Allen Human Brain Atlas & SEA-AD (Seattle Alzheimer’s Disease Brain Cell Atlas):** Single-cell and spatial transcriptomic maps of human cortical and hippocampal circuits across healthy aging and cognitive decline.
+  * *Access:* Freely available without restriction via `brain-map.org` and AWS open data buckets.
+
+#### What It Can and Cannot Find
+* **Can find:** Uncharacterized small molecules that reverse transcriptional signatures of cognitive exhaustion, mimic neurotrophic signaling (e.g., BDNF/TrkB activation), or match the transcriptional state of high-plasticity phenotypes.
+* **Cannot find:** Acute electrophysiological effects. L1000 measures mRNA abundance 6 to 24 hours after compound exposure; it is completely blind to millisecond-level ion-channel gating, action potential dynamics, neurotransmitter vesicle release, or network-level neural firing. It also cannot determine whether a compound penetrates the blood-brain barrier (BBB) or functions in an intact mammalian brain without computational modeling.
+* **Track record:** Highly successful in oncology and rare disease drug repurposing (Subramanian et al., 2017). Has identified promising neuroprotective molecules in preclinical models of ALS, Huntington's, and Alzheimer's disease. However, it has not yet produced a verified de novo cognitive enhancer that succeeds in healthy human clinical trials.
+
+---
+
+### Route 4: High-Throughput In Vivo Phenotypic and Behavioral Screening
+
+#### Strategy and Logic
+Instead of relying on hypothesis-driven molecular targets, this route mines high-throughput in vivo behavioral screens where model organisms (such as larval zebrafish or automated rodent tracking systems) are exposed to libraries of thousands of uncharacterized small molecules to observe direct changes in behavioral capacity, arousal, exploration, and habituation.
+
+#### Accessible Datasets and Verified Access
+* **Jackson Laboratory Mouse Phenome Database (MPD):** Standardized phenotypic, cognitive, and behavioral assay data (e.g., Morris water maze, fear conditioning, open field, prepulse inhibition) across hundreds of mouse inbred and recombinant strains under diverse pharmacological exposures.
+  * *Access:* Fully open and public via `https://phenome.jax.org`. Free programmatic download of curated phenotypic datasets.
+* **Larval Zebrafish High-Throughput Behavioral Catalogs:** Public behavioral barcode datasets profiling rest/wake architecture, acoustic startle habituation, and photomotor responses across thousands of chemical perturbagens (e.g., Rihel et al., 2010; Ghosh et al., 2022).
+  * *Access:* Datasets are published in open supplemental archives, Harvard Dataverse, and the Zenodo repository.
+* **OpenNeuro:** Public open-science repository hosting >1,000 raw, standardized (BIDS format) human neuroimaging datasets (fMRI, EEG, MEG), including acute pharmacological challenge studies measuring network connectivity and working memory tasks.
+  * *Access:* Fully open and free under CC0 / public domain via `https://openneuro.org`. Downloadable via AWS S3 or `datalad`.
+
+#### What It Can and Cannot Find
+* **Can find:** Unbiased behavioral phenotypes: small molecules that potently alter arousal states, suppress sleep drive, accelerate habituation, or modulate locomotor exploration without requiring a predefined molecular target.
+* **Cannot find:** Complex human cognitive capabilities. Larval zebrafish and rodents lack prefrontal cortical networks capable of abstract reasoning, recursive symbolic logic, counterfactual planning, or complex language synthesis. Furthermore, behavioral assays in rodents (such as novel object recognition) suffer notorious translational failure rates when compounds are advanced to healthy human trials.
+* **Track record:** Substantial success in discovering psychiatric and central nervous system (CNS) drugs that govern broad state switches (e.g., levetiracetam was discovered through animal seizure screening rather than target-based design; novel sleep-wake regulators have emerged from zebrafish screens). Near-zero track record for producing validated cognitive gains in healthy humans.
+
+---
+
+### Route Comparison for a No-Wet-Lab Discovery Effort
+
+| Discovery Route | Primary Open Datasets | Access Barrier & Cost | What It Can Reveal | Primary Failure Mode / Blind Spot |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. Human Genetics of Extreme Cognition** | UK Biobank (UKB-RAP), IEU OpenGWAS, All of Us, gnomAD | Low to Moderate: OpenGWAS/gnomAD are free; UKB/All of Us require approved proposal + £3k–£9k access fee | Causal human biological targets; variants conferring cognitive resilience | Reveals targets, not drugs; omnigenic architecture ($R^2 < 0.05\%$) yields no single master switch |
+| **2. Real-World Drug Outcomes & EHR** | openFDA FAERS, UKB Primary Care, TriNetX, All of Us EHR | Low: FAERS is free/public; UKB/All of Us require institutional access | Repurposing signals of approved drugs with proven human safety profiles | Blind to healthy young adults; heavily confounded by indication bias |
+| **3. Perturbation Biology & Transcriptomics** | Broad CMap / LINCS L1000 (clue.io), ChEMBL, PubChem | None: Completely free via web portals, BigQuery, and open REST APIs | Small molecules that mimic desirable transcriptional signatures | Blind to millisecond electrophysiology; requires secondary BBB filtering |
+| **4. In Vivo Phenotypic Screening** | Jackson Lab MPD, Zebrafish Behavioral Barcodes, OpenNeuro | None: Completely free and open-access public repositories | Unbiased behavioral modifiers of alertness, habituation, and arousal | Animal assays fail to translate to human abstract reasoning |
+
+---
+
+### The Integrated Dry-Lab Strategy: A Computational Discovery Funnel
+
+If a no-wet-lab project wants to run an empirical search that goes beyond the published enhancer literature, the only methodologically sound strategy is to combine these routes into a multi-stage **computational funnel**:
+
+```
+[ Stage 1: Target Discovery ]
+Query IEU OpenGWAS, UK Biobank, and gnomAD to identify genes and pathways where natural functional 
+variation associates with superior cognitive resilience, processing speed, or protection against 
+synaptic decline—while filtering for high loss-of-function tolerance (pLI < 0.1) to exclude lethal targets.
+                           │
+                           ▼
+[ Stage 2: Perturbation Matching ]
+Query the Broad Institute LINCS L1000 database (via clue.io API or BigQuery) to identify small 
+molecules that selectively induce the transcriptional activation or repression profile of those targets.
+                           │
+                           ▼
+[ Stage 3: Cheminformatics & BBB Filtering ]
+Query ChEMBL and PubChem to filter matched compounds for drug-likeness (Lipinski's Rule of 5), 
+nanomolar target affinity, absence of pan-assay interference (PAINS), and high central nervous system 
+multiparameter optimization (CNS-MPO) scores to ensure blood-brain barrier permeability.
+                           │
+                           ▼
+[ Stage 4: Real-World Clinical Cross-Validation ]
+Query openFDA FAERS and UK Biobank prescription records to verify whether humans exposed to those 
+molecules (or their close structural analogues) exhibit positive cognitive signals or intolerable adverse events.
+```
+
+#### Strategic Reality Check
+This computational funnel is technically executable today by an independent researcher using open APIs and cloud compute, without pipetting a single reagent. 
+
+However, Rolf should recognize the scientific boundary: this funnel will discover **candidate targets and repurposed compounds, not an cognitive enhancement**. Any compound emerging from this pipeline remains subject to the immutable biophysical constraints established in Sections 1–4: metabolic energy budgets, homeostatic synaptic scaling, inverted-U catecholamine dynamics, and the fundamental trade-off between memory stability and learning flexibility. 
+
+At best, this route can surface specialized, domain-specific candidates (e.g., compounds that improve working memory at the cost of cognitive flexibility, or reduce sleep-debt degradation without expanding baseline ceiling capacity). It will not surface a single chemical switch that multiplies general human intelligence.
+
+---
+
+## 6. Source List
 
 1. **Arnsten, A. F. T. (2011).** Catecholamine influences on dorsolateral prefrontal cortical networks. *Biological Psychiatry*, 69(12), e89–e99. [DOI: 10.1016/j.biopsych.2011.01.027](https://doi.org/10.1016/j.biopsych.2011.01.027)
 2. **Attwell, D., & Laughlin, S. B. (2001).** An energy budget for signaling in the grey matter of the brain. *Journal of Cerebral Blood Flow & Metabolism*, 21(10), 1133–1145. [DOI: 10.1097/00004647-200110000-00001](https://doi.org/10.1097/00004647-200110000-00001)
 3. **Avgerinos, K. I., Spyrou, N., Bougioukas, K. I., & Kapogiannis, D. (2018).** Effects of creatine supplementation on cognitive function of healthy individuals: A systematic review of randomized controlled trials. *Experimental Gerontology*, 108, 166–173. [DOI: 10.1016/j.exger.2018.04.013](https://doi.org/10.1016/j.exger.2018.04.013)
 4. **Battleday, R. M., & Brem, A. K. (2015).** Modafinil for cognitive neuroenhancement in healthy non-sleep-deprived subjects: A systematic review. *European Neuropsychopharmacology*, 25(11), 1865–1881. [DOI: 10.1016/j.euroneuro.2015.07.028](https://doi.org/10.1016/j.euroneuro.2015.07.028)
 5. **Bostrom, N., & Sandberg, A. (2009).** The wisdom of nature: An evolutionary heuristic for human enhancement. In J. Savulescu & N. Bostrom (Eds.), *Human Enhancement* (pp. 375–416). Oxford University Press. [URL](https://nickbostrom.com/ethics/wisdom.pdf)
-6. **Cools, R., & D'Esposito, M. (2011).** Inverted-U-shaped dopamine actions on human working memory and cognitive control. *Biological Psychiatry*, 69(12), e113–e125. [DOI: 10.1016/j.biopsych.2011.03.028](https://doi.org/10.1016/j.biopsych.2011.03.028)
-7. **Davies, G., Lam, M., Harris, S. E., et al. (2018).** Study of 300,486 individuals identifies 148 independent genomic loci influencing general cognitive function. *Nature Communications*, 9, 2098. [DOI: 10.1038/s41467-018-04362-x](https://doi.org/10.1038/s41467-018-04362-x)
-8. **Faisal, A. A., Selen, L. P., & Laughlin, S. B. (2008).** Noise in the nervous system. *Nature Reviews Neuroscience*, 9(4), 292–303. [DOI: 10.1038/nrn2258](https://doi.org/10.1038/nrn2258)
-9. **Froestl, W., Muhs, A., & Pfeifer, A. (2004).** Cognitive enhancers (nootropics). Part 1: drugs interacting with receptors. *Journal of Alzheimer's Disease*, 6(6 Suppl), S99–S117. [DOI: 10.3233/jad-2004-6s617](https://doi.org/10.3233/jad-2004-6s617)
-10. **Goff, D. C., Lamberti, J. S., Leon, A. C., et al. (2008).** A placebo-controlled add-on trial of the ampakine, CX516, for cognitive deficits in schizophrenia. *Neuropsychopharmacology*, 33(3), 465–472. [DOI: 10.1038/sj.npp.1301442](https://doi.org/10.1038/sj.npp.1301442)
-11. **Gualtieri, F., Manetti, D., Romanelli, M. N., & Ghelardini, C. (2002).** Design and study of piracetam-like nootropics, controversial members of the problematic class of cognition-enhancing drugs. *Current Pharmaceutical Design*, 8(2), 125–138. [DOI: 10.2174/1381612023396582](https://doi.org/10.2174/1381612023396582)
-12. **Hills, T. T., & Hertwig, R. (2011).** Why aren't we smarter already: Evolutionary trade-offs and cognitive enhancements. *Current Directions in Psychological Science*, 20(6), 373–377. [DOI: 10.1177/0963721411418300](https://doi.org/10.1177/0963721411418300)
-13. **Horvath, J. C., Forte, J. D., & Carter, O. (2015).** Quantitative review finds no evidence of cognitive effects in healthy populations from single-session transcranial direct current stimulation (tDCS). *Brain Stimulation*, 8(3), 535–550. [DOI: 10.1016/j.brs.2015.01.400](https://doi.org/10.1016/j.brs.2015.01.400)
-14. **Ilieva, I. P., Boland, J., & Farah, M. J. (2013).** Objective and subjective cognitive enhancing effects of mixed amphetamine salts in healthy people. *Neuropharmacology*, 64, 496–505. [DOI: 10.1016/j.neuropharm.2012.07.021](https://doi.org/10.1016/j.neuropharm.2012.07.021)
-15. **Lennie, P. (2003).** The cost of cortical computation. *Current Biology*, 13(6), 493–497. [DOI: 10.1016/S0960-9822(03)00135-0](https://doi.org/10.1016/S0960-9822(03)00135-0)
-16. **LePort, A. K., Mattfeld, A. T., Dickinson-Anson, H., et al. (2012).** Behavioral and neuroanatomical investigation of Highly Superior Autobiographical Memory (HSAM). *Neurobiology of Learning and Memory*, 98(1), 78–92. [DOI: 10.1016/j.nlm.2012.05.002](https://doi.org/10.1016/j.nlm.2012.05.002)
-17. **Ngo, H. V., Martinetz, T., Born, J., & Mölle, M. (2013).** Auditory closed-loop stimulation of the sleep slow oscillation enhances memory. *Neuron*, 78(3), 545–553. [DOI: 10.1016/j.neuron.2013.03.006](https://doi.org/10.1016/j.neuron.2013.03.006)
-18. **Patihis, L., Frenda, S. J., LePort, A. K., et al. (2013).** False memories in highly superior autobiographical memory individuals. *Proceedings of the National Academy of Sciences (PNAS)*, 110(52), 20947–20952. [DOI: 10.1073/pnas.1314373110](https://doi.org/10.1073/pnas.1314373110)
-19. **Pizzorusso, T., Medini, P., Berardi, N., et al. (2002).** Reactivation of ocular dominance plasticity in the adult visual cortex. *Science*, 298(5596), 1248–1251. [DOI: 10.1126/science.1072699](https://doi.org/10.1126/science.1072699)
-20. **Repantis, D., Schlattmann, P., Laisney, O., & Heuser, I. (2010).** Modafinil and methylphenidate for neuroenhancement in healthy individuals: A systematic review. *Pharmacological Research*, 62(3), 187–206. [DOI: 10.1016/j.phrs.2010.04.002](https://doi.org/10.1016/j.phrs.2010.04.002)
-21. **Repantis, D., Laisney, O., & Heuser, I. (2010).** Acetylcholinesterase inhibitors and memantine for neuroenhancement in healthy individuals: A systematic review. *Pharmacological Research*, 61(6), 473–481. [DOI: 10.1016/j.phrs.2010.02.009](https://doi.org/10.1016/j.phrs.2010.02.009)
-22. **Richards, B. A., & Frankland, P. W. (2017).** The persistence and transience of memory. *Neuron*, 94(6), 1071–1084. [DOI: 10.1016/j.neuron.2017.04.037](https://doi.org/10.1016/j.neuron.2017.04.037)
-23. **Roberts, C. A., Jones, A., Sumnall, H., et al. (2020).** How effective are 'smart drugs'? The pharmacologically active constituents of cognitive enhancement supplements in healthy populations: A systematic review and meta-analysis. *Brain and Neuroscience Advances*, 4, 1–24. [DOI: 10.1177/2398212820980482](https://doi.org/10.1177/2398212820980482)
-24. **Savage, J. E., Jansen, P. R., Stringer, S., et al. (2018).** Genome-wide association meta-analysis in 269,867 individuals identifies new susceptibility loci and functional pathways for general intelligence. *Nature Genetics*, 50(7), 940–949. [DOI: 10.1038/s41588-018-0152-6](https://doi.org/10.1038/s41588-018-0152-6)
-25. **Tang, Y. P., Shimizu, E., Dube, G. R., et al. (1999).** Genetic enhancement of learning and memory in mice. *Nature*, 401(6748), 63–69. [DOI: 10.1038/43432](https://doi.org/10.1038/43432)
-26. **Tononi, G., & Cirelli, C. (2014).** Sleep and the price of plasticity: From synaptic and cellular homeostasis to memory consolidation and integration. *Neuron*, 81(1), 12–34. [DOI: 10.1016/j.neuron.2013.12.025](https://doi.org/10.1016/j.neuron.2013.12.025)
-27. **Treffert, D. A. (2009).** The savant syndrome: An extraordinary condition. A synopsis: Past, present, future. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 364(1522), 1351–1357. [DOI: 10.1098/rstb.2008.0326](https://doi.org/10.1098/rstb.2008.0326)
-28. **Turrigiano, G. G. (2008).** The self-tuning neuron: Synaptic scaling of excitatory synapses. *Cell*, 135(3), 422–435. [DOI: 10.1016/j.cell.2008.10.025](https://doi.org/10.1016/j.cell.2008.10.025)
-29. **Wei, F., Wang, G. D., Kerchner, G. A., et al. (2001).** Genetic enhancement of inflammatory pain by forebrain NR2B overexpression. *Nature Neuroscience*, 4(2), 164–169. [DOI: 10.1038/83993](https://doi.org/10.1038/83993)
-30. **Wezenberg, E., Verkes, R. J., & Sabbe, B. G. (2007).** Modulation of memory and attention by the ampakine CX516 in healthy elderly subjects. *Journal of Psychopharmacology*, 21(8), 843–850. [DOI: 10.1177/0269881107077759](https://doi.org/10.1177/0269881107077759)
-31. **Xie, L., Kang, H., Xu, Q., et al. (2013).** Sleep drives metabolite clearance from the adult brain. *Science*, 342(6156), 373–377. [DOI: 10.1126/science.1241224](https://doi.org/10.1126/science.1241224)
+6. **Bycroft, C., Freeman, C., Petkova, D., et al. (2018).** The UK Biobank resource with deep phenotyping and genomic data. *Nature*, 562(7726), 203–209. [DOI: 10.1038/s41586-018-0579-z](https://doi.org/10.1038/s41586-018-0579-z)
+7. **Cools, R., & D'Esposito, M. (2011).** Inverted-U-shaped dopamine actions on human working memory and cognitive control. *Biological Psychiatry*, 69(12), e113–e125. [DOI: 10.1016/j.biopsych.2011.03.028](https://doi.org/10.1016/j.biopsych.2011.03.028)
+8. **Davies, G., Lam, M., Harris, S. E., et al. (2018).** Study of 300,486 individuals identifies 148 independent genomic loci influencing general cognitive function. *Nature Communications*, 9, 2098. [DOI: 10.1038/s41467-018-04362-x](https://doi.org/10.1038/s41467-018-04362-x)
+9. **Faisal, A. A., Selen, L. P., & Laughlin, S. B. (2008).** Noise in the nervous system. *Nature Reviews Neuroscience*, 9(4), 292–303. [DOI: 10.1038/nrn2258](https://doi.org/10.1038/nrn2258)
+10. **Froestl, W., Muhs, A., & Pfeifer, A. (2004).** Cognitive enhancers (nootropics). Part 1: drugs interacting with receptors. *Journal of Alzheimer's Disease*, 6(6 Suppl), S99–S117. [DOI: 10.3233/jad-2004-6s617](https://doi.org/10.3233/jad-2004-6s617)
+11. **Goff, D. C., Lamberti, J. S., Leon, A. C., et al. (2008).** A placebo-controlled add-on trial of the ampakine, CX516, for cognitive deficits in schizophrenia. *Neuropsychopharmacology*, 33(3), 465–472. [DOI: 10.1038/sj.npp.1301442](https://doi.org/10.1038/sj.npp.1301442)
+12. **Gualtieri, F., Manetti, D., Romanelli, M. N., & Ghelardini, C. (2002).** Design and study of piracetam-like nootropics, controversial members of the problematic class of cognition-enhancing drugs. *Current Pharmaceutical Design*, 8(2), 125–138. [DOI: 10.2174/1381612023396582](https://doi.org/10.2174/1381612023396582)
+13. **Hills, T. T., & Hertwig, R. (2011).** Why aren't we smarter already: Evolutionary trade-offs and cognitive enhancements. *Current Directions in Psychological Science*, 20(6), 373–377. [DOI: 10.1177/0963721411418300](https://doi.org/10.1177/0963721411418300)
+14. **Horvath, J. C., Forte, J. D., & Carter, O. (2015).** Quantitative review finds no evidence of cognitive effects in healthy populations from single-session transcranial direct current stimulation (tDCS). *Brain Stimulation*, 8(3), 535–550. [DOI: 10.1016/j.brs.2015.01.400](https://doi.org/10.1016/j.brs.2015.01.400)
+15. **Ilieva, I. P., Boland, J., & Farah, M. J. (2013).** Objective and subjective cognitive enhancing effects of mixed amphetamine salts in healthy people. *Neuropharmacology*, 64, 496–505. [DOI: 10.1016/j.neuropharm.2012.07.021](https://doi.org/10.1016/j.neuropharm.2012.07.021)
+16. **King, E. A., Davis, J. W., & Degner, J. F. (2019).** Are drug targets with genetic support twice as likely to be approved? Revisiting risk by heritable trait and mode of action. *PLoS Genetics*, 15(12), e1008489. [DOI: 10.1371/journal.pgen.1008489](https://doi.org/10.1371/journal.pgen.1008489)
+17. **Lamb, J., Crawford, E. D., Peck, D., et al. (2006).** The Connectivity Map: using gene-expression signatures to connect small molecules, genes, and disease. *Science*, 313(5795), 1929–1935. [DOI: 10.1126/science.1132939](https://doi.org/10.1126/science.1132939)
+18. **Lee, J. J., Wedow, R., Okbay, A., et al. (2018).** Gene discovery and polygenic prediction from a 1.1-million-person GWAS of educational attainment. *Nature Genetics*, 50(8), 1112–1121. [DOI: 10.1038/s41588-018-0147-3](https://doi.org/10.1038/s41588-018-0147-3)
+19. **Lennie, P. (2003).** The cost of cortical computation. *Current Biology*, 13(6), 493–497. [DOI: 10.1016/S0960-9822(03)00135-0](https://doi.org/10.1016/S0960-9822(03)00135-0)
+20. **LePort, A. K., Mattfeld, A. T., Dickinson-Anson, H., et al. (2012).** Behavioral and neuroanatomical investigation of Highly Superior Autobiographical Memory (HSAM). *Neurobiology of Learning and Memory*, 98(1), 78–92. [DOI: 10.1016/j.nlm.2012.05.002](https://doi.org/10.1016/j.nlm.2012.05.002)
+21. **Nelson, M. R., Tipney, H., Painter, J. L., et al. (2015).** The support of human genetic evidence for approved drug indications. *Nature Genetics*, 47(8), 856–860. [DOI: 10.1038/ng.3314](https://doi.org/10.1038/ng.3314)
+22. **Ngo, H. V., Martinetz, T., Born, J., & Mölle, M. (2013).** Auditory closed-loop stimulation of the sleep slow oscillation enhances memory. *Neuron*, 78(3), 545–553. [DOI: 10.1016/j.neuron.2013.03.006](https://doi.org/10.1016/j.neuron.2013.03.006)
+23. **Patihis, L., Frenda, S. J., LePort, A. K., et al. (2013).** False memories in highly superior autobiographical memory individuals. *Proceedings of the National Academy of Sciences (PNAS)*, 110(52), 20947–20952. [DOI: 10.1073/pnas.1314373110](https://doi.org/10.1073/pnas.1314373110)
+24. **Pizzorusso, T., Medini, P., Berardi, N., et al. (2002).** Reactivation of ocular dominance plasticity in the adult visual cortex. *Science*, 298(5596), 1248–1251. [DOI: 10.1126/science.1072699](https://doi.org/10.1126/science.1072699)
+25. **Repantis, D., Schlattmann, P., Laisney, O., & Heuser, I. (2010).** Modafinil and methylphenidate for neuroenhancement in healthy individuals: A systematic review. *Pharmacological Research*, 62(3), 187–206. [DOI: 10.1016/j.phrs.2010.04.002](https://doi.org/10.1016/j.phrs.2010.04.002)
+26. **Repantis, D., Laisney, O., & Heuser, I. (2010).** Acetylcholinesterase inhibitors and memantine for neuroenhancement in healthy individuals: A systematic review. *Pharmacological Research*, 61(6), 473–481. [DOI: 10.1016/j.phrs.2010.02.009](https://doi.org/10.1016/j.phrs.2010.02.009)
+27. **Richards, B. A., & Frankland, P. W. (2017).** The persistence and transience of memory. *Neuron*, 94(6), 1071–1084. [DOI: 10.1016/j.neuron.2017.04.037](https://doi.org/10.1016/j.neuron.2017.04.037)
+28. **Rihel, J., Prober, D. A., Arvanites, A., et al. (2010).** Zebrafish behavioral profiling links drugs to targets and rest/wake regulation. *Science*, 327(5963), 348–351. [DOI: 10.1126/science.1183090](https://doi.org/10.1126/science.1183090)
+29. **Roberts, C. A., Jones, A., Sumnall, H., et al. (2020).** How effective are 'smart drugs'? The pharmacologically active constituents of cognitive enhancement supplements in healthy populations: A systematic review and meta-analysis. *Brain and Neuroscience Advances*, 4, 1–24. [DOI: 10.1177/2398212820980482](https://doi.org/10.1177/2398212820980482)
+30. **Savage, J. E., Jansen, P. R., Stringer, S., et al. (2018).** Genome-wide association meta-analysis in 269,867 individuals identifies new susceptibility loci and functional pathways for general intelligence. *Nature Genetics*, 50(7), 940–949. [DOI: 10.1038/s41588-018-0152-6](https://doi.org/10.1038/s41588-018-0152-6)
+31. **Subramanian, A., Narayan, R., Corsello, S. M., et al. (2017).** A next generation Connectivity Map: L1000 platform and the first 1,000,000 profiles. *Cell*, 171(6), 1437–1452. [DOI: 10.1016/j.cell.2017.10.049](https://doi.org/10.1016/j.cell.2017.10.049)
+32. **Tang, Y. P., Shimizu, E., Dube, G. R., et al. (1999).** Genetic enhancement of learning and memory in mice. *Nature*, 401(6748), 63–69. [DOI: 10.1038/43432](https://doi.org/10.1038/43432)
+33. **Tononi, G., & Cirelli, C. (2014).** Sleep and the price of plasticity: From synaptic and cellular homeostasis to memory consolidation and integration. *Neuron*, 81(1), 12–34. [DOI: 10.1016/j.neuron.2013.12.025](https://doi.org/10.1016/j.neuron.2013.12.025)
+34. **Treffert, D. A. (2009).** The savant syndrome: An extraordinary condition. A synopsis: Past, present, future. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 364(1522), 1351–1357. [DOI: 10.1098/rstb.2008.0326](https://doi.org/10.1098/rstb.2008.0326)
+35. **Turrigiano, G. G. (2008).** The self-tuning neuron: Synaptic scaling of excitatory synapses. *Cell*, 135(3), 422–435. [DOI: 10.1016/j.cell.2008.10.025](https://doi.org/10.1016/j.cell.2008.10.025)
+36. **Wei, F., Wang, G. D., Kerchner, G. A., et al. (2001).** Genetic enhancement of inflammatory pain by forebrain NR2B overexpression. *Nature Neuroscience*, 4(2), 164–169. [DOI: 10.1038/83993](https://doi.org/10.1038/83993)
+37. **Wezenberg, E., Verkes, R. J., & Sabbe, B. G. (2007).** Modulation of memory and attention by the ampakine CX516 in healthy elderly subjects. *Journal of Psychopharmacology*, 21(8), 843–850. [DOI: 10.1177/0269881107077759](https://doi.org/10.1177/0269881107077759)
+38. **Xie, L., Kang, H., Xu, Q., et al. (2013).** Sleep drives metabolite clearance from the adult brain. *Science*, 342(6156), 373–377. [DOI: 10.1126/science.1241224](https://doi.org/10.1126/science.1241224)
+39. **Zabaneh, R., Krapohl, E., Gaspar, H. A., et al. (2018).** A genome-wide association study for extremely high intelligence. *Molecular Psychiatry*, 23(5), 1226–1232. [DOI: 10.1038/mp.2017.121](https://doi.org/10.1038/mp.2017.121)
