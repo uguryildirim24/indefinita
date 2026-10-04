@@ -9,7 +9,7 @@ import json
 import re
 
 import openpyxl
-from fetch import DATA, OUT, sha
+from fetch import DATA, OUT, payload_sha, sha
 from fetch_genebass import MASKS, PHENOTYPES, load_json
 
 SNP_THRESHOLD = 5e-8  # Lee 2018 Table 13; Savage 2018 Table S5
@@ -43,12 +43,14 @@ def main():
     observed = {r["file"]: r for r in inventory}
     for name in required:
         r = observed.get(name, {})
-        if r.get("http_status") != 200 or r.get("expected_sha256"):
+        if r.get("http_status") != 200 or r.get("expected_sha256") or r.get("expected_payload_sha256"):
             raise RuntimeError(f"Required input unavailable or changed: {name}")
     for r in inventory:
         if r.get("http_status") == 200:
             if sha(DATA / r["file"]) != r["sha256"]:
                 raise RuntimeError(f"Input checksum mismatch: {r['file']}")
+            if r.get("payload_sha256") and payload_sha(DATA / r["file"]) != r["payload_sha256"]:
+                raise RuntimeError(f"Input payload checksum mismatch: {r['file']}")
     md5 = hashlib.md5()  # publisher supplies MD5; inventory additionally has SHA256
     with (DATA / "savage2018.txt").open("rb") as f:
         for chunk in iter(lambda: f.read(1024 * 1024), b""):

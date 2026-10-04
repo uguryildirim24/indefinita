@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
+import gzip
 import hashlib
 import json
 from pathlib import Path
@@ -62,6 +63,19 @@ def sha(path):
     return h.hexdigest()
 
 
+def payload_sha(path):
+    """Hash the JSON bytes, not the API's per-request gzip timestamp."""
+    with path.open("rb") as f:
+        compressed = f.read(2) == b"\x1f\x8b"
+    if not compressed:
+        return sha(path)
+    h = hashlib.sha256()
+    with gzip.open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
 def fetch_one(name, url, previous):
     global RESERVED
     path = DATA / name
@@ -92,10 +106,17 @@ def fetch_one(name, url, previous):
                         RESERVED -= path.stat().st_size
                 tmp.replace(path)
                 row.update(bytes=count, sha256=sha(path), access="anonymous GET succeeded" if r.is_success else "unavailable; HTTP error response retained")
-                if r.is_success and old and old.get("http_status") == 200 and old.get("sha256") != row["sha256"]:
-                    # Keep the new bytes for audit but do not silently replace
-                    # the recorded analysis inputs with a changed live release.
-                    row.update(access="source changed since recorded snapshot", expected_sha256=old["sha256"])
+                api_json = name.startswith("genebass-") and name.endswith(".json.gz")
+                if r.is_success and api_json:
+                    row["payload_sha256"] = payload_sha(path)
+                if r.is_success and old and old.get("http_status") == 200:
+                    key = "payload_sha256" if api_json else "sha256"
+                    expected = old.get("expected_" + key, old[key])
+                    if row[key] != expected:
+                        # Preserve the snapshot pin even on subsequent refetches.
+                        # gzip envelope changes do not change the analysis input.
+                        row.update(access="source changed since recorded snapshot")
+                        row["expected_" + key] = expected
     except Exception as e:
         row.update(access="fetch failed", error=str(e))
         if tmp.exists():

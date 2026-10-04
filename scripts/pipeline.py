@@ -22,7 +22,7 @@ def main():
     fetch.run(fetch.SOURCES)
     fetch_genebass.main()
     rows = json.loads((fetch.OUT / "fetch-manifest.json").read_text())
-    join.tsv("access-inventory.tsv", [{"file": r["file"], "observed_utc": r["observed_utc"], "http_status": r.get("http_status", ""), "bytes": r.get("bytes", ""), "sha256": r.get("sha256", ""), "access_observed": SEMANTIC_ACCESS.get(r["file"], r["access"]), "requested_url": r["url"], "final_url": r.get("final_url", "")} for r in rows])
+    join.tsv("access-inventory.tsv", [{"file": r["file"], "observed_utc": r["observed_utc"], "http_status": r.get("http_status", ""), "bytes": r.get("bytes", ""), "sha256": r.get("sha256", ""), "payload_sha256": r.get("payload_sha256", ""), "access_observed": SEMANTIC_ACCESS.get(r["file"], r["access"]), "requested_url": r["url"], "final_url": r.get("final_url", "")} for r in rows])
     # Small verbatim evidence excerpts for the threshold choices, not invented
     # p-values or thresholds. PDF page index 74 = printed supplementary page 73.
     pages = PdfReader(fetch.DATA / "lee-methods.pdf").pages
