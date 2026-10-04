@@ -1,0 +1,50 @@
+{
+  "source_thresholds": {
+    "snp": 5e-08,
+    "savage_magma": 2.76e-06,
+    "genebass_skato": 2.5e-07,
+    "genebass_burden": 6.7e-07,
+    "expected_ac_min": 50,
+    "synonymous_lambda_min": 0.75,
+    "ea3_proxy_fdr": 0.05
+  },
+  "snp_counts": {
+    "lee2018": {
+      "total": 10098325,
+      "gws": 13714,
+      "gws_body_mapped": 9541
+    },
+    "savage2018": {
+      "total": 9295118,
+      "gws": 12110,
+      "gws_body_mapped": 8130
+    }
+  },
+  "savage_low_confidence_loci_excluded_from_fuma": [
+    8,
+    40,
+    66,
+    82,
+    124,
+    134,
+    197,
+    200
+  ],
+  "common_direct_gene_count": 1332,
+  "rare_significant_qc_gene_count": 4,
+  "rare_significant_qc_genes": [
+    "ENSG00000049192",
+    "ENSG00000117139",
+    "ENSG00000160877",
+    "ENSG00000258674"
+  ],
+  "direct_convergence_gene_count": 0,
+  "ea_proxy_convergence_genes": [
+    "ENSG00000117139",
+    "ENSG00000160877"
+  ],
+  "unknome_rank_universe_n": 19271,
+  "gene_evidence_rows": 1339,
+  "mapping_issues": 144,
+  "inventoried_download_bytes": 2446946857
+}

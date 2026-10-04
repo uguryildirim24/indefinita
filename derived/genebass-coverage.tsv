@@ -1,0 +1,13 @@
+analysis_id	description	n	mask	rows	keep_pheno_skato	keep_pheno_skat	keep_pheno_burden
+continuous-20016-both_sexes--irnt	Fluid intelligence score	128302	pLoF	17832	True	True	True
+continuous-20018-both_sexes--	Prospective memory result	131007	pLoF	17849	True	True	True
+continuous-20023-both_sexes--irnt	Mean time to correctly identify matches	392194	pLoF	18250	True	True	True
+continuous-20191-both_sexes--irnt	Fluid intelligence score	100900	pLoF	17581	True	True	True
+continuous-20016-both_sexes--irnt	Fluid intelligence score	128302	missense|LC	19366	True	True	True
+continuous-20018-both_sexes--	Prospective memory result	131007	missense|LC	19366	True	True	True
+continuous-20023-both_sexes--irnt	Mean time to correctly identify matches	392194	missense|LC	19288	True	True	True
+continuous-20191-both_sexes--irnt	Fluid intelligence score	100900	missense|LC	19384	True	True	True
+continuous-20016-both_sexes--irnt	Fluid intelligence score	128302	pLoF|missense|LC	18589	True	True	True
+continuous-20018-both_sexes--	Prospective memory result	131007	pLoF|missense|LC	18589	True	True	True
+continuous-20023-both_sexes--irnt	Mean time to correctly identify matches	392194	pLoF|missense|LC	18517	True	True	True
+continuous-20191-both_sexes--irnt	Fluid intelligence score	100900	pLoF|missense|LC	18608	True	True	True
