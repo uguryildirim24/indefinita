@@ -1,0 +1,7 @@
+fold_a	fold_b	absolute_coefficient_spearman	signed_coefficient_cosine
+cocaine	ketamine	0.5071771	0.3107576
+cocaine	LSD	0.58279811	0.57502739
+cocaine	MDMA	0.6358464	0.67961703
+ketamine	LSD	0.57971463	0.58323449
+ketamine	MDMA	0.68499578	0.74082635
+LSD	MDMA	0.62121077	0.6648265

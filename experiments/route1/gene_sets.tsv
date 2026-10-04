@@ -1,0 +1,32 @@
+panel	gene	present	provenance
+neuronal_proxy	Snap25	True	investigator-defined coarse proxy
+neuronal_proxy	Syt1	True	investigator-defined coarse proxy
+neuronal_proxy	Rbfox3	True	investigator-defined coarse proxy
+astrocyte_proxy	Aldh1l1	True	investigator-defined coarse proxy
+astrocyte_proxy	Aqp4	True	investigator-defined coarse proxy
+astrocyte_proxy	Slc1a3	True	investigator-defined coarse proxy
+oligodendrocyte_proxy	Mbp	True	investigator-defined coarse proxy
+oligodendrocyte_proxy	Plp1	True	investigator-defined coarse proxy
+oligodendrocyte_proxy	Mog	True	investigator-defined coarse proxy
+microglia_proxy	Aif1	True	investigator-defined coarse proxy
+microglia_proxy	C1qa	True	investigator-defined coarse proxy
+microglia_proxy	P2ry12	True	investigator-defined coarse proxy
+endothelial_proxy	Pecam1	True	investigator-defined coarse proxy
+endothelial_proxy	Cldn5	True	investigator-defined coarse proxy
+endothelial_proxy	Kdr	True	investigator-defined coarse proxy
+mural_proxy	Pdgfrb	True	investigator-defined coarse proxy
+mural_proxy	Rgs5	True	investigator-defined coarse proxy
+mural_proxy	Cspg4	True	investigator-defined coarse proxy
+published_ECM_examples	Fn1	True	Nardou ECM section; outcome-informed descriptive reference
+published_ECM_examples	Mmp16	True	Nardou ECM section; outcome-informed descriptive reference
+published_ECM_examples	Trpv4	True	Nardou ECM section; outcome-informed descriptive reference
+published_ECM_examples	Tinagl1	True	Nardou ECM section; outcome-informed descriptive reference
+published_ECM_examples	Nostrin	True	Nardou ECM section; outcome-informed descriptive reference
+published_ECM_examples	Cxcr4	True	Nardou ECM section; outcome-informed descriptive reference
+published_ECM_examples	Adgre5	True	Nardou ECM section; outcome-informed descriptive reference
+published_ECM_examples	Robo4	True	Nardou ECM section; outcome-informed descriptive reference
+published_ECM_examples	Sema3g	True	Nardou ECM section; outcome-informed descriptive reference
+published_IEG_examples	Fos	True	Nardou ECM section; outcome-informed descriptive reference
+published_IEG_examples	Junb	True	Nardou ECM section; outcome-informed descriptive reference
+published_IEG_examples	Arc	True	Nardou ECM section; outcome-informed descriptive reference
+published_IEG_examples	Dusp1	True	Nardou ECM section; outcome-informed descriptive reference

@@ -1,0 +1,7 @@
+file	url	bytes	sha256	local_file_mtime_utc
+GSE230679_20230425_psychadelic_study_tpm_matrix.tsv.gz	https://ftp.ncbi.nlm.nih.gov/geo/series/GSE230nnn/GSE230679/suppl/GSE230679_20230425_psychadelic_study_tpm_matrix.tsv.gz	4530278	89ebc42e3442546c7313350fb16bb67f0f3302d2157554b3d677da608c6fe93c	2026-10-04T12:16:03.840645+00:00
+GSE230679_criticalPeriodDE_all_test_results.tsv.gz	https://ftp.ncbi.nlm.nih.gov/geo/series/GSE230nnn/GSE230679/suppl/GSE230679_criticalPeriodDE_all_test_results.tsv.gz	2075950	1d9967c4d91fdb38b579f5d959512c36df60a930fd4efd90a3928c7e4f0844e3	2026-10-04T12:16:04.436520+00:00
+GSE230679_family.soft.gz	https://ftp.ncbi.nlm.nih.gov/geo/series/GSE230nnn/GSE230679/soft/GSE230679_family.soft.gz	5717	ffa5d92ef70fd14cc08aad345c259b82cdf57aca135a66d8e8f04eaf40339a14	2026-10-04T12:15:42.219234+00:00
+paper.xml	https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10284704/fullTextXML	168503	0cd2da818c9af64699730e78a7e4727cbdd05b357dd06ac298e191dc530d07fa	2026-10-04T12:15:41.835591+00:00
+SupCode4_RNAseqAnalysis.Rmd	https://raw.githubusercontent.com/genesofeve/DolenPsychedelicOpenState/5e51f9d9e4e0b196e8d64134b7605b3f12902787/SupCode4_RNAseqAnalysis.Rmd	34535	b21c6f8c7fa8481645fe0abc6f900e55c985a7fec82b804756a676fdd7780bcb	2026-10-04T12:16:26.668818+00:00
+author_tree.json	https://api.github.com/repos/genesofeve/DolenPsychedelicOpenState/git/trees/5e51f9d9e4e0b196e8d64134b7605b3f12902787?recursive=1	1479	09d357e6cf83896cd832fa88a20b7eb58ed1eac259e59c5954d97fcb824e5070	2026-10-04T12:15:42.094985+00:00
