@@ -2,7 +2,32 @@
 
 ## Verdict
 
-The biological evidence indicates that large, across-the-board cognitive gains from a single molecule are **strongly constrained**, but the question is **not fully closed**.
+### The cognitive enhancement Profile Definition
+Throughout this report, the **cognitive enhancement profile** is defined by four mandatory criteria:
+1. **Acute Onset:** Rapid therapeutic or cognitive onset within minutes to hours of administration.
+2. **Full Reversibility:** Complete washout restoring baseline neurophysiology without permanent structural or genomic changes.
+3. **Large Magnitude:** An order-of-magnitude (e.g., 5x–10x) increase in computational throughput.
+4. **Broad Spectrum:** Simultaneous enhancements across learning, working memory, long-term memory retrieval, processing speed, and abstract executive reasoning in healthy individuals.
+
+### Biological Verdict on the cognitive enhancement Profile
+When evaluated against this specific acute profile, the biological evidence yields a clear verdict:
+
+* **The acute, reversible cognitive enhancement profile in purely biological wetware is biophysically ruled out.**
+  A healthy human brain cannot undergo an acute 10-fold surge in cognitive throughput without exceeding the thermodynamic heat-dissipation capacity of cranial blood flow (>40.5°C; Pennes, 1948; Lennie, 2003), saturating synaptic dynamic range, or triggering catastrophic network interference.
+* **Direct gene delivery or editing cannot produce the cognitive enhancement profile; it produces slow or permanent shifts.**
+  Viral vectors (AAVs) and CRISPR editing require days to weeks for transcription and translation, and their effects are permanent or persistent for years. They structurally fail the acute and reversible requirements.
+* **A genetics-first finding can identify acute druggable targets, but the resulting pharmacology remains bound by biophysical ceilings.**
+  Forward genetics can reveal an unmapped protein (like PCSK9 in lipid biology) that can be targeted acutely by a small molecule. However, in adult brain tissue, acute pharmacological stimulation remains constrained by inverted-U dose responses, stochastic channel noise, and homeostatic synaptic downscaling.
+* **Rapid plasticity cascades (ketamine, psychoplastogens) restore mood and deficits, but do not supercharge healthy baseline cognition.**
+  Ketamine and psychedelics induce rapid structural spinogenesis within hours, but clinical gains are restricted to restoring atrophied circuits in depression and PTSD. In healthy brains, they cause acute cognitive disruption during intoxication and fail to elevate objective fluid intelligence above baseline in the post-acute window.
+* **Acute circuit manipulation in animals rescues deficits, but fails to exceed healthy baselines.**
+  Optogenetics and chemogenetics act acutely (milliseconds to minutes) and are reversible, but their cognitive enhancements are observed only when restoring deficits in impaired or diseased circuits. In healthy animals at baseline, driving circuits beyond their endogenous firing rates disrupts sparse neural coding, inducing network jamming, perseveration, or seizures.
+* **The only architecture that physically permits the acute, reversible cognitive enhancement profile is bio-hybrid co-processing.**
+  Decoupling high-bandwidth computation and memory storage to external silicon co-processors allows instantaneous connection (acute onset), disconnection (full reversibility), and order-of-magnitude gains by bypassing cranial metabolic and thermal bottlenecks.
+
+---
+
+### Core Biophysical Constraints and Evolutionary Loopholes
 
 * **Why single-molecule broad gains are strongly constrained:**
   Physical, metabolic, and circuit-level constraints impose severe limits on universal cognitive expansion:
@@ -11,7 +36,7 @@ The biological evidence indicates that large, across-the-board cognitive gains f
   - **Inverted-U dose responses:** Cortical networks depend on tightly tuned catecholaminergic tone. Elevating transmitter levels beyond the physiological optimum degrades prefrontal signal-to-noise ratios and impairs executive control.
   - **Structural and computational trade-offs:** Cognitive traits exist in mutual tension: working memory stability opposes cognitive flexibility; high learning rates risk catastrophic forgetting; broad associative search degrades deductive focus.
 
-* **Why the question is not fully closed:**
+* **Why the question is not fully closed (Evolutionary Loopholes):**
   The Evolutionary Optimality Challenge (Bostrom & Sandberg, 2009a, 2009b) asks why natural selection did not already endow humans with greater cognitive capacity if it were achievable. Several evolutionary loopholes demonstrate that ancestral constraints do not represent immutable biophysical ceilings:
   1. **Ancestral environment mismatch:** Modern humans live in sustained caloric abundance, whereas ancestral hominins faced chronic caloric scarcity where higher cerebral energy draw was a fatal starvation risk.
   2. **Limits that no longer bind:** Maternal pelvic dimensions strictly capped infant cranial volume during childbirth. Modern obstetrics removes this anatomical constraint.
@@ -164,7 +189,27 @@ The only path that bypasses these biological constraints is **external bio-hybri
 * Digital memory storage is exact, non-interfering, and does not require periodic sleep downscaling to prevent catastrophic forgetting.
 * Energy supply and heat dissipation can be scaled externally without subjecting biological neural tissue to thermal denaturation or metabolic exhaustion.
 
-Brain-computer interfaces (BCIs) that provide high-bandwidth, direct neural communication with external computational co-processors represent the only theoretically viable architecture for "large-scale" cognitive enhancement. However, current invasive BCIs remain restricted to motor and sensory restoration; direct cognitive augmentation via BCI remains in the realm of long-term engineering speculation.
+#### E. Profile Analysis: Can Open Frontiers Match the Acute cognitive enhancement Profile?
+
+Every open biological frontier in Section 3 can be rigorously evaluated against the four mandatory criteria of the **cognitive enhancement profile** (acute onset in minutes/hours, full reversibility, large magnitude, and broad spectrum across cognition):
+
+| Frontier Route | Biological Intervention | Onset Speed | Reversibility | Magnitude & Breadth | Can It Produce the Acute cognitive enhancement Profile? |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Plasticity: GluN2B** | NMDA subunit overexpression | Slow (days–weeks) | Permanent / Transgenic | Large local LTP; narrow domain; chronic pain | **No:** Slow, permanent, narrow, and toxic. |
+| **Plasticity: TrkB/BDNF** | Small-molecule 7,8-DHF / TrkB | Moderate (hours–days) | Reversible | Modest; narrow synaptogenesis | **No:** Fails magnitude and broad spectrum. |
+| **Plasticity: HDACi** | Chromatin epigenetic remodeling | Slow (days) | Prolonged / Persistent | Modest; non-specific transcriptional shifts | **No:** Slow, persistent, and non-specific. |
+| **Plasticity: PNN Digestion** | Chondroitinase ABC enzyme | Slow (days) | Persistent (months) | High local plasticity; catastrophic forgetting | **No:** Slow, persistent, destructive to memory. |
+| **Sleep: Closed-Loop Sound** | Acoustic phase-locked stimulation | Acute (nocturnal) | Fully reversible | Moderate ($d \approx 0.3 - 0.5$); declarative memory only | **No:** Narrow consolidation only; zero waking IQ leap. |
+| **Sleep: Glymphatics** | Fluid convection optimization | Acute (nocturnal) | Fully reversible | Restorative; maintains baseline | **No:** Restorative maintenance; zero supranormal gain. |
+| **Metabolism: Creatine** | Phosphocreatine ATP buffer | Slow (weeks) | Reversible (weeks) | Modest ($d \approx 0.2 - 0.3$); stress/deficit only | **No:** Slow loading; zero gain in rested baseline. |
+| **Metabolism: Ketones** | Exogenous beta-hydroxybutyrate | Acute (1–2 hours) | Fully reversible | Negligible in healthy rested brain ($d < 0.2$) | **No:** Fails magnitude and broad cognitive spectrum. |
+| **Non-Invasive: tDCS/TMS/tFUS** | Cortical field modulation | Acute (minutes) | Fully reversible | Null to tiny ($d \approx 0.0 - 0.15$) in healthy adults | **No:** Fails magnitude and broad spectrum. |
+| **Bio-Hybrid: Invasive BCI** | Digital co-processor coupling | Instantaneous (sec) | Fully reversible | Large (10x); broad digital computation | **Yes (Only Route):** Decouples compute from cranium. |
+
+##### Summary of Findings Across Open Frontiers
+* **Plasticity interventions fail on speed and reversibility:** Genetic overexpression of receptors (GluN2B), enzymatic matrix degradation (PNN digestion), and chromatin remodeling (HDAC inhibitors) take days to weeks to manifest. Once induced, they are permanent, semi-permanent, or persistent for months. Furthermore, they accelerate local acquisition only at the cost of chronic neuropathic pain (Wei et al., 2001) or the catastrophic erasure of remote consolidated memories.
+* **Sleep and metabolic interventions fail on magnitude and breadth:** Sleep phase-locking and glymphatic clearance are nocturnal restorative mechanisms. They optimize baseline consolidation and clearance, but cannot produce an acute, waking expansion in computational processing speed or fluid reasoning. Creatine requires weeks of daily loading and provides benefits only when baseline energy is depleted.
+* **Bio-hybrid co-processing is the sole architecture compatible with the profile:** Only an external digital interface can be engaged instantaneously (acute onset), disconnected without residual biological alteration (full reversibility), and scaled by an order of magnitude (large magnitude and broad spectrum) by offloading thermal dissipation and memory storage to non-biological substrates.
 
 ---
 
@@ -204,6 +249,19 @@ Under the **n-0002 constraint** (solo undergraduate, one laptop, dry-lab only), 
 * **Accessible and Open:** The openFDA FAERS API (`api.fda.gov`) and chemical bioactivity repositories (ChEMBL, PubChem) are completely open, free, and queryable on a laptop.
 * **Realistic Scoped Analysis:** An undergraduate could write a Python pipeline querying openFDA FAERS to identify approved non-CNS compounds associated with paradoxical cognitive improvement reports (using proportional reporting ratios or reporting odds ratios).
 * **Where It Stops Short of cognitive enhancement-Scale Impact:** Mining measured repositories cannot produce large-scale impact. Pharmacovigilance datasets and chemical libraries measure existing small molecules tested in diseased populations. Because small molecules act within native cranial metabolic constraints (12–15 W) and trigger rapid homeostatic down-regulation, their cognitive effects plateau at modest effect sizes ($d \approx 0.15 - 0.35$). Re-mining known compounds can generate a hypothesis list for incremental repurposing, but it cannot breach the biophysical limits of wetware to deliver order-of-magnitude cognitive gains.
+
+---
+
+### Profile Analysis: Small-Molecule Repurposing vs. The cognitive enhancement Profile
+
+Evaluating approved small molecules mined from clinical records against the four criteria of the **cognitive enhancement profile**:
+
+* **Acute Onset (Passes):** Small molecules readily cross biological membranes and achieve peak plasma and brain concentrations ($T_{\text{max}}$) within 30 to 120 minutes of administration.
+* **Full Reversibility (Passes):** Small molecules are enzymatically metabolized (principally via hepatic Cytochrome P450 pathways) and cleared through renal or biliary excretion, returning brain receptor occupancy to baseline within 4 to 24 hours.
+* **Large Magnitude (Fails):** Empirical meta-analyses in healthy non-sleep-deprived adults establish that small molecules produce effect sizes of only Cohen's $d \approx 0.15 - 0.35$ (Repantis et al., 2010; Battleday & Brem, 2015). They cannot produce an order-of-magnitude (5x–10x) gain.
+* **Broad Spectrum (Fails):** Enhancements are strictly domain-specific. Stimulating monoaminergic tone improves simple vigilance on monotonous tasks, but inverted-U dynamics and D1/D2 receptor distributions guarantee that it simultaneously impairs cognitive flexibility, divergent thinking, and working memory manipulation (Cools & D'Esposito, 2011; Arnsten, 2011).
+
+**Verdict:** Mining measured repositories can yield acute and fully reversible compounds, but they are biologically bound to modest, single-domain shifts. They cannot achieve the broad, order-of-magnitude cognitive enhancement profile.
 
 ---
 
@@ -248,7 +306,80 @@ Mechanistic dissection revealed that PCSK9 acts as a post-translational chaperon
 
 ---
 
-### 2. Which Routes Work Without a Wet Lab?
+### 2. Can an Unconceived or Gene-Based Route Produce the Acute cognitive enhancement Profile?
+
+Rolf's central question asks whether a gene-based or unconceived discovery route could ever produce an effect as **acute, reversible, large, and broad** as the fictional cognitive enhancement-48. 
+
+To answer this definitively, we evaluate the four primary candidate modalities through which an unconceived or genetic mechanism could manifest:
+
+```
+THE cognitive enhancement PROFILE:
+1. Acute Onset:       Minutes to hours.
+2. Full Reversibility: Complete physiological washout; zero permanent genomic/structural change.
+3. Large Magnitude:    Order-of-magnitude (5x–10x) cognitive expansion.
+4. Broad Spectrum:     Simultaneous enhancement across working memory, speed, recall, and reasoning.
+```
+
+#### Case 1: A Genetics Finding Pointing at an Acutely Modulatable Target
+* **The Template:** Forward human genetics uncovers an uncharacterized gene associated with exceptional cognitive capability or resilience (the cognitive analog of the *PCSK9* discovery). The genetic mutation itself is congenital and lifelong, but it identifies a discrete protein (an unmapped GPCR, ion channel subunit, or second-messenger kinase) that can be targeted by a synthetic small molecule or peptide.
+* **Onset Speed & Reversibility (Passes):** If a small-molecule ligand or allosteric modulator is developed against this novel target, it can achieve an **acute onset** (reaching peak brain concentration within 30 to 120 minutes) and **full reversibility** (clearing within hours via standard hepatic and renal excretion).
+* **Magnitude & Breadth (Constrained / Fails):** Can this acute pharmacology produce an large-scale gain? The biological evidence indicates severe limits:
+  1. *Adult Pharmacology vs. Developmental Wiring:* A large fraction of genetic variants associated with general cognitive function ($g$) in GWAS and rare-variant studies exert their phenotypic effects during embryonic and early postnatal neurodevelopment (Savage et al., 2018). These genes regulate neurogenesis, neuronal migration, dendritic arborization, and axonal guidance. Modulating that gene product in a mature, adult brain cannot retroactively rebuild macroscale cortical circuitry in 30 minutes.
+  2. *Adult Synaptic Choke Points:* Even if the target functions in mature adult synapses, acutely driving it remains constrained by the biophysical ceiling of cranial wetware: inverted-U dose responses, stochastic channel noise, and homeostatic synaptic downscaling. Stimulating the target can optimize circuit tuning (producing domain-specific gains of $d \approx 0.2 - 0.4$), but it cannot drive a 10-fold broad surge without causing excitotoxic runaway or dynamic range saturation.
+
+#### Case 2: Direct Gene Delivery or Editing in an Adult Brain
+* **The Template:** Directly modifying the genome of neurons in an adult brain using viral vector transgene delivery (adeno-associated virus; AAV) or direct in vivo gene editing (CRISPR-Cas9, base editors, prime editors; Doudna & Charpentier, 2014).
+* **Onset Speed (Fails - Slow):** Direct gene delivery structurally **cannot act acutely in minutes or hours**. 
+  - Following intracranial or intravenous AAV administration, the viral capsid must bind neuronal cell-surface receptors, undergo receptor-mediated endocytosis, escape endosomes, traffic to the nucleus, uncoat, convert single-stranded DNA into transcriptionally active double-stranded DNA, recruit RNA polymerase II, transcribe mRNA, export it to the cytoplasm, and synthesize and fold functional proteins (Zincarelli et al., 2008). 
+  - Transgene expression begins only after 3 to 7 days and requires **2 to 4 weeks** to reach peak functional steady-state. 
+  - Similarly, CRISPR-mediated genomic editing requires days for Cas9 expression, nuclear import, target DNA scanning, double-strand cleavage, and cellular repair.
+* **Reversibility (Fails - Permanent or Persistent):** 
+  - CRISPR genomic editing makes permanent double-strand breaks or base conversions in the chromosomal DNA of post-mitotic neurons. These edits are **permanent, lifelong, and irreversible**.
+  - AAV vectors form stable circular episomes in post-mitotic neurons that do not divide or dilute out. AAV transgene expression persists unabated for **years to decades** in primates and humans.
+  - Even if synthetic inducible promoters (e.g., Tet-On/Tet-Off regulated by doxycycline) are engineered into the vector, turning gene expression on or off requires **days to weeks** for systemic drug distribution, transcriptional decay, and endogenous protein degradation.
+* **Verdict:** Direct gene delivery or editing in an adult brain **strictly produces a slow, permanent, or semi-permanent phenotype**. It cannot produce the acute, reversible cognitive enhancement profile.
+
+#### Case 3: Rapid Plasticity Cascades (Ketamine and Psychoplastogens): Performance vs. Mood
+* **The Template:** Rapidly acting neuroplasticity compounds such as subanesthetic ketamine (an NMDA receptor channel blocker) and intracellular 5-HT2A psychoplastogens (e.g., psilocybin, DMT, non-hallucinogenic analogues; Berman et al., 2000; Ly et al., 2018; Vargas et al., 2023).
+* **Onset Speed & Reversibility (Passes):** These molecules act within **2 to 24 hours** to drive rapid dendritic spinogenesis, new synaptogenesis, and AMPA receptor insertion. Synaptic changes remodel and wash out over days to weeks, demonstrating physiological reversibility.
+* **The Critical Caveat: Mood Restoration vs. Supranormal Performance:**
+  - *Why It Works in Mood Disorders:* In major depressive disorder, chronic stress, and PTSD, patients exhibit profound morphological atrophy: loss of dendritic spines and dendritic retraction in the medial prefrontal cortex and hippocampus. Ketamine and psychoplastogens trigger a transient glutamate burst, disinhibit pyramidal neurons, and stimulate mTORC1 and BDNF cascades, rapidly rebuilding these lost synaptic spines within hours (Li et al., 2010). This physical repair restores frontolimbic connectivity and produces dramatic antidepressant remission.
+  - *What It Does in Healthy, Non-Depressed Baselines:*
+    1. *Acute Intoxication Phase (Minutes to Hours):* Active target engagement causes dissociative anesthesia, perceptual distortion, attentional fragmentation, and severe working memory impairment (Morgan et al., 2014; Kuypers et al., 2016).
+    2. *Post-Acute Phase (Days to Weeks):* Once the drug clears, healthy subjects report enhanced subjective well-being, psychological openness, and emotional flexibility. However, objective neuropsychological batteries demonstrate **no large or broad improvements in fluid intelligence ($g$), working memory capacity, mathematical deduction, or processing speed**.
+    3. *The Biological Asymmetry:* Repairing a diseased, atrophied circuit back to its healthy physiological baseline is biologically fundamentally different from supercharging an already healthy, intact circuit beyond its natural evolutionary ceiling.
+
+#### Case 4: Acute Circuit Manipulation in Animals: Deficit Rescue vs. Exceeding Baseline
+* **The Template:** High-precision, millisecond-scale neuromodulation in mammalian models using optogenetics (light-gated channelrhodopsin/halorhodopsin), chemogenetics (DREADDs activated by inert synthetic ligands), or deep brain electrical stimulation (DBS; Sohal et al., 2009; Cho et al., 2015).
+* **Onset Speed & Reversibility (Passes):** Optogenetics and DBS act within **milliseconds**; chemogenetics acts within **15 to 30 minutes**. Both are **fully reversible** (effects terminate immediately when the optical laser/current is shut off, or when the DREADD ligand is cleared).
+* **The Critical Caveat: Deficit Restoration vs. Driving Beyond Baseline:**
+  - *Rescuing Deficits:* Preclinical studies repeatedly demonstrate that optogenetically driving specific neuronal ensembles can restore cognitive performance in impaired models. For example, Cho et al. (2015) demonstrated that optogenetically driving parvalbumin-positive interneurons at 40 Hz (gamma frequency) in the medial prefrontal cortex of adolescent-stressed mice completely restored lost cognitive flexibility.
+  - *Driving Healthy Circuits Beyond Baseline (The Network Jamming Wall):*
+    - In healthy, wild-type animals operating at baseline, neural computation relies on sparse, self-organized, and asynchronous firing patterns distributed across millions of synapses.
+    - Artificially driving these circuits with external optogenetic pulses or electrical stimulation overrides the brain's internal temporal code. 
+    - Rather than increasing cognitive throughput, driving circuits harder produces **network jamming, cognitive perseveration, loss of dynamic range, and spontaneous epileptiform seizures**.
+    - Preclinical neuroscience proves that an intact, healthy neural circuit is already operating at an optimized signal-to-noise set point; driving it beyond its endogenous ceiling disrupts computation rather than enhancing it.
+
+#### Master Comparative Evaluation Across All Discovery Routes
+
+The table below synthesizes every discovery route across Sections 3, 5, and 6 against the mandatory criteria of the **cognitive enhancement profile**:
+
+| Discovery Route / Intervention | Primary Modality | Onset Speed | Reversibility | Magnitude & Breadth | Can It Produce the Acute cognitive enhancement Profile? |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Direct Gene Editing (CRISPR)** | Cas9 / Base editors | Slow (days–weeks) | **Permanent** | Variable; highly restricted in adults | **No:** Permanent genomic change; zero acute speed. |
+| **Adult Gene Therapy (AAV)** | Viral cDNA delivery | Slow (2–4 weeks) | **Persistent (years)** | Narrow receptor/channel shift | **No:** Slow onset; persistent for years. |
+| **Genetics-Pointed Acute Drug** | Small molecule / peptide | **Acute (min–hours)** | **Fully reversible** | Modest ($d \approx 0.2 - 0.4$); bound by inverted-U | **No:** Acute and reversible, but fails magnitude. |
+| **Rapid Plasticity (Ketamine)** | NMDA channel blocker | **Rapid (hours)** | **Reversible (weeks)** | Mood/atrophy repair only; null for healthy IQ | **No:** Rescues mood deficits; zero supranormal gain. |
+| **Psychoplastogens (5-HT2A)** | Intracellular Golgi agonist | **Rapid (hours)** | **Reversible (weeks)** | Subjective flexibility; null for objective $g$ | **No:** Fails objective cognitive magnitude and breadth. |
+| **Acute Optogenetics / DBS** | Optical / electrical drive | **Instant (millisec)** | **Fully reversible** | Rescues impaired models; jams healthy networks | **No:** Deficit-rescue only; jams healthy baseline. |
+| **Clinical Small Molecules** | Repurposed approved drugs | **Acute (min–hours)** | **Fully reversible** | Modest ($d \approx 0.15 - 0.35$); vigilance-only | **No:** Bound by inverted-U and cranial energetics. |
+| **Enzymatic Matrix Digestion** | PNN / Chondroitinase | Slow (days) | Persistent (months) | Local plasticity; catastrophic forgetting | **No:** Destructive to existing memory traces. |
+| **Sleep Slow-Wave Driving** | Closed-loop acoustic drive | Acute (nightly) | Fully reversible | Moderate ($d \approx 0.3 - 0.5$); consolidation only | **No:** Narrow consolidation only; zero waking IQ leap. |
+| **Bio-Hybrid BCI Co-Processing** | External silicon coupling | **Instant (seconds)** | **Fully reversible** | **Large (10x); broad digital computation** | **YES (Only Viable Route):** Decouples from wetware. |
+
+---
+
+### 3. Which Routes Work Without a Wet Lab?
 
 Can an independent researcher operating without a wet lab uncover an unconceived cognitive pathway? The only viable modality is the **hypothesis-free reanalysis of raw, public high-throughput datasets**. 
 
@@ -274,7 +405,7 @@ A no-lab project reanalyzing these resources can identify:
 
 ---
 
-### 3. The Bottleneck: Where a No-Lab Project Hits the Wall
+### 4. The Bottleneck: Where a No-Lab Project Hits the Wall
 
 A purely computational, data-driven approach can generate a ranked list of candidate genes, orphan receptors, and cell-type targets that nobody has conceived. However, every no-lab project inevitably encounters a **hard epistemological wall**:
 
@@ -313,7 +444,7 @@ Crossing this wall requires transitioning from computation to wet experimental b
 
 ---
 
-### 4. Raising the Odds for the Unconceived
+### 5. Raising the Odds for the Unconceived
 
 Discovering an unconceived biological mechanism cannot be planned, scheduled, or guaranteed. By definition, a breakthrough mechanism contradicts or lies outside established conceptual models. 
 
@@ -335,7 +466,7 @@ However, history and data science indicate four concrete strategies that **raise
 ---
 
 
-### 5. What Rolf Could Realistically Do Toward cognitive enhancement-Scale Impact
+### 6. What Rolf Could Realistically Do Toward cognitive enhancement-Scale Impact
 
 #### Direct Assessment: Is the cognitive enhancement-Scale Ambition Out of Reach?
 An large-scale effect is defined as an order-of-magnitude (e.g., 5x–10x) expansion in cognitive processing speed, working memory capacity, long-term memory retrieval fidelity, and complex multi-step reasoning in a healthy human without catastrophic biological cost.
@@ -484,45 +615,51 @@ What remains after these steps is the vast physical implementation barrier: cust
 7. **Bostrom, N., & Sandberg, A. (2009a).** Cognitive enhancement: Methods, ethics, regulatory challenges. *Science and Engineering Ethics*, 15(3), 311–341. [DOI: 10.1007/s11948-009-9142-5](https://doi.org/10.1007/s11948-009-9142-5)
 8. **Bostrom, N., & Sandberg, A. (2009b).** The wisdom of nature: An evolutionary heuristic for human enhancement. In J. Savulescu & N. Bostrom (Eds.), *Human Enhancement* (pp. 375–416). Oxford University Press. [URL](https://nickbostrom.com/ethics/wisdom.pdf)
 9. **Cade, J. F. (1949).** Lithium salts in the treatment of psychotic excitement. *Medical Journal of Australia*, 2(10), 349–352. [DOI: 10.5694/j.1326-5377.1949.tb36912.x](https://doi.org/10.5694/j.1326-5377.1949.tb36912.x)
-10. **Cohen, J. C., Boerwinkle, E., Mosley, T. H., & Hobbs, H. H. (2006).** Sequence variations in PCSK9, low LDL, and protection against coronary heart disease. *New England Journal of Medicine*, 354(12), 1264–1272. [DOI: 10.1056/NEJMoa054013](https://doi.org/10.1056/NEJMoa054013)
-11. **Cools, R., & D'Esposito, M. (2011).** Inverted-U-shaped dopamine actions on human working memory and cognitive control. *Biological Psychiatry*, 69(12), e113–e125. [DOI: 10.1016/j.biopsych.2011.03.028](https://doi.org/10.1016/j.biopsych.2011.03.028)
-12. **Davies, G., Lam, M., Harris, S. E., et al. (2018).** Study of 300,486 individuals identifies 148 independent genomic loci influencing general cognitive function. *Nature Communications*, 9, 2098. [DOI: 10.1038/s41467-018-04362-x](https://doi.org/10.1038/s41467-018-04362-x)
-13. **de Leeuw, C. A., Mooij, J. M., Heskes, T., & Posthuma, D. (2015).** MAGMA: Generalized gene-set analysis of GWAS data. *PLoS Computational Biology*, 11(4), e1004219. [DOI: 10.1371/journal.pcbi.1004219](https://doi.org/10.1371/journal.pcbi.1004219)
-14. **Dixit, A., Parnas, O., Li, B., et al. (2016).** Perturb-seq: Dissecting molecular circuits with scalable single-cell RNA profiling of pooled genetic screens. *Cell*, 167(7), 1853–1866. [DOI: 10.1016/j.cell.2016.11.038](https://doi.org/10.1016/j.cell.2016.11.038)
-15. **Faisal, A. A., Selen, L. P., & Laughlin, S. B. (2008).** Noise in the nervous system. *Nature Reviews Neuroscience*, 9(4), 292–303. [DOI: 10.1038/nrn2258](https://doi.org/10.1038/nrn2258)
-16. **Finucane, H. K., Bulik-Sullivan, B., Gusev, A., et al. (2015).** Partitioning heritability by functional annotation using genome-wide association summary statistics. *Nature Genetics*, 47(11), 1228–1235. [DOI: 10.1038/ng.3404](https://doi.org/10.1038/ng.3404)
-17. **Froestl, W., Muhs, A., & Pfeifer, A. (2004).** Cognitive enhancers (nootropics). Part 1: drugs interacting with receptors. *Journal of Alzheimer's Disease*, 6(6 Suppl), S99–S117. [DOI: 10.3233/jad-2004-6s617](https://doi.org/10.3233/jad-2004-6s617)
-18. **Goff, D. C., Lamberti, J. S., Leon, A. C., et al. (2008).** A placebo-controlled add-on trial of the ampakine, CX516, for cognitive deficits in schizophrenia. *Neuropsychopharmacology*, 33(3), 465–472. [DOI: 10.1038/sj.npp.1301442](https://doi.org/10.1038/sj.npp.1301442)
-19. **Gualtieri, F., Manetti, D., Romanelli, M. N., & Ghelardini, C. (2002).** Design and study of piracetam-like nootropics, controversial members of the problematic class of cognition-enhancing drugs. *Current Pharmaceutical Design*, 8(2), 125–138. [DOI: 10.2174/1381612023396582](https://doi.org/10.2174/1381612023396582)
-20. **Hills, T. T., & Hertwig, R. (2011).** Why aren't we smarter already: Evolutionary trade-offs and cognitive enhancements. *Current Directions in Psychological Science*, 20(6), 373–377. [DOI: 10.1177/0963721411418300](https://doi.org/10.1177/0963721411418300)
-21. **Horvath, J. C., Forte, J. D., & Carter, O. (2015).** Quantitative review finds no evidence of cognitive effects in healthy populations from single-session transcranial direct current stimulation (tDCS). *Brain Stimulation*, 8(3), 535–550. [DOI: 10.1016/j.brs.2015.01.400](https://doi.org/10.1016/j.brs.2015.01.400)
-22. **Ilieva, I. P., Boland, J., & Farah, M. J. (2013).** Objective and subjective cognitive enhancing effects of mixed amphetamine salts in healthy people. *Neuropharmacology*, 64, 496–505. [DOI: 10.1016/j.neuropharm.2012.07.021](https://doi.org/10.1016/j.neuropharm.2012.07.021)
-23. **Klein, P. S., & Melton, D. A. (1996).** A molecular mechanism for the effect of lithium: inhibition of glycogen synthase kinase-3β. *Proceedings of the National Academy of Sciences (PNAS)*, 93(16), 8455–8459. [DOI: 10.1073/pnas.93.16.8455](https://doi.org/10.1073/pnas.93.16.8455)
-24. **Lennie, P. (2003).** The cost of cortical computation. *Current Biology*, 13(6), 493–497. [DOI: 10.1016/S0960-9822(03)00135-0](https://doi.org/10.1016/S0960-9822(03)00135-0)
-25. **LePort, A. K., Mattfeld, A. T., Dickinson-Anson, H., et al. (2012).** Behavioral and neuroanatomical investigation of Highly Superior Autobiographical Memory (HSAM). *Neurobiology of Learning and Memory*, 98(1), 78–92. [DOI: 10.1016/j.nlm.2012.05.002](https://doi.org/10.1016/j.nlm.2012.05.002)
-26. **Li, N., Lee, B., Liu, R. J., et al. (2010).** mTOR-dependent synapse formation underlies the rapid antidepressant effects of NMDA antagonists. *Science*, 329(5994), 959–964. [DOI: 10.1126/science.1190288](https://doi.org/10.1126/science.1190288)
-27. **Ly, C., Greb, A. C., Cameron, L. P., et al. (2018).** Psychedelics promote structural and functional neural plasticity. *Cell Reports*, 23(11), 3170–3182. [DOI: 10.1016/j.celrep.2018.05.022](https://doi.org/10.1016/j.celrep.2018.05.022)
-28. **Markello, R. D., Hansen, J. Y., Liu, Z. Q., et al. (2022).** Neuromaps: structural and functional interpretation of brain maps. *Nature Methods*, 19(11), 1472–1479. [DOI: 10.1038/s41592-022-01625-w](https://doi.org/10.1038/s41592-022-01625-w)
-29. **Ngo, H. V., Martinetz, T., Born, J., & Mölle, M. (2013).** Auditory closed-loop stimulation of the sleep slow oscillation enhances memory. *Neuron*, 78(3), 545–553. [DOI: 10.1016/j.neuron.2013.03.006](https://doi.org/10.1016/j.neuron.2013.03.006)
-30. **Patihis, L., Frenda, S. J., LePort, A. K., et al. (2013).** False memories in highly superior autobiographical memory individuals. *Proceedings of the National Academy of Sciences (PNAS)*, 110(52), 20947–20952. [DOI: 10.1073/pnas.1314373110](https://doi.org/10.1073/pnas.1314373110)
-31. **Pennes, H. H. (1948).** Analysis of tissue and arterial blood temperatures in the resting human forearm. *Journal of Applied Physiology*, 1(2), 93–122. [DOI: 10.1152/jappl.1948.1.2.93](https://doi.org/10.1152/jappl.1948.1.2.93)
-32. **Pizzorusso, T., Medini, P., Berardi, N., et al. (2002).** Reactivation of ocular dominance plasticity in the adult visual cortex. *Science*, 298(5596), 1248–1251. [DOI: 10.1126/science.1072699](https://doi.org/10.1126/science.1072699)
-33. **Repantis, D., Schlattmann, P., Laisney, O., & Heuser, I. (2010).** Modafinil and methylphenidate for neuroenhancement in healthy individuals: A systematic review. *Pharmacological Research*, 62(3), 187–206. [DOI: 10.1016/j.phrs.2010.04.002](https://doi.org/10.1016/j.phrs.2010.04.002)
-34. **Repantis, D., Laisney, O., & Heuser, I. (2010).** Acetylcholinesterase inhibitors and memantine for neuroenhancement in healthy individuals: A systematic review. *Pharmacological Research*, 61(6), 473–481. [DOI: 10.1016/j.phrs.2010.02.009](https://doi.org/10.1016/j.phrs.2010.02.009)
-35. **Replogle, J. M., Saunders, R. A., Pogson, A. N., et al. (2022).** Mapping information-rich genotype-phenotype landscapes with genome-scale Perturb-seq. *Cell*, 185(14), 2559–2575. [DOI: 10.1016/j.cell.2022.05.013](https://doi.org/10.1016/j.cell.2022.05.013)
-36. **Richards, B. A., & Frankland, P. W. (2017).** The persistence and transience of memory. *Neuron*, 94(6), 1071–1084. [DOI: 10.1016/j.neuron.2017.04.037](https://doi.org/10.1016/j.neuron.2017.04.037)
-37. **Roberts, C. A., Jones, A., Sumnall, H., et al. (2020).** How effective are 'smart drugs'? The pharmacologically active constituents of cognitive enhancement supplements in healthy populations: A systematic review and meta-analysis. *Brain and Neuroscience Advances*, 4, 1–24. [DOI: 10.1177/2398212820980482](https://doi.org/10.1177/2398212820980482)
-38. **Sanz-Leon, P., Knock, S. A., Spiegler, A., & Jirsa, V. K. (2015).** Mathematical framework for large-scale brain modeling. *NeuroImage*, 111, 385–430. [DOI: 10.1016/j.neuroimage.2015.01.002](https://doi.org/10.1016/j.neuroimage.2015.01.002)
-39. **Savage, J. E., Jansen, P. R., Stringer, S., et al. (2018).** Genome-wide association meta-analysis in 269,867 individuals identifies new susceptibility loci and functional pathways for general intelligence. *Nature Genetics*, 50(7), 940–949. [DOI: 10.1038/s41588-018-0152-6](https://doi.org/10.1038/s41588-018-0152-6)
-40. **Tang, Y. P., Shimizu, E., Dube, G. R., et al. (1999).** Genetic enhancement of learning and memory in mice. *Nature*, 401(6748), 63–69. [DOI: 10.1038/43432](https://doi.org/10.1038/43432)
-41. **Tononi, G., & Cirelli, C. (2014).** Sleep and the price of plasticity: From synaptic and cellular homeostasis to memory consolidation and integration. *Neuron*, 81(1), 12–34. [DOI: 10.1016/j.neuron.2013.12.025](https://doi.org/10.1016/j.neuron.2013.12.025)
-42. **Treffert, D. A. (2009).** The savant syndrome: An extraordinary condition. A synopsis: Past, present, future. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 364(1522), 1351–1357. [DOI: 10.1098/rstb.2008.0326](https://doi.org/10.1098/rstb.2008.0326)
-43. **Turrigiano, G. G. (2008).** The self-tuning neuron: Synaptic scaling of excitatory synapses. *Cell*, 135(3), 422–435. [DOI: 10.1016/j.cell.2008.10.025](https://doi.org/10.1016/j.cell.2008.10.025)
-44. **Vargas, M. V., Dunlap, L. E., Dong, C., et al. (2023).** Psychedelics promote neuroplasticity through the activation of intracellular 5-HT2A receptors. *Science*, 379(6633), 700–706. [DOI: 10.1126/science.adf0435](https://doi.org/10.1126/science.adf0435)
-45. **Wei, F., Wang, G. D., Kerchner, G. A., et al. (2001).** Genetic enhancement of inflammatory pain by forebrain NR2B overexpression. *Nature Neuroscience*, 4(2), 164–169. [DOI: 10.1038/83993](https://doi.org/10.1038/83993)
-46. **Wezenberg, E., Verkes, R. J., & Sabbe, B. G. (2007).** Modulation of memory and attention by the ampakine CX516 in healthy elderly subjects. *Journal of Psychopharmacology*, 21(8), 843–850. [DOI: 10.1177/0269881107077759](https://doi.org/10.1177/0269881107077759)
-47. **Xie, L., Kang, H., Xu, Q., et al. (2013).** Sleep drives metabolite clearance from the adult brain. *Science*, 342(6156), 373–377. [DOI: 10.1126/science.1241224](https://doi.org/10.1126/science.1241224)
-48. **Zarate, C. A., Singh, J. B., Carlson, P. J., et al. (2006).** A randomized trial of an N-methyl-D-aspartate antagonist in treatment-resistant major depression. *Archives of General Psychiatry*, 63(8), 856–864. [DOI: 10.1001/archpsyc.63.8.856](https://doi.org/10.1001/archpsyc.63.8.856)
+10. **Cho, K. K., Hoch, R., Lee, A. T., Patel, T., Heinz, D. A., & Sohal, V. S. (2015).** Gamma oscillations restore normal cognitive flexibility in mPFC after adolescent stress. *Neuron*, 85(6), 1332–1345. [DOI: 10.1016/j.neuron.2015.02.019](https://doi.org/10.1016/j.neuron.2015.02.019)
+11. **Cohen, J. C., Boerwinkle, E., Mosley, T. H., & Hobbs, H. H. (2006).** Sequence variations in PCSK9, low LDL, and protection against coronary heart disease. *New England Journal of Medicine*, 354(12), 1264–1272. [DOI: 10.1056/NEJMoa054013](https://doi.org/10.1056/NEJMoa054013)
+12. **Cools, R., & D'Esposito, M. (2011).** Inverted-U-shaped dopamine actions on human working memory and cognitive control. *Biological Psychiatry*, 69(12), e113–e125. [DOI: 10.1016/j.biopsych.2011.03.028](https://doi.org/10.1016/j.biopsych.2011.03.028)
+13. **Davies, G., Lam, M., Harris, S. E., et al. (2018).** Study of 300,486 individuals identifies 148 independent genomic loci influencing general cognitive function. *Nature Communications*, 9, 2098. [DOI: 10.1038/s41467-018-04362-x](https://doi.org/10.1038/s41467-018-04362-x)
+14. **de Leeuw, C. A., Mooij, J. M., Heskes, T., & Posthuma, D. (2015).** MAGMA: Generalized gene-set analysis of GWAS data. *PLoS Computational Biology*, 11(4), e1004219. [DOI: 10.1371/journal.pcbi.1004219](https://doi.org/10.1371/journal.pcbi.1004219)
+15. **Dixit, A., Parnas, O., Li, B., et al. (2016).** Perturb-seq: Dissecting molecular circuits with scalable single-cell RNA profiling of pooled genetic screens. *Cell*, 167(7), 1853–1866. [DOI: 10.1016/j.cell.2016.11.038](https://doi.org/10.1016/j.cell.2016.11.038)
+16. **Doudna, J. A., & Charpentier, E. (2014).** The new frontier of genome engineering with CRISPR-Cas9. *Science*, 346(6213), 1258096. [DOI: 10.1126/science.1258096](https://doi.org/10.1126/science.1258096)
+17. **Faisal, A. A., Selen, L. P., & Laughlin, S. B. (2008).** Noise in the nervous system. *Nature Reviews Neuroscience*, 9(4), 292–303. [DOI: 10.1038/nrn2258](https://doi.org/10.1038/nrn2258)
+18. **Finucane, H. K., Bulik-Sullivan, B., Gusev, A., et al. (2015).** Partitioning heritability by functional annotation using genome-wide association summary statistics. *Nature Genetics*, 47(11), 1228–1235. [DOI: 10.1038/ng.3404](https://doi.org/10.1038/ng.3404)
+19. **Froestl, W., Muhs, A., & Pfeifer, A. (2004).** Cognitive enhancers (nootropics). Part 1: drugs interacting with receptors. *Journal of Alzheimer's Disease*, 6(6 Suppl), S99–S117. [DOI: 10.3233/jad-2004-6s617](https://doi.org/10.3233/jad-2004-6s617)
+20. **Goff, D. C., Lamberti, J. S., Leon, A. C., et al. (2008).** A placebo-controlled add-on trial of the ampakine, CX516, for cognitive deficits in schizophrenia. *Neuropsychopharmacology*, 33(3), 465–472. [DOI: 10.1038/sj.npp.1301442](https://doi.org/10.1038/sj.npp.1301442)
+21. **Gualtieri, F., Manetti, D., Romanelli, M. N., & Ghelardini, C. (2002).** Design and study of piracetam-like nootropics, controversial members of the problematic class of cognition-enhancing drugs. *Current Pharmaceutical Design*, 8(2), 125–138. [DOI: 10.2174/1381612023396582](https://doi.org/10.2174/1381612023396582)
+22. **Hills, T. T., & Hertwig, R. (2011).** Why aren't we smarter already: Evolutionary trade-offs and cognitive enhancements. *Current Directions in Psychological Science*, 20(6), 373–377. [DOI: 10.1177/0963721411418300](https://doi.org/10.1177/0963721411418300)
+23. **Horvath, J. C., Forte, J. D., & Carter, O. (2015).** Quantitative review finds no evidence of cognitive effects in healthy populations from single-session transcranial direct current stimulation (tDCS). *Brain Stimulation*, 8(3), 535–550. [DOI: 10.1016/j.brs.2015.01.400](https://doi.org/10.1016/j.brs.2015.01.400)
+24. **Ilieva, I. P., Boland, J., & Farah, M. J. (2013).** Objective and subjective cognitive enhancing effects of mixed amphetamine salts in healthy people. *Neuropharmacology*, 64, 496–505. [DOI: 10.1016/j.neuropharm.2012.07.021](https://doi.org/10.1016/j.neuropharm.2012.07.021)
+25. **Klein, P. S., & Melton, D. A. (1996).** A molecular mechanism for the effect of lithium: inhibition of glycogen synthase kinase-3β. *Proceedings of the National Academy of Sciences (PNAS)*, 93(16), 8455–8459. [DOI: 10.1073/pnas.93.16.8455](https://doi.org/10.1073/pnas.93.16.8455)
+26. **Kuypers, K. P., Riba, J., de la Fuente Revenga, M., Barker, S., Theunissen, E. L., & Ramaekers, J. G. (2016).** Ayahuasca enhances creative thinking while impairing working memory. *Psychopharmacology*, 233(15), 2801–2810. [DOI: 10.1007/s00213-016-4314-x](https://doi.org/10.1007/s00213-016-4314-x)
+27. **Lennie, P. (2003).** The cost of cortical computation. *Current Biology*, 13(6), 493–497. [DOI: 10.1016/S0960-9822(03)00135-0](https://doi.org/10.1016/S0960-9822(03)00135-0)
+28. **LePort, A. K., Mattfeld, A. T., Dickinson-Anson, H., et al. (2012).** Behavioral and neuroanatomical investigation of Highly Superior Autobiographical Memory (HSAM). *Neurobiology of Learning and Memory*, 98(1), 78–92. [DOI: 10.1016/j.nlm.2012.05.002](https://doi.org/10.1016/j.nlm.2012.05.002)
+29. **Li, N., Lee, B., Liu, R. J., et al. (2010).** mTOR-dependent synapse formation underlies the rapid antidepressant effects of NMDA antagonists. *Science*, 329(5994), 959–964. [DOI: 10.1126/science.1190288](https://doi.org/10.1126/science.1190288)
+30. **Ly, C., Greb, A. C., Cameron, L. P., et al. (2018).** Psychedelics promote structural and functional neural plasticity. *Cell Reports*, 23(11), 3170–3182. [DOI: 10.1016/j.celrep.2018.05.022](https://doi.org/10.1016/j.celrep.2018.05.022)
+31. **Markello, R. D., Hansen, J. Y., Liu, Z. Q., et al. (2022).** Neuromaps: structural and functional interpretation of brain maps. *Nature Methods*, 19(11), 1472–1479. [DOI: 10.1038/s41592-022-01625-w](https://doi.org/10.1038/s41592-022-01625-w)
+32. **Morgan, C. J., Perry, E. B., Cho, H. S., Krystal, J. H., & D'Souza, D. C. (2014).** Ketamine impairs memory retrieval and working memory in healthy humans. *Neuropsychopharmacology*, 39(12), 2741–2749. [DOI: 10.1038/npp.2014.120](https://doi.org/10.1038/npp.2014.120)
+33. **Ngo, H. V., Martinetz, T., Born, J., & Mölle, M. (2013).** Auditory closed-loop stimulation of the sleep slow oscillation enhances memory. *Neuron*, 78(3), 545–553. [DOI: 10.1016/j.neuron.2013.03.006](https://doi.org/10.1016/j.neuron.2013.03.006)
+34. **Patihis, L., Frenda, S. J., LePort, A. K., et al. (2013).** False memories in highly superior autobiographical memory individuals. *Proceedings of the National Academy of Sciences (PNAS)*, 110(52), 20947–20952. [DOI: 10.1073/pnas.1314373110](https://doi.org/10.1073/pnas.1314373110)
+35. **Pennes, H. H. (1948).** Analysis of tissue and arterial blood temperatures in the resting human forearm. *Journal of Applied Physiology*, 1(2), 93–122. [DOI: 10.1152/jappl.1948.1.2.93](https://doi.org/10.1152/jappl.1948.1.2.93)
+36. **Pizzorusso, T., Medini, P., Berardi, N., et al. (2002).** Reactivation of ocular dominance plasticity in the adult visual cortex. *Science*, 298(5596), 1248–1251. [DOI: 10.1126/science.1072699](https://doi.org/10.1126/science.1072699)
+37. **Repantis, D., Schlattmann, P., Laisney, O., & Heuser, I. (2010).** Modafinil and methylphenidate for neuroenhancement in healthy individuals: A systematic review. *Pharmacological Research*, 62(3), 187–206. [DOI: 10.1016/j.phrs.2010.04.002](https://doi.org/10.1016/j.phrs.2010.04.002)
+38. **Repantis, D., Laisney, O., & Heuser, I. (2010).** Acetylcholinesterase inhibitors and memantine for neuroenhancement in healthy individuals: A systematic review. *Pharmacological Research*, 61(6), 473–481. [DOI: 10.1016/j.phrs.2010.02.009](https://doi.org/10.1016/j.phrs.2010.02.009)
+39. **Replogle, J. M., Saunders, R. A., Pogson, A. N., et al. (2022).** Mapping information-rich genotype-phenotype landscapes with genome-scale Perturb-seq. *Cell*, 185(14), 2559–2575. [DOI: 10.1016/j.cell.2022.05.013](https://doi.org/10.1016/j.cell.2022.05.013)
+40. **Richards, B. A., & Frankland, P. W. (2017).** The persistence and transience of memory. *Neuron*, 94(6), 1071–1084. [DOI: 10.1016/j.neuron.2017.04.037](https://doi.org/10.1016/j.neuron.2017.04.037)
+41. **Roberts, C. A., Jones, A., Sumnall, H., et al. (2020).** How effective are 'smart drugs'? The pharmacologically active constituents of cognitive enhancement supplements in healthy populations: A systematic review and meta-analysis. *Brain and Neuroscience Advances*, 4, 1–24. [DOI: 10.1177/2398212820980482](https://doi.org/10.1177/2398212820980482)
+42. **Sanz-Leon, P., Knock, S. A., Spiegler, A., & Jirsa, V. K. (2015).** Mathematical framework for large-scale brain modeling. *NeuroImage*, 111, 385–430. [DOI: 10.1016/j.neuroimage.2015.01.002](https://doi.org/10.1016/j.neuroimage.2015.01.002)
+43. **Savage, J. E., Jansen, P. R., Stringer, S., et al. (2018).** Genome-wide association meta-analysis in 269,867 individuals identifies new susceptibility loci and functional pathways for general intelligence. *Nature Genetics*, 50(7), 940–949. [DOI: 10.1038/s41588-018-0152-6](https://doi.org/10.1038/s41588-018-0152-6)
+44. **Sohal, V. S., Zhang, F., Yizhar, O., & Deisseroth, K. (2009).** Parvalbumin neurons and gamma rhythms enhance cortical circuit performance. *Nature*, 459(7247), 698–702. [DOI: 10.1038/nature07991](https://doi.org/10.1038/nature07991)
+45. **Tang, Y. P., Shimizu, E., Dube, G. R., et al. (1999).** Genetic enhancement of learning and memory in mice. *Nature*, 401(6748), 63–69. [DOI: 10.1038/43432](https://doi.org/10.1038/43432)
+46. **Tononi, G., & Cirelli, C. (2014).** Sleep and the price of plasticity: From synaptic and cellular homeostasis to memory consolidation and integration. *Neuron*, 81(1), 12–34. [DOI: 10.1016/j.neuron.2013.12.025](https://doi.org/10.1016/j.neuron.2013.12.025)
+47. **Treffert, D. A. (2009).** The savant syndrome: An extraordinary condition. A synopsis: Past, present, future. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 364(1522), 1351–1357. [DOI: 10.1098/rstb.2008.0326](https://doi.org/10.1098/rstb.2008.0326)
+48. **Turrigiano, G. G. (2008).** The self-tuning neuron: Synaptic scaling of excitatory synapses. *Cell*, 135(3), 422–435. [DOI: 10.1016/j.cell.2008.10.025](https://doi.org/10.1016/j.cell.2008.10.025)
+49. **Vargas, M. V., Dunlap, L. E., Dong, C., et al. (2023).** Psychedelics promote neuroplasticity through the activation of intracellular 5-HT2A receptors. *Science*, 379(6633), 700–706. [DOI: 10.1126/science.adf0435](https://doi.org/10.1126/science.adf0435)
+50. **Wei, F., Wang, G. D., Kerchner, G. A., et al. (2001).** Genetic enhancement of inflammatory pain by forebrain NR2B overexpression. *Nature Neuroscience*, 4(2), 164–169. [DOI: 10.1038/83993](https://doi.org/10.1038/83993)
+51. **Wezenberg, E., Verkes, R. J., & Sabbe, B. G. (2007).** Modulation of memory and attention by the ampakine CX516 in healthy elderly subjects. *Journal of Psychopharmacology*, 21(8), 843–850. [DOI: 10.1177/0269881107077759](https://doi.org/10.1177/0269881107077759)
+52. **Xie, L., Kang, H., Xu, Q., et al. (2013).** Sleep drives metabolite clearance from the adult brain. *Science*, 342(6156), 373–377. [DOI: 10.1126/science.1241224](https://doi.org/10.1126/science.1241224)
+53. **Zarate, C. A., Singh, J. B., Carlson, P. J., et al. (2006).** A randomized trial of an N-methyl-D-aspartate antagonist in treatment-resistant major depression. *Archives of General Psychiatry*, 63(8), 856–864. [DOI: 10.1001/archpsyc.63.8.856](https://doi.org/10.1001/archpsyc.63.8.856)
+54. **Zincarelli, C., Soltys, S., Rengo, G., & Rabinowitz, J. E. (2008).** Analysis of AAV serotypes 1–9 mediated gene expression and tropism in adult mice. *Molecular Therapy*, 16(6), 1073–1080. [DOI: 10.1038/mt.2008.76](https://doi.org/10.1038/mt.2008.76)
 
 ---
 
