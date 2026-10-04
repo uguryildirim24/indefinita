@@ -1,0 +1,7 @@
+{
+  "published_claim": 65,
+  "supplied_table_q_le_0_1": 65,
+  "supplied_tested_genes": 55536,
+  "exact_sleuth_reproduction": false,
+  "reason": "RNA-isolation batch map, kallisto bootstraps, local metadata/cache/helpers unavailable in these inputs"
+}
