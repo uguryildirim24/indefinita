@@ -1,0 +1,200 @@
+region_id	gene_id	symbol	nominal_rows	shared_aligned_variants	gwas_lead_covered	min_qtl_p	status
+R001	ENSG00000047849	MAP4	1326	912	False	0.0107776	shared local summaries
+R001	ENSG00000270285	RPS27P30	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000265078	RN7SL664P	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000236768	RPL17P16	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000164045	CDC25A	1425	990	False	4.25604e-05	shared local summaries
+R001	ENSG00000235627	SNRPFP4	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000253056	RNU7-128P	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000231884	NDUFB1P1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000265483	MIR4443	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000164047	CAMP	1467	1022	False	0.0182783	shared local summaries
+R001	ENSG00000164048	ZNF589	1491	1044	False	1.23987e-19	shared local summaries
+R001	ENSG00000229759	MRPS18AP1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000199476	Y_RNA	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000228638	FCF1P2	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000172113	NME6	1555	1088	False	9.64612e-06	shared local summaries
+R001	ENSG00000229453	SPINK8	1593	1114	False	0.000181543	shared local summaries
+R001	ENSG00000252466	MIR2115	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000164049	FBXW12	1642	1148	False	0.00313833	shared local summaries
+R001	ENSG00000265053	RN7SL321P	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000164050	PLXNB1	1742	1221	False	0.00219571	shared local summaries
+R001	ENSG00000164051	CCDC51	1766	1241	False	0.00212251	shared local summaries
+R001	ENSG00000232112	TMA7	1765	1240	False	0.0005304	shared local summaries
+R001	ENSG00000244380	RP11-24C3.2	1775	1245	False	4.94991e-05	shared local summaries
+R001	ENSG00000164053	ATRIP	1775	1245	False	0.0050373	shared local summaries
+R001	ENSG00000213689	TREX1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000164054	SHISA5	1857	1306	False	0.000607604	shared local summaries
+R001	ENSG00000264209	AC104448.1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000114268	PFKFB4	1941	1365	False	0.00172573	shared local summaries
+R001	ENSG00000145040	UCN2	1944	1368	False	0.00469522	shared local summaries
+R001	ENSG00000114270	COL7A1	1982	1395	False	0.00168395	shared local summaries
+R001	ENSG00000211535	MIR711	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000010256	UQCRC1	2001	1410	False	0.0147735	shared local summaries
+R001	ENSG00000183396	TMEM89	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000225697	SLC26A6	2040	1438	False	0.000426484	shared local summaries
+R001	ENSG00000008300	CELSR3	2075	1462	False	0.00168119	shared local summaries
+R001	ENSG00000263898	MIR4793	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000228350	LINC02585	2075	1462	False	0.000981338	shared local summaries
+R001	ENSG00000213672	NCKIPSD	2107	1481	False	2.85749e-09	shared local summaries
+R001	ENSG00000271973	RP11-572O6.1	2090	1471	False	7.71448e-05	shared local summaries
+R001	ENSG00000068745	IP6K2	2190	1538	False	3.03002e-08	shared local summaries
+R001	ENSG00000114302	PRKAR2A	2344	1643	False	0.00428365	shared local summaries
+R001	ENSG00000224424	PRKAR2A-AS1	2344	1643	False	0.00722752	shared local summaries
+R001	ENSG00000178537	SLC25A20	2415	1686	True	0.00158691	shared local summaries
+R001	ENSG00000221883	ARIH2OS	2440	1706	True	0.0114604	shared local summaries
+R001	ENSG00000177479	ARIH2	2440	1706	True	0.00234402	shared local summaries
+R001	ENSG00000235236	RP13-131K19.1	2554	1790	True	0.00324427	shared local summaries
+R001	ENSG00000223343	RP13-131K19.2	2566	1801	True	0.0136114	shared local summaries
+R001	ENSG00000273211	RP13-131K19.7	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000178467	P4HTM	2566	1801	True	7.08838e-05	shared local summaries
+R001	ENSG00000178252	WDR6	2595	1821	True	8.85828e-05	shared local summaries
+R001	ENSG00000178149	DALRD3	2614	1834	True	0.000422515	shared local summaries
+R001	ENSG00000199032	MIR425	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000178057	NDUFAF3	2611	1831	True	0.0126449	shared local summaries
+R001	ENSG00000207605	MIR191	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000178035	IMPDH2	2628	1844	True	0.000678137	shared local summaries
+R001	ENSG00000272434	RP13-131K19.6	2628	1844	True	0.00932837	shared local summaries
+R001	ENSG00000198218	QRICH1	2671	1895	True	0.00626254	shared local summaries
+R001	ENSG00000241461	RN7SL182P	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000172053	QARS1	2664	1891	True	0.000418966	shared local summaries
+R001	ENSG00000172046	USP19	2668	1893	True	0.00457654	shared local summaries
+R001	ENSG00000172037	LAMB2	2662	1892	True	0.0130899	shared local summaries
+R001	ENSG00000270441	LAMB2P1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000177352	CCDC71	2665	1902	True	1.89943e-07	shared local summaries
+R001	ENSG00000185909	KLHDC8B	2674	1908	True	0.0166365	shared local summaries
+R001	ENSG00000236980	CIMIP7	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000173421	IHO1	2686	1913	True	0.0053486	shared local summaries
+R001	ENSG00000270538	GCSHP6	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000225399	RP11-3B7.1	2685	1929	True	0.0117626	shared local summaries
+R001	ENSG00000188315	C3orf62	2679	1926	True	3.79858e-05	shared local summaries
+R001	ENSG00000199546	Y_RNA	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000264633	MIR4271	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000114316	USP4	2630	1879	True	0.000182264	shared local summaries
+R001	ENSG00000233276	GPX1	2595	1850	True	5.25754e-09	shared local summaries
+R001	ENSG00000067560	RHOA	2573	1830	True	0.00123266	shared local summaries
+R001	ENSG00000235908	RHOA-IT1	2571	1831	True	0.00237016	shared local summaries
+R001	ENSG00000145022	TCTA	2569	1828	True	0.00584822	shared local summaries
+R001	ENSG00000145020	AMT	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000235261	NICN1-AS1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000145029	NICN1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000201301	RNA5SP130	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000173402	DAG1	2609	1878	True	0.0102391	shared local summaries
+R001	ENSG00000226913	BSN-DT	2637	1905	True	5.96039e-09	shared local summaries
+R001	ENSG00000164061	BSN	2637	1905	True	0.000740012	shared local summaries
+R001	ENSG00000235120	BSN-AS1	2687	1938	True	0.006728	shared local summaries
+R001	ENSG00000164062	APEH	2728	1970	True	0.00106239	shared local summaries
+R001	ENSG00000173531	MST1	2715	1967	True	0.000271961	shared local summaries
+R001	ENSG00000259970	AC099668.5	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000164068	RNF123	2715	1967	True	2.58409e-07	shared local summaries
+R001	ENSG00000176020	AMIGO3	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000173540	GMPPB	2721	1970	True	5.57435e-10	shared local summaries
+R001	ENSG00000176095	IP6K1	2781	2002	True	0.00647443	shared local summaries
+R001	ENSG00000239576	COX6CP14	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000244730	PHF5AP3	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000187492	CDHR4	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000185614	INKA1	2813	2022	True	0.00311221	shared local summaries
+R001	ENSG00000182179	UBA7	2827	2038	True	0.00255092	shared local summaries
+R001	ENSG00000263506	MIR5193	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000263651	AC139451.1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000183763	TRAIP	2886	2094	True	0.00175234	shared local summaries
+R001	ENSG00000164076	CAMKV	2909	2109	True	0.00556382	shared local summaries
+R001	ENSG00000264706	RN7SL217P	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000234667	ACTL11P	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000164078	MST1R	2972	2136	True	0.000481391	shared local summaries
+R001	ENSG00000230698	CTD-2330K9.2	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000228008	CTD-2330K9.3	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000164077	MON1A	3015	2165	True	0.00083078	shared local summaries
+R001	ENSG00000004534	RBM6	3020	2170	True	9.22767e-08	shared local summaries
+R001	ENSG00000003756	RBM5	2890	2082	True	0.012759	shared local summaries
+R001	ENSG00000235016	SEMA3F-AS1	2834	2036	True	0.00290909	shared local summaries
+R001	ENSG00000001617	SEMA3F	2836	2038	True	0.00125503	shared local summaries
+R001	ENSG00000207922	MIR566	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000114349	GNAT1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000188338	SLC38A3	2773	1993	True	0.00111326	shared local summaries
+R001	ENSG00000114353	GNAI2	2746	1970	True	0.0019836	shared local summaries
+R001	ENSG00000213600	U73169.1	2727	1952	True	0.00252333	shared local summaries
+R001	ENSG00000230454	LINC03143	2705	1935	True	0.00067194	shared local summaries
+R001	ENSG00000232352	SEMA3B-AS1	2700	1931	True	7.53665e-05	shared local summaries
+R001	ENSG00000012171	SEMA3B	2700	1931	True	0.00090982	shared local summaries
+R001	ENSG00000179564	LSMEM2	2689	1922	True	0.00297215	shared local summaries
+R001	ENSG00000214706	IFRD2	2675	1915	True	0.00140647	shared local summaries
+R001	ENSG00000186792	HYAL3	2666	1909	True	1.42363e-17	shared local summaries
+R001	ENSG00000243477	NAA80	2666	1909	True	5.65047e-08	shared local summaries
+R001	ENSG00000114378	HYAL1	2651	1899	True	0.00366318	shared local summaries
+R001	ENSG00000068001	HYAL2	2637	1888	True	0.00269592	shared local summaries
+R001	ENSG00000114383	TUSC2	2629	1883	True	0.00856588	shared local summaries
+R001	ENSG00000068028	RASSF1	2619	1877	True	0.00309707	shared local summaries
+R001	ENSG00000235058	ZMYND10-AS1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000004838	ZMYND10	2613	1873	True	0.00438092	shared local summaries
+R001	ENSG00000114388	NPRL2	2609	1870	True	0.0111526	shared local summaries
+R001	ENSG00000114395	CYB561D2	2609	1870	True	0.0117746	shared local summaries
+R001	ENSG00000272104	XXcos-LUCA11.5	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000126062	TMEM115	2594	1859	True	0.000569895	shared local summaries
+R001	ENSG00000007402	CACNA2D2	2359	1688	True	0.00308117	shared local summaries
+R001	ENSG00000271858	XXcos-LUCA11.4	2587	1853	True	0.0179155	shared local summaries
+R001	ENSG00000202322	RNA5SP131	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000088543	C3orf18	2267	1621	True	0.0207076	shared local summaries
+R001	ENSG00000114735	HEMK1	2267	1621	True	0.000200361	shared local summaries
+R001	ENSG00000114737	CISH	2214	1583	True	0.00750953	shared local summaries
+R001	ENSG00000114738	MAPKAPK3	2215	1584	True	0.00996663	shared local summaries
+R001	ENSG00000273356	LINC02019	2130	1525	True	0.00498934	shared local summaries
+R001	ENSG00000272543	MIR4787	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000088538	DOCK3	2121	1522	True	0.000467989	shared local summaries
+R001	ENSG00000228337	PPIAP69	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000213587	RP11-646D13.1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000235278	ZNF652P1	0	0	False	NA	not covered/aligned; not null evidence
+R001	ENSG00000240959	ST13P14	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000146263	MMS22L	2257	1578	True	0.00019187	shared local summaries
+R002	ENSG00000226684	RP3-418C23.2	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000224849	RP1-104O17.1	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000242486	RP1-104O17.2	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000226207	RP1-104O17.3	3160	2221	True	0.00746984	shared local summaries
+R002	ENSG00000271860	MIR2113HG	2257	1578	True	5.66162e-05	shared local summaries
+R002	ENSG00000238367	MIR2113	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000220505	EIF4EBP2P3	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000236920	RP11-111D3.2	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000235504	RP3-453D15.1	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000187472	RP11-67P15.1	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000184486	POU3F2	4503	3171	True	4.16334e-05	shared local summaries
+R002	ENSG00000112234	FBXL4	4258	2998	True	0.00247287	shared local summaries
+R002	ENSG00000271042	RP3-364H10.1	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000265226	MIR548AI	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000232699	BDH2P1	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000146267	FAXC	3375	2358	False	0.00314748	shared local summaries
+R002	ENSG00000132423	COQ3	3326	2326	False	0.000443475	shared local summaries
+R002	ENSG00000132424	PNISR	3238	2281	False	0.000209006	shared local summaries
+R002	ENSG00000228506	PNISR-AS1	3241	2283	False	9.61873e-36	shared local summaries
+R002	ENSG00000123552	USP45	2989	2094	False	0.00385142	shared local summaries
+R002	ENSG00000228439	TSTD3	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000112237	CCNC	2918	2040	False	0.00194947	shared local summaries
+R002	ENSG00000272017	RP1-199J3.7	0	0	False	NA	not covered/aligned; not null evidence
+R002	ENSG00000219755	RP1-199J3.5	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000138814	PPP3CA	3472	2339	True	0.00167786	shared local summaries
+R003	ENSG00000221265	MIR1255A	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000254531	PPP3CA-DT	3470	2337	True	4.7857e-05	shared local summaries
+R003	ENSG00000153064	BANK1	3666	2470	True	0.000931407	shared local summaries
+R003	ENSG00000199529	RNU6-462P	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000251149	MTND5P5	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000251309	BANK1-AS1	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000138821	SLC39A8	4594	3140	True	0.000260294	shared local summaries
+R003	ENSG00000241144	RN7SL728P	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000248161	NFKB1-AS1	4562	3116	True	1.30428e-10	shared local summaries
+R003	ENSG00000251572	AF213884.1	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000260651	AF213884.2	4352	2955	True	0.00134854	shared local summaries
+R003	ENSG00000109320	NFKB1	4352	2955	True	0.00044781	shared local summaries
+R003	ENSG00000238553	AF213884.3	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000109323	MANBA	3395	2284	True	0.000321259	shared local summaries
+R003	ENSG00000241981	RPL21P49	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000230069	LRRC37A15P	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000248971	KRT8P46	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000224207	RP11-10L12.1	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000251288	WDR12P1	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000109332	UBE2D3	3075	2050	True	0.00387683	shared local summaries
+R003	ENSG00000246560	UBE2D3-AS1	3187	2135	True	8.78065e-05	shared local summaries
+R003	ENSG00000252739	RNU7-151P	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000238948	snoU13	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000145354	CISD2	3075	2050	True	0.002538	shared local summaries
+R003	ENSG00000164037	SLC9B1	2781	1848	True	0.00127129	shared local summaries
+R003	ENSG00000250651	PABPC1P7	0	0	False	NA	not covered/aligned; not null evidence
+R003	ENSG00000249283	ACTR3BP4	0	0	False	NA	not covered/aligned; not null evidence

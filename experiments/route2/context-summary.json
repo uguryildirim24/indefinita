@@ -1,0 +1,21 @@
+{
+  "evidence_rows": 406,
+  "associated_pharos_tdark": 38,
+  "pilot_associated_pharos_tdark": [
+    "CDHR4",
+    "C3orf62",
+    "CIMIP7"
+  ],
+  "pilot_alternative_genes": 199,
+  "expression_tissues": [
+    "amygdala",
+    "basal ganglia",
+    "cerebellum",
+    "cerebral cortex",
+    "hypothalamus",
+    "midbrain",
+    "spinal cord"
+  ],
+  "rank_uses_only_genomic_association": true,
+  "full_QTL_or_perturbation_scope": false
+}

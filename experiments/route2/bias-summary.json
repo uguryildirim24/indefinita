@@ -1,0 +1,46 @@
+{
+  "tested_genes": 18913,
+  "quantile_edges_log10_length": [
+    3.848706265172644,
+    4.258900556783608,
+    4.589089086739986,
+    4.949974199728745
+  ],
+  "quantile_edges_density": [
+    2.314814814814815,
+    2.9958758093457045,
+    3.627644198572213,
+    4.443246647913664
+  ],
+  "spearman_gene_evidence_vs_log_length": -0.06528571950854876,
+  "spearman_gene_evidence_vs_snp_density": -0.1662924235994835,
+  "annotation_coverage": {
+    "hgnc_mapping": {
+      "unique": 18168,
+      "unmapped": 1262
+    },
+    "hpa_expression_available": {
+      "True": 17904,
+      "False": 1526
+    },
+    "hpa_brain_available": {
+      "True": 17904,
+      "False": 1526
+    }
+  },
+  "unknome_scored": 17401,
+  "pharos_scored": 17615,
+  "interpretation": "Descriptive matching, not a causal adjustment or independent GWAS validation; union-bound power depends on gene boundaries and SNP count",
+  "matched_associated_scored_genes": 374,
+  "matched_knownness_mean_difference": 0.9385672963599301,
+  "matched_controls": "all nonassociated scored genes in same length/density quintiles and HPA brain-coverage stratum; reused controls, not independent pairs",
+  "expression_match_edges_log1p_ntpm": [
+    0.6931471805599453,
+    1.9740810260220096,
+    2.8154087194227095,
+    3.6938669956249757
+  ],
+  "expression_matched_associated_scored_genes": 374,
+  "expression_matched_knownness_mean_difference": 0.6957950029853371,
+  "expression_match_limitation": "HPA consensus RNA blends HPA/GTEx; an annotation/covariate, not independent GWAS or independent GTEx expression evidence"
+}

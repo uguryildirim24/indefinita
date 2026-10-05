@@ -1,0 +1,18 @@
+{
+  "url": "https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/QTS000015/QTD000176/QTD000176.all.tsv.gz",
+  "observed_utc": "2026-10-05T14:02:08.778251+00:00",
+  "study": "GTEx v8 reprocessed eQTL Catalogue QTD000176; adult frontal cortex; N=175",
+  "index_sha256": "ede98799f356bd260b724ff660e47fc3808b1e9cf2c2955b5accf4be84c718ff",
+  "access": "anonymous HTTPS range/tabix selected local full nominal summaries; no significance filter",
+  "http_status": 206,
+  "final_url": "https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/QTS000015/QTD000176/QTD000176.all.tsv.gz",
+  "content_range": "bytes 0-65535/3226399270",
+  "etag": "\"c04ef226-5f8ab5049cf71\"",
+  "last_modified": "Thu, 06 Apr 2023 13:59:13 GMT",
+  "range_response_sha256": "b03b9291aa3b267bdf83f4b5a3cc543385c5d9d147f6bd37195cd44badf81d52",
+  "selected_rows": 310264,
+  "sha256": "fac18039d1e780fae5158c00c2b3ee1ca5460fd58142b5ac0835f0940eda96e3",
+  "pilot_gwas_sha256": "422983cef61dccfa4f2ec71aa7df460b55144d338a06543c9c046a699f8abb60",
+  "locus_alternatives_sha256": "7ce7945bd296db5a737d902888b6621975a342731f66169d557d91aa0ef8a83c",
+  "chain_sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d"
+}
