@@ -1,0 +1,10 @@
+{
+  "exclusions": {
+    "not_in_lifted_gwas": 56812,
+    "palindromic_not_oriented": 34539,
+    "allele_mismatch": 8
+  },
+  "aligned_gene_region_pairs": 118,
+  "variant_join": "unique GRCh37-to-38 lift; exact position and biallelic alleles; no palindrome orientation",
+  "prior_choices_are_sensitivity_not_acceptance_thresholds": true
+}

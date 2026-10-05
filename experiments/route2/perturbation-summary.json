@@ -1,0 +1,33 @@
+{
+  "sequence_mapping_header": [
+    "cell",
+    "barcode",
+    "read_count",
+    "umi_count"
+  ],
+  "sequence_mapping_rows": 1970727,
+  "distinct_barcodes": 367635,
+  "distinct_cell_barcodes": 100993,
+  "barcode_counts_are_not_validated_cells_or_gene_coverage": true,
+  "candidate_genes_checked": 199,
+  "candidate_gene_mapping_established": false,
+  "no_expression_matrix_downloaded": true,
+  "no_neuronal_cognition_outcome": true,
+  "paper": "Tian et al. 2019 DOI 10.1016/j.neuron.2019.07.014; main HTML available; relevant screen/method passages inspected",
+  "access": [
+    {
+      "file": "tian2019-primary.xlsx",
+      "http_status": 200,
+      "sha256": "d59117001004f04799c3bb00ce9afc020fdc1158897795329850f4fbf066a8ff",
+      "usable_excel": false,
+      "access": "HTML/browser challenge, not a usable screen table"
+    },
+    {
+      "file": "tian2019-validation.xlsx",
+      "http_status": 200,
+      "sha256": "8a0fccffe5f92a822beb611e0a0c17c18242f6e18820c2d17e508377a6a366b2",
+      "usable_excel": false,
+      "access": "HTML/browser challenge, not a usable screen table"
+    }
+  ]
+}

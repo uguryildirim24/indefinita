@@ -1,0 +1,51 @@
+{
+  "total_rows": 10098325,
+  "valid_rows": 10098325,
+  "rows_overlapping_protein_coding_body": 4356714,
+  "genome_wide_significant_rows": 13714,
+  "tested_genes": 18913,
+  "total_autosomal_protein_coding_genes": 19430,
+  "associated_genes": 406,
+  "regions": 160,
+  "pilot_regions": [
+    {
+      "chromosome": "3",
+      "start": 48070686,
+      "end": 50974574,
+      "region_id": "R001",
+      "region_rank": 1,
+      "lead_snp": "rs2352974",
+      "lead_pos": 49890613,
+      "lead_p": 5.19e-29,
+      "gws_snp_count": 821,
+      "pilot": true
+    },
+    {
+      "chromosome": "6",
+      "start": 97714814,
+      "end": 100032265,
+      "region_id": "R002",
+      "region_rank": 2,
+      "lead_snp": "rs1906252",
+      "lead_pos": 98550289,
+      "lead_p": 4.44e-27,
+      "gws_snp_count": 300,
+      "pilot": true
+    },
+    {
+      "chromosome": "4",
+      "start": 102202364,
+      "end": 103888441,
+      "region_id": "R003",
+      "region_rank": 3,
+      "lead_snp": "rs13107325",
+      "lead_pos": 103188709,
+      "lead_p": 1.09e-23,
+      "gws_snp_count": 109,
+      "pilot": true
+    }
+  ],
+  "knownness_used_to_choose_evidence": false,
+  "procedure": "SNP-min union bound; gene body; all tested genes Bonferroni",
+  "associations_are_not_causal_assignments": true
+}

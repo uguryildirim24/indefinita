@@ -1,0 +1,21 @@
+{
+  "reference_samples": 503,
+  "reference_sha256": "83a48fd9dcaa0b9a874b18c63143a4ede93f05505b215b0bd8790130a0d7a954",
+  "reference": "CNCR phase 3 EUR; updated 19/09/2018; GRCh37",
+  "dosage": "A1 counts; missing mean-imputed; allele-aligned r and r2",
+  "local_variants": 18755,
+  "harmonized_variants": 15987,
+  "statuses": {
+    "direct": 8009,
+    "swapped": 7978,
+    "palindromic_not_oriented": 2672,
+    "absent_reference": 96
+  },
+  "lead_coverage": {
+    "R001": true,
+    "R002": true,
+    "R003": true
+  },
+  "absent_ld_is_not_r2_zero": true,
+  "causal_gene_assignment": false
+}
