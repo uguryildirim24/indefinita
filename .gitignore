@@ -1,4 +1,36 @@
-data/
+# Raw downloads, extracted references, generated exports and runtime observations
+**/data/
+**/output/
+**/outputs/
+*.part
+*.log
+derived/source-method-excerpts.txt
+experiments/route2/source-method-excerpts.txt
+experiments/route2/gene-associations.tsv
+
+# Python environments, caches and build output
 .venv/
-__pycache__/
+venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.uv-cache/
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+credentials*.json
+secrets*.json
 .herdr-project/
+.DS_Store
