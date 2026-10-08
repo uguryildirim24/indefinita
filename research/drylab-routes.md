@@ -1,10 +1,10 @@
 # Dry-lab discovery routes with open data
 
-Checked 2026-10-04. Request q-1791090165681-74715-0, job-0003. Analysis and strategy only. No analysis was run and no dataset was downloaded.
+Checked 2026-10-04. This is an archived research review, not an implemented workflow. No analysis was run and no dataset was downloaded for this review.
 
 ## Verdict
 
-Open data will not hand Rolf an large-scale discovery. Nothing I found gets from public data to a cognition mechanism without wet-lab work. What it can do cheaply is produce a short, ranked, falsifiable list of poorly characterized genes and cell types that several independent lines of genetic evidence tie to cognition. Someone with a lab can then test that list.
+Open data will not hand Rolf a broad-improvement discovery. Nothing I found gets from public data to a cognition mechanism without wet-lab work. What it can do cheaply is produce a short, ranked, falsifiable list of poorly characterized genes and cell types that several independent lines of genetic evidence tie to cognition. Someone with a lab can then test that list.
 
 The route that best fits "biology nobody has described yet" is Project 1 in section 5: take genes implicated in cognition by common-variant and rare-variant genetics, join them to "knownness" rankings (Unknome, Pharos Tdark, literature counts), and keep the ones nobody has studied. Projects 3 and 4 strengthen that list. The cell-type and brain-structure projects (2 and 5) say where to look, not what is there.
 
@@ -178,7 +178,7 @@ All five stop at the same place: none confirms a mechanism, because that needs a
 - **Best case:** A map of regions and connectivity phenotypes with local genetic correlation to cognition, which tells Project 2 where to look and may show whether any of the correlated regions contain Project 1's dark genes.
 - **Stops short:** Structure-to-cognition MR is vulnerable to pleiotropy and to the indirect-effect problem in section 2. It points at where, and produces no new gene biology unless a dark gene sits in a correlated region.
 
-**My order for "unexplained biology" payoff:** 1, 4, 3, then 2 and 5. Projects 1 and 4 are cheapest and run on summary statistics, so there is no institutional gate. Project 3 turns the list into function hypotheses. Projects 2 and 5 are context. This is a recommendation for the coordinator, not a pick.
+**My order for "unexplained biology" payoff:** 1, 4, 3, then 2 and 5. Projects 1 and 4 are cheapest and run on summary statistics, so there is no institutional gate. Project 3 turns the list into function hypotheses. Projects 2 and 5 are context.
 
 ## Not established
 

@@ -1,8 +1,8 @@
-# Could an cognition-enhancing enhancer exist, and where would a search start?
+# Broad cognitive improvement: evidence and open questions
 
 ## Answer
 
-**The full cognitive enhancement profile is biologically constrained but scientifically open—not demonstrated, and not ruled out by the sources reviewed.** The target remains a **large gain across learning, memory, reasoning and attention in healthy people, beginning within minutes to hours, with a fully reversible enhanced state**. There is no validated numerical definition of “large” for this fictional comparison; this document does not invent one.
+**The full broad-improvement profile is biologically constrained but scientifically open—not demonstrated, and not ruled out by the sources reviewed.** The target remains a **large gain across learning, memory, reasoning and attention in healthy people, beginning within minutes to hours, with a fully reversible enhanced state**. There is no validated numerical definition of “large” for this fictional comparison; this document does not invent one.
 
 My confidence is:
 
@@ -24,7 +24,7 @@ This is the top-level interpretation of the existing work, not another comprehen
 | [Theory and extremes](theory-and-extremes.md) | Credit assignment, retrieval, interference and scheduling; exceptional specializations are not a general on-demand reserve. |
 | [Non-drug interventions](nondrug-interventions.md) | Selective stimulation effects, replication limits, and substantial but lower-certainty hyperoxia/photobiomodulation signals. |
 | [Dry-lab routes](drylab-routes.md) | Public-data discovery beyond familiar targets; access and causal limits of genetics, atlases and perturbation data. |
-| [Synthesis](synthesis.md) | Six bounded discovery routes and the distinction between a computational deliverable and human cognitive enhancement. |
+| [Synthesis](synthesis.md) | Six bounded discovery routes and the distinction between a computational deliverable and human broad improvement. |
 | [Route 1 verdict](../experiments/route1/VERDICT.md) | The plasticity-state analysis is **inconclusive**: a failed out-of-treatment predictor plus missing batch information and causal non-identifiability. It does not warrant candidate interpretation or a biological-null conclusion. |
 
 All seven inputs were read completely. Claims used below have additional independent source checks, recorded at the end. Companion files retain their own access-depth qualifications; cross-referencing them is not blanket re-verification of every citation they contain.
@@ -97,7 +97,7 @@ Closed-loop temporal-cortex stimulation improved recall by targeting poor encodi
 
 Sleep pharmacology supplies an unusually direct reciprocal result: greater spindle density accompanied **better verbal memory but worse perceptual learning**, with motor learning unchanged [6]. The tradeoff is observed experimentally; changing several sleep features together prevents attributing every effect exclusively to spindles. Modest TMR effects [17] likewise establish selected consolidation benefits, not all-domain capacity.
 
-For metabolic approaches, energy costs are mechanistically real [9–10], but the literature does not establish that adequate fuel delivery is the dominant bottleneck in rested healthy brains. Hyperoxia's positive but low-quality findings [15] argue against categorical dismissal, not for a fuel-based cognitive enhancement mechanism. Device and metabolic plateaus are often **observed selectivity, inconsistent transfer or incomplete measurement**, not an identified universal biological ceiling.
+For metabolic approaches, energy costs are mechanistically real [9–10], but the literature does not establish that adequate fuel delivery is the dominant bottleneck in rested healthy brains. Hyperoxia's positive but low-quality findings [15] argue against categorical dismissal, not for a fuel-based broad-improvement mechanism. Device and metabolic plateaus are often **observed selectivity, inconsistent transfer or incomplete measurement**, not an identified universal biological ceiling.
 
 ### Speed, effort and policy can conceal the plateau
 
@@ -107,7 +107,7 @@ The speed–accuracy literature shows how changing decision policy changes the a
 
 ## 3. Open directions worth pursuing
 
-Labels apply to the **specific claim**, not to a whole field: **established** = well-supported phenomenon in the named population/preparation; **supported** = evidence-based direction with important unresolved links; **speculative** = plausible extension without direct evidence of the claimed capability. No direction below is an established cognitive enhancement route.
+Labels apply to the **specific claim**, not to a whole field: **established** = well-supported phenomenon in the named population/preparation; **supported** = evidence-based direction with important unresolved links; **speculative** = plausible extension without direct evidence of the claimed capability. No direction below is an established broad-improvement route.
 
 | Direction | Established / supported starting point | Speculative extension and a discriminating next question |
 |---|---|---|
@@ -116,7 +116,7 @@ Labels apply to the **specific claim**, not to a whole field: **established** = 
 | **Selective learning gates with interference protection** | **Supported:** mouse critical-period reopening and metaplastic/ECM findings identify a controllable learning gate [13]. A shared causal state program is **not established** by the existing Route 1 experiment. | **Speculative:** acutely controlled learning susceptibility generalizes across domains without acute impairment or lasting unwanted susceptibility. First resolve independent biological evidence and nuisance explanations; do not optimize the inconclusive predictor into a discovery. Subsequent supervised research would need acquisition slopes, old-knowledge protection and new-material tests after the window ends. Even success would not automatically establish immediate reasoning/attention gain. |
 | **Precision, closed-loop network control** | **Supported:** state-dependent recall improvement in implanted patients [18], plus the selective healthy noninvasive findings mapped in the non-drug report. The human result is real causal leverage, not general enhancement. | **Speculative:** controllable network coordination improves joint healthy performance rather than just weak encoding. Synthesis Route 6 can evaluate public timing data and useful recall per elapsed time; waiting for “good states” may erase benefit. Device-off is not proof of full physiological recovery, and invasive systems are not fully reversible whole interventions. |
 | **Independent audit of larger acute human signals** | **Supported:** hyperoxia and photobiomodulation have published substantial estimates, with the limitations above [15–16]. | **Speculative:** a reproducible full-profile effect is concealed by fragmented measurements. Start with synthesis Route 5: separate healthy populations, acute versus repeated protocols, dependent endpoints and speed/accuracy. Missing numerical inputs remain unavailable, not zero effects. An audit can justify a supervised confirmatory study; it cannot establish safety or broad state reversal. |
-| **Selective consolidation and memory access** | **Established:** sleep TMR improves selected memory outcomes [17]. **Supported:** the theory report's retrieval/indexing and interference hypotheses explain why usable memory may differ from storage capacity. | **Speculative:** a shared access or consolidation lever has large cross-domain consequences. Compare retrieval errors, useful transfer and competing memories, not just cued recall. This is a component-level search/control case; stronger memories alone do not meet the full cognitive enhancement profile or justify sleep compression. |
+| **Selective consolidation and memory access** | **Established:** sleep TMR improves selected memory outcomes [17]. **Supported:** the theory report's retrieval/indexing and interference hypotheses explain why usable memory may differ from storage capacity. | **Speculative:** a shared access or consolidation lever has large cross-domain consequences. Compare retrieval errors, useful transfer and competing memories, not just cued recall. This is a component-level search/control case; stronger memories alone do not meet the full broad-improvement profile or justify sleep compression. |
 
 **Where I would start:** use the merged synthesis's bounded routes, but update its first-route recommendation with the actual **inconclusive Route 1 verdict**. Do not promote its expression ranks into enhancer candidates. For unfamiliar biology, the understudied-gene dossier is a concrete public-data entry; for a possible acute reversible mechanism, fixed-resource control-policy comparisons ask the sharper feasibility question. These are complementary hypothesis-generating starts, not forecasts of efficacy. Keep larger human signals visible for audit rather than assuming only old stimulants deserve investigation.
 
@@ -126,13 +126,13 @@ Laptop work can reject an explanation, prioritize a locus, or establish sufficie
 
 The unknown is the **conjunction of headroom and acute biological access**. A convincing advance would independently reproduce substantial useful gains across unfamiliar learning, later memory, reasoning and attention in the **same rested healthy population**, beyond practice and expectancy, with comparable time/opportunity and reciprocal losses made visible. It would measure onset and subsequent recovery of capacity on **new material**, plus unwanted physiological/functional persistence. Retaining knowledge learned while enhanced is compatible with reversal of the enhanced state; pharmacological clearance or a nonsignificant follow-up alone does not establish complete reversal. Detailed measurement choices are in the history report.
 
-A failed plasticity trial, negative shortlist, or unsuccessful controller would narrow that branch, not rule out all cognition-enhancing biology. A general impossibility claim would need a genuinely general bound linked to behavioral capacity and all admissible mechanisms; none of these sources supplies one. There is no honest numerical threshold or single decisive current experiment that can replace that missing argument.
+A failed plasticity trial, negative shortlist, or unsuccessful controller would narrow that branch, not rule out all broad-improvement biology. A general impossibility claim would need a genuinely general bound linked to behavioral capacity and all admissible mechanisms; none of these sources supplies one. There is no honest numerical threshold or single decisive current experiment that can replace that missing argument.
 
 **Bottom line:** current classes reveal why blunt enhancement stalls, and real exceptions justify searching. The literature can constrain candidate stories and identify tractable questions. It cannot currently tell Rolf that the full effect must exist—or that biology forbids it.
 
 ## Sources and verification depth
 
-Independent checks used the **Europe PMC REST API** on 4 October 2026: each DOI/PMID below returned the matching title/authors and abstract. **A = abstract-only** (not full-methods appraisal); **F = abstract plus relevant full-text passages inspected**. F passages came from Europe PMC XML for [12–13,18,23] and NCBI PMC HTML for [2–4,9] after XML HTTP 500 errors. Runtime records are retained with the lane report; no effect was independently reestimated. Short titles below identify the cited papers, not extra sources.
+Independent checks used the **Europe PMC REST API** on 4 October 2026: each DOI/PMID below returned the matching title/authors and abstract. **A = abstract-only** (not full-methods appraisal); **F = abstract plus relevant full-text passages inspected**. F passages came from Europe PMC XML for [12,13,18,23] and NCBI PMC HTML for [2,3,4,9] after XML HTTP 500 errors. No effect was independently reestimated. Short titles below identify the cited papers, not extra sources.
 
 | Ref | Paper / verified identifier | What it supports | Depth |
 |---|---|---|---|

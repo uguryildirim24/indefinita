@@ -1,4 +1,4 @@
-# Non-drug human interventions against the cognitive enhancement profile
+# Non-drug human interventions: evidence and limits
 
 ## Verdict
 
@@ -6,7 +6,7 @@ No intervention reviewed here has demonstrated the requested combination in heal
 
 There are real partial leads. Brain stimulation can change particular cognitive operations; targeted stimulation can improve episodic memory; stimulation paired with learning can sometimes improve acquisition; and metabolic or environmental interventions can affect performance acutely. But the better-established effects are generally small or domain-specific. Some apparently large effects come from small studies, weak controls, clinical populations, or disputed meta-analytic calculations. Invasive memory prostheses are a particularly important proof of principle, but not an available enhancement route for a healthy undergraduate.
 
-The strongest practical distinction is not “drug versus device.” It is a general enhancement of capacity versus a change in one task, an improvement in encoding selected material, restoration from fatigue or disease, or assistance from an external computer. None of those narrower outcomes should be relabeled cognitive enhancement.
+The strongest practical distinction is not “drug versus device.” It is a general enhancement of capacity versus a change in one task, an improvement in encoding selected material, restoration from fatigue or disease, or assistance from an external computer. None of those narrower outcomes should be relabeled broad improvement.
 
 ## Scope, verification and interpretation
 
@@ -32,7 +32,7 @@ Onset can fall within the requested minutes-to-hours window, during or shortly a
 
 Replication audit: Arar and colleagues conducted a double-blind, preregistered trial in 150 younger and 91 cognitively normal older adults. It directly tested earlier claims of improved memory retrieval and examined time of day, task difficulty and stimulus format. It found no effect on episodic or working memory [4]. This is an especially relevant large confirmatory failure, not merely an underpowered pilot null. It does not invalidate every stimulation target, but it substantially weakens the proposition that ordinary prefrontal tDCS reliably boosts memory in healthy people.
 
-cognitive enhancement judgment: timing sometimes fits; large magnitude and broad transfer do not. General-purpose single-session tDCS is a poor lead for the stated goal. Small task-specific adjunctive benefits remain credible research questions.
+Profile assessment: timing sometimes fits; large magnitude and broad transfer do not. General-purpose single-session tDCS is a poor lead for the stated goal. Small task-specific adjunctive benefits remain credible research questions.
 
 ### tACS: selective timing control, modest average gains
 
@@ -44,7 +44,7 @@ Headline studies matter, with their boundaries intact. Reinhart and Nguyen repor
 
 Replication audit: a 2026 preregistered study tested the claim that slowing theta rhythms expands working-memory capacity. It found neither behavioral improvement nor the predicted EEG modulation, regardless of task difficulty or baseline capacity [9]. This is a protocol-level negative test, not a large multisite refutation of the entire field, and the opened abstract did not report sample size. No large preregistered independent replication establishing the famous broad interpretation of the aging-memory headlines was located. That status is “not established,” not “replicated” or “disproved.”
 
-cognitive enhancement judgment: one of the closer noninvasive state-control concepts, but the most relevant pooled estimate is small and effects are selective. Full reversibility is not demonstrated merely by stopping current; durable plasticity is sometimes the desired outcome.
+Profile assessment: one of the closer noninvasive state-control concepts, but the most relevant pooled estimate is small and effects are selective. Full reversibility is not demonstrated merely by stopping current; durable plasticity is sometimes the desired outcome.
 
 For completeness, transcranial random-noise stimulation does not currently rescue the electrical approach. A 2026 meta-analysis of 13 RCTs and 403 healthy adults reported g = 0.17, 95% CI −0.06–0.40. A positive online-stimulation subgroup did not produce a significant between-subgroup difference [10]. It is an uncertain adjunct, not a hidden large-effect alternative.
 
@@ -58,13 +58,13 @@ The same paper reported a model-projected g = 0.66 for a favorable combination o
 
 Some TMS effects occur in a session; other memory studies use repeated sessions over days or weeks. Physiological after-effects and learned memories can outlast stimulation. Treatment success in depression is not evidence of above-baseline cognition in healthy people. TMS also requires specialized equipment, screening and supervision; “noninvasive” is not equivalent to risk-free or completely reversible.
 
-cognitive enhancement judgment: among the better-supported partial leads for a meaningful memory improvement, but broad reasoning and attention gains are specifically missing. It is not an accessible general cognitive switch for Rolf without a collaborating laboratory.
+Profile assessment: among the better-supported partial leads for a meaningful memory improvement, but broad reasoning and attention gains are specifically missing. It is not an accessible general cognitive switch for Rolf without a collaborating laboratory.
 
 ### Temporal interference: include the deep-targeting lead, without promoting it prematurely
 
 Temporal interference uses interacting electrical fields to attempt noninvasive modulation of deep structures. Violante and colleagues demonstrated hippocampal targeting with modeling and human experiments [13]. Their first, 20-person imaging experiment changed physiology without improving memory accuracy; a separate 21-person behavioral experiment found a small improvement in recall accuracy during stimulation. Overall accuracy at the later retest did not differ, although an analysis restricted to items initially recalled correctly favored stimulation. This is relevant because it could extend electrical stimulation beyond accessible superficial cortex, but the behavioral finding is substantially narrower than a general memory upgrade.
 
-The opened human proof-of-concept does not establish a broad effect, a healthy-cognition meta-analytic magnitude, or full reversibility. No large independent preregistered replication of enhancement-like behavior was located. Onset can be acute; long-term cognitive and safety generalization remain unsettled. This is an emerging deep-network tool, not a validated substitute for invasive stimulation.
+The opened human proof-of-concept does not establish a broad effect, a healthy-cognition meta-analytic magnitude, or full reversibility. No large independent preregistered replication of broadly improved behavior was located. Onset can be acute; long-term cognitive and safety generalization remain unsettled. This is an emerging deep-network tool, not a validated substitute for invasive stimulation.
 
 ## 2. Focused ultrasound
 
@@ -76,7 +76,7 @@ No mature meta-analysis establishing a healthy-human, broad cognitive enhancemen
 
 Replication audit: auditory and somatic confounding are concrete, demonstrated problems, not generic methodological objections. Braun and colleagues showed that healthy participants could hear ultrasound stimulation and distinguish active from inactive trials; appropriate auditory masking removed the associated auditory EEG signal and reduced detection to chance [15]. A change in attention could therefore reflect sensory alerting or imperfect blinding unless those alternatives are controlled. No large preregistered independent replication of the thalamic attention result was located.
 
-cognitive enhancement judgment: high research interest because of acute deep-network access, but currently very low certainty about enhancement magnitude and breadth. It is not a dead mechanism; the claimed capability remains unestablished and requires a specialist research setting.
+Profile assessment: high research interest because of acute deep-network access, but currently very low certainty about enhancement magnitude and breadth. It is not a dead mechanism; the claimed capability remains unestablished and requires a specialist research setting.
 
 ## 3. Vagus nerve stimulation paired with learning
 
@@ -92,7 +92,7 @@ Replication audit: a registered 2025 cervical-VNS study explicitly attempted to 
 
 There is stronger confirmatory evidence for implanted paired VNS in rehabilitation, but not for the requested cognition profile. The registered VNS-REHAB trial randomized 108 stroke survivors across 19 services. After six weeks, the between-group upper-limb impairment improvement was 2.6 Fugl-Meyer points, 95% CI 1.0–4.2 [21]. This is a positive human paired-stimulation result that must be preserved in the assessment, but it concerns recovery of motor function after stroke, not acute healthy cognition. Implantation also fails whole-intervention reversibility.
 
-cognitive enhancement judgment: a plausible learning adjunct with some positive pooled evidence, but no large broad acute gain. Task selection and pairing are central, and rigorous independent replication of healthy cognitive enhancement remains inadequate.
+Profile assessment: a plausible learning adjunct with some positive pooled evidence, but no large broad acute gain. Task selection and pairing are central, and rigorous independent replication of healthy cognitive enhancement remains inadequate.
 
 ## 4. Closed-loop sleep stimulation and targeted memory reactivation
 
@@ -108,7 +108,7 @@ Targeted memory reactivation is distinct: previously learned material is associa
 
 Reversibility concerns include possible sleep disruption and unknown repeated-use effects; turning off sound is easy, but resulting consolidation is not an on/off cognitive state. The target is a biological sleep process, and more externally driven oscillation is not necessarily better sleep.
 
-cognitive enhancement judgment: useful research on a narrow memory component, not a strong candidate for broad acute enhancement. Restoration of adequate sleep and sleep-disorder treatment must be kept separate from enhancement beyond a well-rested healthy baseline.
+Profile assessment: useful research on a narrow memory component, not a strong candidate for broad acute enhancement. Restoration of adequate sleep and sleep-disorder treatment must be kept separate from enhancement beyond a well-rested healthy baseline.
 
 ## 5. Neurofeedback
 
@@ -120,7 +120,7 @@ Onset is usually after repeated sessions rather than a switch applied once; some
 
 Replication audit: a 2026 preregistered double-blind experiment compared genuine feedback, n = 30, with sham, n = 30, and passive control, n = 32. Alpha power increased across groups independently of feedback authenticity or active self-regulation [28]. This is a specific failure of the proposed single-session mechanism, not a definitive test of every multi-session protocol. Together with the sham-controlled meta-analytic result, it substantially weakens headline claims based on within-group EEG improvements.
 
-cognitive enhancement judgment: weak as an acute large-effect route. Laboratory self-regulation research remains legitimate; consumer “brain optimization” claims exceed the demonstrated transfer.
+Profile assessment: weak as an acute large-effect route. Laboratory self-regulation research remains legitimate; consumer “brain optimization” claims exceed the demonstrated transfer.
 
 ## 6. Brain–computer interfaces and memory prostheses
 
@@ -136,7 +136,7 @@ Noninvasive passive BCI evidence is much weaker as an enhancement claim. A 2025 
 
 Onset can be trial-by-trial after calibration, but recording, training and surgery are substantial prerequisites. Electrical input can stop; implantation, surgical risks and tissue responses are not fully reversible. A healthy-human cognitive meta-analysis or large preregistered independent replication was not located.
 
-cognitive enhancement judgment: important causal proof of principle for targeted memory engineering; wrong population, wrong accessibility, narrow effect, and failure of the fully reversible whole-intervention requirement. Not a realistic route for a healthy undergraduate without clinical infrastructure.
+Profile assessment: important causal proof of principle for targeted memory engineering; wrong population, wrong accessibility, narrow effect, and failure of the fully reversible whole-intervention requirement. Not a realistic route for a healthy undergraduate without clinical infrastructure.
 
 ## 7. Light and photobiomodulation
 
@@ -146,7 +146,7 @@ Light affects circadian timing and alertness through retinal pathways. A meta-an
 
 Onset can be within exposure, fitting the acute window. Circadian effects may extend after the light is removed, so switching off illumination is not a complete reversibility test. Time of day, prior sleep and prior light exposure affect interpretation; a night-time fatigue countermeasure is not automatically an enhancement of a fully rested daytime baseline.
 
-Replication audit: the pooled signal exists, but no large preregistered independent replication of broad enhancement-like enhancement was located. Alertness and sleepiness are the supported endpoints. cognitive enhancement judgment: a credible small state-management tool, not a large-capacity intervention.
+Replication audit: the pooled signal exists, but no large preregistered independent replication of broad cognitive enhancement was located. Alertness and sleepiness are the supported endpoints. Profile assessment: a credible small state-management tool, not a large-capacity intervention.
 
 ### Transcranial photobiomodulation
 
@@ -158,7 +158,7 @@ Some constituent interventions are acute, others repeated; the meta-analysis can
 
 Replication audit: no large preregistered independent replication confirming these large healthy-person cognitive effects was located. This is an evidence gap, not a documented failed replication. Small pooled samples spread across multiple outcomes, protocol diversity and uncertain generalization make photobiomodulation a low-certainty lead despite the appealing magnitude.
 
-cognitive enhancement judgment: one of the more striking published magnitude signals, but not a validated broad enhancer. It deserves scrutiny rather than dismissal or product-level confidence.
+Profile assessment: one of the more striking published magnitude signals, but not a validated broad enhancer. It deserves scrutiny rather than dismissal or product-level confidence.
 
 ## 8. Exercise and its molecular mediators
 
@@ -172,7 +172,7 @@ Mechanisms are biologically interesting but should not substitute for behavior. 
 
 Acute arousal/performance effects occur around a session and are transient. Fitness, vascular and learning adaptations accrue over weeks or longer and are not instantly reversible. These timescales should not be blended into one story of immediate brain rebuilding.
 
-cognitive enhancement judgment: credible health value and possible small acute cognitive benefit, but not close in magnitude. Molecular mediators are research leads, not evidence that exercise hides an large-scale response.
+Profile assessment: credible health value and possible small acute cognitive benefit, but not close in magnitude. Molecular mediators are research leads, not evidence that exercise hides a broad-improvement response.
 
 ## 9. Ketones, fasting and other metabolic routes
 
@@ -188,7 +188,7 @@ Replication audit: the larger NOURISH AD trial randomized 413 people with mild-t
 
 Exogenous ketosis can arise in the acute window; dietary adaptation is slower. Blood fuel changes can subside, but the studies do not establish complete reversibility of any putative broad enhanced state. Ketogenic diets, fasting and individual ketone formulations are not interchangeable. No large preregistered healthy-person trial showing broad acute gains was located.
 
-cognitive enhancement judgment: an active modest-effect metabolic lead, not a demonstrated fuel-limited route to dramatically greater healthy cognition.
+Profile assessment: an active modest-effect metabolic lead, not a demonstrated fuel-limited route to dramatically greater healthy cognition.
 
 ### Fasting, energy buffering and basic metabolic restoration
 
@@ -200,7 +200,7 @@ No acute, fully reversible, broad creatine-like metabolic enhancement state is e
 
 ## 10. Endocrine routes
 
-There is no separate evidence-supported category of “non-drug hormonal cognitive enhancement.” Exercise, sleep, stress and circadian interventions affect endocrine signaling, but their cognition data are already evaluated above. Exogenous hormone trials help test the underlying claim; they do not become non-drug interventions because the hormone is natural.
+There is no separate evidence-supported category of “non-drug hormonal broad improvement.” Exercise, sleep, stress and circadian interventions affect endocrine signaling, but their cognition data are already evaluated above. Exogenous hormone trials help test the underlying claim; they do not become non-drug interventions because the hormone is natural.
 
 Testosterone has unusually informative negative evidence. A meta-analysis of 23 randomized trials found overall cognitive g = 0.09, 95% CI −0.02–0.19, approaching g = 0.04 after publication-bias adjustment, with no significant benefit in individual cognitive domains [50]. The large registered Testosterone Trials cognitive study included 788 older men, with 493 meeting age-associated-memory-impairment criteria. After one year, the primary memory difference was −0.07 points, 95% CI −0.92–0.79, and other cognitive domains were not significantly improved [51]. These are not healthy-young-person trials, but they substantially weaken simple “raise testosterone, raise cognition” claims even in a population selected for low levels.
 
@@ -214,7 +214,7 @@ Stress manipulation can act within minutes, but is not broadly beneficial. Meta-
 
 Sex-hormone claims also do not generalize into a cognitive switch: a 2026 review of randomized menopausal-hormone trials in younger menopausal women found no demonstrated cognitive benefit [71]. This concerns a different population, not Rolf's immediate options.
 
-Onset ranges from rapid stress responses to months-long replacement studies. None establishes a large broad acute benefit in healthy hormonally normal people, and hormone clearance is not proof that all downstream physiological effects are fully reversible. Beyond the testosterone confirmatory trials, large preregistered healthy-enhancement replications were not located. cognitive enhancement judgment: endocrine optimization is a dead end as a currently supported general healthy enhancement claim; diagnosis and treatment of an actual endocrine disorder is a separate question.
+Onset ranges from rapid stress responses to months-long replacement studies. None establishes a large broad acute benefit in healthy hormonally normal people, and hormone clearance is not proof that all downstream physiological effects are fully reversible. Beyond the testosterone confirmatory trials, large preregistered healthy-enhancement replications were not located. Profile assessment: endocrine optimization is a dead end as a currently supported general healthy enhancement claim; diagnosis and treatment of an actual endocrine disorder is a separate question.
 
 ## 11. Hypoxia, hyperoxia, heat and cold
 
@@ -224,17 +224,17 @@ Acute oxygen deprivation is primarily an impairment risk, not a cognitive shortc
 
 Repeated intermittent conditioning is a different hypothesis involving adaptive responses. A systematic review of sustained/repeated moderate hypoxia identified eight human studies with 274 participants; all were judged at high risk of bias because of limitations including randomization and assessor blinding [58]. A separate older-adult review identified seven studies and five registered trials, reporting some cognitive/cerebrovascular benefits but no significant BDNF effects for the examined training approaches [59]. Neither provides a dependable healthy-young-adult cognitive enhancement magnitude.
 
-The proposed adaptation takes repeated exposure rather than minutes-to-hours delivery of a general benefit. Large preregistered healthy-person cognitive replication was not located. Reoxygenation can terminate exposure but cannot guarantee reversibility of injury. cognitive enhancement judgment: acute hypoxia is a bad-direction lead; controlled conditioning is a low-certainty rehabilitation/adaptation question with the wrong timescale.
+The proposed adaptation takes repeated exposure rather than minutes-to-hours delivery of a general benefit. Large preregistered healthy-person cognitive replication was not located. Reoxygenation can terminate exposure but cannot guarantee reversibility of injury. Profile assessment: acute hypoxia is a bad-direction lead; controlled conditioning is a low-certainty rehabilitation/adaptation question with the wrong timescale.
 
 ### Hyperoxia: a closer-looking signal that should not be overlooked
 
 More oxygen is not simply the inverse of hypoxia, but it has an unusually relevant positive literature. A 2023 meta-analysis of acute normobaric hyperoxia in healthy humans included 23 studies and 76 effect estimates. It reported memory accuracy g = 0.34, memory speed g = 0.59, attention accuracy g = 0.59, attention speed g = 0.51, reaction speed g = 0.82, crystallized intelligence g = 0.73, executive function g = 0.88 and information processing g = 0.62 [60]. Those are among the largest and broadest reported acute non-drug-domain estimates in this review.
 
-The same review rated overall evidence quality low, with an average Rosendal score of 47%, substantial heterogeneity and prediction intervals often crossing zero. Domains were supported by relatively few estimates, and a collection of improvements across studies is still not simultaneous broad enhancement in the same people. These estimates deserve direct confirmatory testing; they should not be quietly discarded, but neither do they establish large-scale capability. No large preregistered independent trial confirming that broad profile was located.
+The same review rated overall evidence quality low, with an average Rosendal score of 47%, substantial heterogeneity and prediction intervals often crossing zero. Domains were supported by relatively few estimates, and a collection of improvements across studies is still not simultaneous broad enhancement in the same people. These estimates deserve direct confirmatory testing; they should not be quietly discarded, but neither do they establish broad-improvement capability. No large preregistered independent trial confirming that broad profile was located.
 
 Input and blood-gas changes are acute, but complete reversibility and repeated-use safety are not established by cognitive test improvements. A separate hemodynamic meta-analysis found that hyperoxia could reduce cardiac output and increase vascular resistance, without evidence for increased systemic oxygen delivery [72]. Normobaric studies do not validate hyperbaric treatment packages, which introduce different exposure and logistical conditions.
 
-cognitive enhancement judgment: a relatively close fit to timing and reported cross-study breadth, but low-confidence magnitude and no decisive broad replication. A scientific lead, not a self-experimentation recommendation.
+Profile assessment: a relatively close fit to timing and reported cross-study breadth, but low-confidence magnitude and no decisive broad replication. A scientific lead, not a self-experimentation recommendation.
 
 ### Heat, sauna and cold
 
@@ -244,7 +244,7 @@ For cold specifically, a systematic review of 18 healthy-person experiments foun
 
 Sauna-dementia findings address a different question. The Finnish prospective cohort of 2,315 men associated more frequent sauna use with lower subsequent dementia incidence over a median 20.7-year follow-up [63]. It was observational, not random allocation to an acute cognitive enhancer. Selection, correlated lifestyle factors and residual confounding remain possible. Proposed heat-shock, vascular and endocrine mechanisms do not establish a large immediate behavioral gain.
 
-Onset of heat/cold stress is rapid; any acclimation benefit requires repeated exposure. Restoration of comfortable temperature can reverse some performance impairment, but extreme thermal injury is not assuredly reversible. No large preregistered independent trial establishing broad acute enhancement from sauna, heat or cold was located. cognitive enhancement judgment: dead ends as supported acute enhancement strategies, while long-term health/adaptation questions remain separate.
+Onset of heat/cold stress is rapid; any acclimation benefit requires repeated exposure. Restoration of comfortable temperature can reverse some performance impairment, but extreme thermal injury is not assuredly reversible. No large preregistered independent trial establishing broad acute enhancement from sauna, heat or cold was located. Profile assessment: dead ends as supported acute enhancement strategies, while long-term health/adaptation questions remain separate.
 
 ## 12. Training, expertise, mnemonic strategies and mindfulness
 
@@ -258,7 +258,7 @@ Expert mnemonic performance is not imaginary. Dresler and colleagues showed that
 
 Mindfulness also has mixed rather than uniformly null evidence. A meta-analysis of 111 RCTs and 9,538 participants reported active-control effects ranging from g = 0.192 to 0.394 for the outcomes that benefited. Episodic memory, processing speed and several latency measures did not improve; benefits were stronger in people with elevated psychiatric symptoms than in healthy controls [70]. The large registered Lenze trial described above found no significant cognitive benefit from mindfulness alone or combined with exercise [39]. The meta-analysis excluded single-session interventions, so it cannot establish an acute meditation-induced broad enhancement state.
 
-Onset ranges from immediate use of a learned strategy to weeks, months or years of developing expertise. Large expertise advantages are often content- and representation-specific. Training changes are not deliberately reversible on demand. cognitive enhancement judgment: robust routes to becoming better at selected things, not the requested large broad acute reversible state. Far-transfer brain-training claims are among the clearest dead ends in this evidence base; learning useful knowledge and strategies is not.
+Onset ranges from immediate use of a learned strategy to weeks, months or years of developing expertise. Large expertise advantages are often content- and representation-specific. Training changes are not deliberately reversible on demand. Profile assessment: robust routes to becoming better at selected things, not the requested large broad acute reversible state. Far-transfer brain-training claims are among the clearest dead ends in this evidence base; learning useful knowledge and strategies is not.
 
 ## Replication audit: what actually shrank or failed
 
@@ -278,7 +278,7 @@ For focused ultrasound, temporal interference, large healthy-person photobiomodu
 
 ## Ranked leads closest to the requested profile
 
-This ranking is a qualitative research judgment balancing profile fit and evidence, not a calculated probability of discovering cognitive enhancement and not advice to use an intervention.
+This ranking is a qualitative research judgment balancing profile fit and evidence, not a calculated probability of discovering broad improvement and not advice to use an intervention.
 
 1. Precision network stimulation: tACS and hippocampal-network TMS. These offer actual human causal leverage over cognitive processing, sometimes acutely, with noninvasive delivery. The trade-off is severe: the healthy-young tACS average is small, and the stronger TMS memory effect is specifically not broad. Closed-loop personalization is a hypothesis for improving this trade-off, not a demonstrated escape from it.
 
@@ -294,7 +294,7 @@ This ranking is a qualitative research judgment balancing profile fit and eviden
 
 7. Acute exercise and retinal light. Better-established modest state effects, relatively good timing, but the magnitude and cognitive breadth are plainly insufficient. Their ordinary health or alertness value is not a substitute answer to the original aim.
 
-8. Sleep-targeted consolidation and mnemonic training. Worthwhile mechanisms for improving selected memories, with modest pooled effects and, for strategies, potentially large practiced-task gains. Wrong breadth, and usually wrong state/onset/reversibility profile for cognitive enhancement.
+8. Sleep-targeted consolidation and mnemonic training. Worthwhile mechanisms for improving selected memories, with modest pooled effects and, for strategies, potentially large practiced-task gains. Wrong breadth, and usually wrong state/onset/reversibility profile for broad improvement.
 
 Invasive closed-loop memory prostheses sit outside this practical ranking: they are a particularly strong proof of concept for targeted encoding assistance, but fail the healthy-person, accessibility and whole-intervention reversibility requirements. Neurofeedback has weaker specific sham-controlled evidence than its popularity suggests.
 

@@ -1,10 +1,10 @@
-# Learning theory and cognitive extremes: where could an large-scale lever hide?
+# Learning theory and cognitive extremes
 
 ## Verdict
 
 No source examined here establishes an intervention that gives healthy people a large, broad cognitive improvement within minutes to hours and is fully reversible. Exceptional brains establish substantial **task-specific** headroom, not a hidden, general-purpose genius mode. Comparative biology establishes alternative implementations of intelligence, not an acute route to transplant their capabilities into humans.
 
-The strongest leads are computational: improve **which computations are selected, which memories are retrieved, which synapses receive credit, and which old knowledge is protected**, rather than merely increasing activity or plasticity. These are plausible places to look for disproportionate gains. Whether any can produce the full cognitive enhancement profile is unknown. Rolf can test their computational consequences on his MacBook without a wet lab; he cannot establish a human cognitive enhancement intervention from those simulations alone.
+The strongest leads are computational: improve **which computations are selected, which memories are retrieved, which synapses receive credit, and which old knowledge is protected**, rather than merely increasing activity or plasticity. These are plausible places to look for disproportionate gains. Whether any can produce the full broad-improvement profile is unknown. Rolf can test their computational consequences on his MacBook without a wet lab; he cannot establish a human broad-improvement intervention from those simulations alone.
 
 The most promising near-term research question is whether a controllable change in routing or learning policy can move performance outward across several domains at fixed resources, rather than moving along a trade-off between them. This report proposes tests of that question. It does not claim that the proposed combinations are unprecedented.
 
@@ -86,7 +86,7 @@ Stacho and colleagues identify repeated, cortex-like circuit motifs in the avian
 
 There is also a metabolic clue. In pigeons, von Eugen and colleagues estimate per-neuron glucose use at approximately one-third the rate of an average mammalian neuron [26]. This is based on glucose-metabolism measurements and neuron-number estimates, not a matched measurement of identical computations in bird and mammal neurons. It suggests evolutionary alternatives to mammalian energy economics; it does not establish spare metabolic capacity in an adult human.
 
-**Hypothesis contribution:** compact, reusable circuits and efficient communication may matter more than gross volume or indiscriminate activation. H5 and H10 can compare architecture and coding efficiency in models. The observed advantages are evolved/developmental, with no acute onset or reversibility established. Planning breadth in ravens is interesting; cognitive enhancement breadth in healthy humans remains unestablished.
+**Hypothesis contribution:** compact, reusable circuits and efficient communication may matter more than gross volume or indiscriminate activation. H5 and H10 can compare architecture and coding efficiency in models. The observed advantages are evolved/developmental, with no acute onset or reversibility established. Planning breadth in ravens is interesting; broad-improvement breadth in healthy humans remains unestablished.
 
 ### Octopus and cuttlefish: associative intelligence through another architecture
 
@@ -144,7 +144,7 @@ Snyder and colleagues attempted a transient analogue in healthy participants [41
 
 Chi and Snyder's later sham-controlled insight study included 60 healthy participants and reported that 20% solved an insight problem under sham versus three times as many under one stimulation condition [42]. This is an acute, potentially substantial task-level result and should not be dismissed merely because it is narrow. But it demonstrates neither general reasoning enhancement nor improvements in learning, memory and attention; the abstract does not establish full reversibility or durable benefit. An exhaustive independent replication assessment was not completed here. These studies are cited as hypothesis-generating causal probes, not as a device recommendation or a self-experiment protocol.
 
-**Candidate lever:** selectively weaken an inappropriate prior or semantic template while preserving useful abstraction and error checking. H8 asks whether that can improve unfamiliar problem solving without reciprocal losses. This is the closest human-extreme clue to acute “unlocking,” but among the weaker foundations for broad cognitive enhancement claims.
+**Candidate lever:** selectively weaken an inappropriate prior or semantic template while preserving useful abstraction and error checking. H8 asks whether that can improve unfamiliar problem solving without reciprocal losses. This is the closest human-extreme clue to acute “unlocking,” but among the weaker foundations for broad-improvement claims.
 
 ### Hyperthymesia / highly superior autobiographical memory
 
@@ -190,7 +190,7 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Discriminating outcome:** specificity improves learning and retention across task families while gain mainly increases instability. If benefits vanish after update budget and prior information are matched, or require an omniscient teacher unavailable to the brain, the proposed explanation weakens.
 
-**Speculation and cognitive enhancement fit:** strong basis for the computational problem; moderate speculation that addressability is a major human bottleneck; very high speculation that it is acutely and broadly controllable. Signal timing can operate rapidly, but acquired changes can persist. Large, broad, reversible healthy-human benefit is unestablished.
+**Speculation and profile fit:** strong basis for the computational problem; moderate speculation that addressability is a major human bottleneck; very high speculation that it is acutely and broadly controllable. Signal timing can operate rapidly, but acquired changes can persist. Large, broad, reversible healthy-human benefit is unestablished.
 
 ### H2. Selective interference protection permits faster learning without erasure
 
@@ -200,7 +200,7 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Discriminating outcome:** selective protection improves the joint acquisition–retention frontier, not just one side. Failure on newly structured tasks would support a narrower schema-access explanation rather than general acceleration. Extra hidden storage or replay must not account for the result.
 
-**Speculation and cognitive enhancement fit:** well-grounded computationally; uncertain biological control. It could accelerate learning over exposures, but cannot instantly provide missing knowledge. The learned content persists, and breadth across attention and reasoning is not established. No acute reversible human implementation is demonstrated.
+**Speculation and profile fit:** well-grounded computationally; uncertain biological control. It could accelerate learning over exposures, but cannot instantly provide missing knowledge. The learned content persists, and breadth across attention and reasoning is not established. No acute reversible human implementation is demonstrated.
 
 ### H3. Apparent rapid intelligence reflects reuse of structural priors
 
@@ -210,7 +210,7 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Discriminating outcome:** reusable structure supports broad transfer within and beyond the pretraining family without accessing additional answers. A collapse outside the familiar family would show powerful specialization, not general acceleration. Count the pretraining cost rather than treating it as free.
 
-**Speculation and cognitive enhancement fit:** plausible explanation of fast adaptation; speculative general-purpose human lever. A latent procedure could be recruited quickly, but availability and quality of that procedure constrain the result. Reversibility of a model's context state does not establish reversibility of a human enhancement.
+**Speculation and profile fit:** plausible explanation of fast adaptation; speculative general-purpose human lever. A latent procedure could be recruited quickly, but availability and quality of that procedure constrain the result. Reversibility of a model's context state does not establish reversibility of a human enhancement.
 
 ### H4. Retrieval and indexing, rather than storage size, constrain exceptional performance
 
@@ -218,9 +218,9 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Test:** give different models identical stored content and vary only indexing, chunk organization and retrieval policy. Compare associative retrieval, list recall, multistep arithmetic and relational reasoning. Track incorrect retrievals and the computational cost of finding useful content. Contrasting intact versus scrambled task structure tests whether a gain depends on expert chunks. Synthetic content is sufficient; private prodigy data are not needed.
 
-**Discriminating outcome:** better indexing yields gains in several domains without enlarging the knowledge base or using a hidden solution oracle. A memory gain with unchanged reasoning, or a gain that requires laboriously built domain-specific chunks, supports a real but non-cognitive enhancement form of headroom.
+**Discriminating outcome:** better indexing yields gains in several domains without enlarging the knowledge base or using a hidden solution oracle. A memory gain with unchanged reasoning, or a gain that requires laboriously built domain-specific chunks, supports a real but domain-specific form of headroom.
 
-**Speculation and cognitive enhancement fit:** strong evidence for strategy-sensitive human performance; moderate speculation about a shared indexing bottleneck. Switching retrieval policy might be acute once learned. Existing exceptional strategies took training, do not establish broad attention gains and are not fully reversible enhancements.
+**Speculation and profile fit:** strong evidence for strategy-sensitive human performance; moderate speculation about a shared indexing bottleneck. Switching retrieval policy might be acute once learned. Existing exceptional strategies took training, do not establish broad attention gains and are not fully reversible enhancements.
 
 ### H5. Context-dependent compression beats uniformly more detail or more sparsity
 
@@ -230,7 +230,7 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Discriminating outcome:** adaptive allocation improves several objectives rather than trading detail for abstraction. If a controller needs to know the correct answer to choose its code, or gains vanish on unexpected changes in relevance, the proposed lever is much weaker.
 
-**Speculation and cognitive enhancement fit:** established principles of coding; speculative controllable human representation policy. Policy changes can be rapid in a model, but remapping learned representations may not be. Large broad healthy-human benefit and full reversibility are not established.
+**Speculation and profile fit:** established principles of coding; speculative controllable human representation policy. Policy changes can be rapid in a model, but remapping learned representations may not be. Large broad healthy-human benefit and full reversibility are not established.
 
 ### H6. Cognitive throughput is limited partly by scheduling and overcommitment
 
@@ -240,7 +240,7 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Discriminating outcome:** a shared scheduler improves several tasks without simply lowering decision thresholds or neglecting the first target. If better performance requires extra parallel compute, more prior knowledge or a slower response, it does not establish a released scheduling reserve at fixed resources.
 
-**Speculation and cognitive enhancement fit:** plausible and computationally accessible; the size of avoidable inefficiency in healthy humans is unknown. A control policy can, in principle, change quickly and be switched back, making this relatively close to the onset/reversibility shape. Existing meditation evidence falls far short on magnitude and breadth.
+**Speculation and profile fit:** plausible and computationally accessible; the size of avoidable inefficiency in healthy humans is unknown. A control policy can, in principle, change quickly and be switched back, making this relatively close to the onset/reversibility shape. Existing meditation evidence falls far short on magnitude and breadth.
 
 ### H7. HSAM reflects retention or access policy, not a general encoding multiplier
 
@@ -250,7 +250,7 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Discriminating outcome:** a selective retention/access model reproduces the dissociations without predicting universal memory superiority. If several models do equally well, report non-identifiability rather than selecting a mechanism by preference. Rare-case raw longitudinal data were not verified here, so human mechanism identification remains limited.
 
-**Speculation and cognitive enhancement fit:** useful explanation test; weak route to the target. The phenotype develops over time, concerns selected memories and is not known to be switchable. Increasing retention could increase unwanted accessibility rather than reasoning or control.
+**Speculation and profile fit:** useful explanation test; weak route to the target. The phenotype develops over time, concerns selected memories and is not known to be switchable. Increasing retention could increase unwanted accessibility rather than reasoning or control.
 
 ### H8. Controlled relaxation of priors can expose useful detail without losing abstraction
 
@@ -260,7 +260,7 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Discriminating outcome:** a context-sensitive gate improves misleading-prior tasks while preserving ordinary inference and calibration. If all gains require reciprocal damage, the model supports specialization or paradoxical facilitation, not broad enhancement. A global reduction in prior influence should face the strongest ordinary-context controls.
 
-**Speculation and cognitive enhancement fit:** human task-level acute clues exist, but broad interpretation is highly speculative. Disease cases fail the healthy-person and reversibility requirements; small stimulation studies do not establish magnitude across domains or full reversal. No injury or stimulation procedure is proposed.
+**Speculation and profile fit:** human task-level acute clues exist, but broad interpretation is highly speculative. Disease cases fail the healthy-person and reversibility requirements; small stimulation studies do not establish magnitude across domains or full reversal. No injury or stimulation procedure is proposed.
 
 ### H9. Preserving representational diversity is different from globally reopening plasticity
 
@@ -270,7 +270,7 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Discriminating outcome:** diversity-preserving methods recover acquisition without sacrificing established knowledge. If improvement merely replaces old competence with new competence, or works only by adding capacity, it does not support an unused reserve.
 
-**Speculation and cognitive enhancement fit:** model evidence is substantial; analogy to human adult learning windows is speculative. Biological restructuring would likely differ from switching an activity policy, and the sources do not establish an acute, reversible implementation. Breadth is principally learning, not immediate general reasoning.
+**Speculation and profile fit:** model evidence is substantial; analogy to human adult learning windows is speculative. Biological restructuring would likely differ from switching an activity policy, and the sources do not establish an acute, reversible implementation. Breadth is principally learning, not immediate general reasoning.
 
 ### H10. Communication efficiency matters more than raising the total activity budget
 
@@ -280,7 +280,7 @@ For all hypotheses, compare models with matched observations, training opportuni
 
 **Discriminating outcome:** an architecture or policy needs less communication for equivalent task performance, and retains that advantage under plausible alternative accounting. If the result depends on ignoring maintenance or long-range communication, it is an accounting artifact rather than a biological lead.
 
-**Speculation and cognitive enhancement fit:** energy constraints are real; cross-species transfer is highly speculative. Evolved packing and wiring cannot be acutely installed in a healthy adult. A routing policy might be adjustable, but no measured source here establishes a large reversible reserve from it. This is a useful constraint on other hypotheses, not the closest direct cognitive enhancement route.
+**Speculation and profile fit:** energy constraints are real; cross-species transfer is highly speculative. Evolved packing and wiring cannot be acutely installed in a healthy adult. A routing policy might be adjustable, but no measured source here establishes a large reversible reserve from it. This is a useful constraint on other hypotheses, not the closest direct broad-improvement route.
 
 ## 5. What public computation can and cannot settle
 
@@ -288,11 +288,11 @@ The executable starting points are real but not turn-key evidence. The e-prop au
 
 The TEM and loss-of-plasticity repositories were confirmed public via GitHub metadata [56,57]. They were not installed or executed. The octopus portal and cloud segmentation metadata were opened [58]; the metadata exposes chunked multiresolution segmentation. Full image analysis, synapse extraction and construction of a biological adjacency graph are separate projects. Start with the published motifs, not an unbounded image download.
 
-A feasible first deliverable would be a compact benchmark comparison among better credit routing (H1), selective interference protection (H2) and context-adaptive scheduling or representation (H5/H6). It should make resource accounting and negative transfer visible. This is not a replacement goal for cognitive enhancement; it is a way to reject attractive explanations before making human claims.
+A feasible first deliverable would be a compact benchmark comparison among better credit routing (H1), selective interference protection (H2) and context-adaptive scheduling or representation (H5/H6). It should make resource accounting and negative transfer visible. This is not a replacement goal for broad improvement; it is a way to reject attractive explanations before making human claims.
 
 The hardest missing evidence is causal access. A successful simulation can establish that a proposed computation is sufficient under its assumptions. It cannot establish that healthy human brains have the corresponding unused reserve, that a non-invasive control variable reaches it, or that switching it produces a large and broad benefit without persistent changes. Rare cases and species comparisons do not supply those missing links.
 
-## 6. Ranked leads closest to the full cognitive enhancement profile
+## 6. Ranked leads closest to the full broad-improvement profile
 
 This is an ordinal judgment about resemblance to the requested profile, not a probability estimate or a list of validated interventions. None meets all the requirements.
 
@@ -306,7 +306,7 @@ This is an ordinal judgment about resemblance to the requested profile, not a pr
 
 ## 7. Ranked hypotheses most testable by Rolf now
 
-The ranking below concerns testability with public computation, not likelihood of producing cognitive enhancement. All remain proposals.
+The ranking below concerns testability with public computation, not likelihood of producing broad improvement. All remain proposals.
 
 1. **H1: credit specificity versus global gain.** Public reference implementation; small synthetic delayed-feedback tasks; a direct comparison that can falsify the simplest “more plasticity” account.
 2. **H2: interference-selective fast learning.** Straightforward sequential-task simulations; explicit acquisition–retention trade-off; no privileged biological data required.
@@ -314,12 +314,12 @@ The ranking below concerns testability with public computation, not likelihood o
 4. **H4: retrieval and indexing.** Hold content fixed and change retrieval policy. This cleanly separates stored information from usable performance and connects to documented healthy-human expertise.
 5. **H3: structural reuse and inference-time adaptation.** Public model reference and synthetic relational environments; harder to distinguish truly broad transfer from a favorable pretraining family.
 6. **H9: diversity preservation versus plasticity gain.** Public reference code and measurable forgetting/acquisition dissociations; biological interpretation remains a second, unresolved step.
-7. **H6: scheduling and overcommitment.** Easy to simulate, harder to identify uniquely from human aggregate data. It ranks higher for cognitive enhancement-profile resemblance than for decisive mechanism identification.
+7. **H6: scheduling and overcommitment.** Easy to simulate, harder to identify uniquely from human aggregate data. It ranks higher for broad-improvement resemblance than for decisive mechanism identification.
 8. **H8: detail access through selective prior relaxation.** Feasible model comparison with important reciprocal-cost tests; mapping the parameter to savant cases or stimulation effects is highly uncertain.
 9. **H10: energy-aware communication efficiency.** Feasible sensitivity analysis but strongly dependent on cost accounting and unknown cross-species comparability; cannot quantify a human reserve.
 10. **H7: HSAM retention versus access.** Qualitative dissociations are available, but lack of verified longitudinal individual-level data makes multiple explanations difficult to separate.
 
-A negative result is useful here. If candidate controllers merely reshuffle errors, model speedups rely on hidden pretraining, or better learning requires irreversible rewriting, that directly narrows the path to the original acute, reversible, large and broad goal. It does not justify renaming a narrower success “cognitive enhancement.”
+A negative result is useful here. If candidate controllers merely reshuffle errors, model speedups rely on hidden pretraining, or better learning requires irreversible rewriting, that directly narrows the path to the original acute, reversible, large and broad goal. It does not justify renaming a narrower success “broad improvement.”
 
 ## Sources and verification record
 

@@ -1,10 +1,10 @@
-# Acute, reversible routes to large cognitive gain
+# Acute cognitive modulation: evidence and limits
 
 Mechanism map for Rolf. Strategy and mechanism level only: no molecule design, no doses, no sourcing, no self-experimentation.
 
 ## Verdict
 
-No mechanism I found gets near the cognitive enhancement profile (onset in minutes to hours, fully reversible, large, broad across learning, memory, reasoning and attention). I did not set a threshold for "large". I report the numbers the sources give and let them speak.
+No mechanism I found gets near the broad-improvement profile (onset in minutes to hours, fully reversible, large, broad across learning, memory, reasoning and attention). I did not set a threshold for "large". I report the numbers the sources give and let them speak.
 
 Three findings carry the verdict.
 
@@ -14,7 +14,7 @@ Three findings carry the verdict.
 
 The route with the best demonstrated fit for "above baseline, hours, reversible" is sleep-stage-targeted memory consolidation. It is small and narrow.
 
-An large-scale effect in healthy adults is **not established**. The evidence also does not rule it out, because the decisive human experiment has not been done (see section 5).
+A large, broad cognitive effect in healthy adults is **not established**. The evidence also does not rule it out, because the decisive human experiment has not been done (see section 5).
 
 ## How to read the grades
 
@@ -56,7 +56,7 @@ A 2025 review of 70 articles calls the preclinical plasticity evidence consisten
 
 **Acetylcholine.** Donepezil during five days of motion-discrimination training increased perceptual learning in healthy adults and made it more specific to the trained stimulus (Rokem and Silver 2010). A meta-analysis of 41 studies found nicotine improved fine motor, alerting and orienting attention, short-term episodic memory accuracy and working-memory speed, with effect sizes from 0.16 to 0.44 (Heishman 2010). Cholinergic tone is at its lowest in slow-wave sleep, which the consolidation literature treats as the stage that matters for declarative memory (Diekelmann and Born 2010). So I would not expect a cholinergic boost to help consolidation; this is my inference, not a tested result.
 
-**Classic stimulants (covered by another lane; kept short here).** In healthy adults, a meta-analysis of 48 studies (1,409 participants) found small effects of methylphenidate and amphetamine on inhibitory control and short-term episodic memory and a medium effect on delayed episodic memory, but publication bias qualified the memory results, and the authors concluded the overall effect is probably modest (Ilieva 2015). A later set of meta-analyses in non-sleep-deprived adults found modafinil 0.12 overall (memory updating 0.28), methylphenidate 0.21 overall (recall 0.43, sustained attention 0.42, inhibitory control 0.27), and no effect of d-amphetamine (Roberts 2020). An earlier review found modafinil's benefit larger in sleep-deprived people than rested ones (Repantis 2010).
+**Classic stimulants.** In healthy adults, a meta-analysis of 48 studies (1,409 participants) found small effects of methylphenidate and amphetamine on inhibitory control and short-term episodic memory and a medium effect on delayed episodic memory, but publication bias qualified the memory results, and the authors concluded the overall effect is probably modest (Ilieva 2015). A later set of meta-analyses in non-sleep-deprived adults found modafinil 0.12 overall (memory updating 0.28), methylphenidate 0.21 overall (recall 0.43, sustained attention 0.42, inhibitory control 0.27), and no effect of d-amphetamine (Roberts 2020). An earlier review found modafinil's benefit larger in sleep-deprived people than rested ones (Repantis 2010).
 
 **Exercise.** A meta-analysis of 79 studies found a positive but small acute effect (g = 0.097) (Chang 2012).
 
@@ -89,7 +89,7 @@ Abstracts mostly give no effect sizes, and I can't tell how close to ceiling the
 
 **How it could translate.** Light-gated and designer-receptor methods need gene delivery into neurons, which does not fit an acute, reversible profile for healthy people. I found no human route for them and I would treat them as a way to identify targets. They did point at specific cell types and signalling routes (astrocytic Gq signalling, CCK interneurons, orexin, locus coeruleus co-release) that other, less invasive methods might one day reach. The nearest translations are timing-based and noninvasive: acoustic stimulation and cueing during sleep, frequency-tuned stimulation, and vagus stimulation paired with learning. Their human effects are selective, often small, or tested mainly in older adults. Healthy older participants must not be relabeled impaired without evidence.
 
-## 4. Ranking against the cognitive enhancement profile
+## 4. Ranking against the broad-improvement profile
 
 Ranked by how much of the profile each route has demonstrated in people. I do not claim that any of them is large or broadly effective. The onset and reversibility notes distinguish short-lived input from persistent plasticity; full reversibility is not established for these candidate families.
 
@@ -153,12 +153,12 @@ Ranked by how much of the profile each route has demonstrated in people. I do no
 
 **Does any acute, reversible manipulation raise the learning rate of a healthy adult across several unrelated domains, and by how much?**
 
-The specific experiment I could not find: healthy adults, a plasticity-window-opening intervention (psychedelic-type, ketamine-type or HDAC-type) paired with a structured multi-session training protocol, against placebo and an active psychoactive control, with the slope of the learning curve in more than one domain as the outcome, measured after the acute impairment has cleared. Nearly every existing human result measures performance during or just after the state, or mood, or one narrow trained task. Learning rate across domains is what an large-scale claim is about.
+The specific experiment I could not find: healthy adults, a plasticity-window-opening intervention (psychedelic-type, ketamine-type or HDAC-type) paired with a structured multi-session training protocol, against placebo and an active psychoactive control, with the slope of the learning curve in more than one domain as the outcome, measured after the acute impairment has cleared. Nearly every existing human result measures performance during or just after the state, or mood, or one narrow trained task. Learning rate across domains is what a broad-improvement claim is about.
 
 Why it decides the question:
 
 - If the window is real in humans, the gain is bounded by juvenile-like plasticity. Children are not better than adults at everything, so even a fully open window may not give a broad advantage, and measuring that ceiling would tell us what "large" can mean here.
-- If it fails in healthy adults, the remaining routes (sleep timing, neuromodulator tuning, stimulation) are consistent with small, narrow gains. Then large-scale needs a mechanism not yet in the literature I found.
+- If it fails in healthy adults, the remaining routes (sleep timing, neuromodulator tuning, stimulation) are consistent with small, narrow gains. Then broad improvement needs a mechanism not yet in the literature I found.
 - A second, related unknown: whether the state-dependent pattern seen in animals and patients, where stimulation helps when the process is weak, means a healthy, well-rested adult has little headroom at all.
 
 ## Limits
