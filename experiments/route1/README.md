@@ -1,10 +1,10 @@
 # Route 1: withheld-treatment plasticity-state prediction
 
-**Result: inconclusive; no candidate-interpretation continuation justified.** See [VERDICT.md](VERDICT.md). Laptop CPU only; no Modal, paid compute, animal work or human experiment. Only this route was run.
+**Result: inconclusive; no candidate interpretation is justified.** See [VERDICT.md](VERDICT.md). This is a separate mouse-expression experiment, not a human-cognition gene validation. It uses local CPU compute, with no paid compute, animal work or human experiment.
 
 ## Exact reproduction commands
 
-From the repository checkout, using Python **3.13.15**:
+From the repository root, using Python 3.13 (the stored run used 3.13.15):
 
 ```sh
 python3 -m venv experiments/route1/data/venv
@@ -13,20 +13,22 @@ PYTHONDONTWRITEBYTECODE=1 experiments/route1/data/venv/bin/python experiments/ro
 PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 experiments/route1/data/venv/bin/python experiments/route1/analyze.py
 ```
 
-`prepare.py` retrieves missing raw inputs into `data/`, writes `input_provenance.tsv`, then writes `samples.tsv` **before any model fits**. Raw downloads and the environment are ignored only by `data/.gitignore`; the root gitignore is untouched. URLs, observed file hashes and sizes are recorded. The timestamp is the local file modification time, not a claimed remote release date. To reproduce exactly, compare downloaded hashes with the committed manifest. Author code is pinned to commit `5e51f9d9e4e0b196e8d64134b7605b3f12902787`. FTP-over-HTTPS GEO paths avoid the GEO webpage challenge.
+`prepare.py` retrieves missing inputs into ignored `experiments/route1/data/`, then writes `samples.tsv` **before any model fits**. It rewrites `input_provenance.tsv` with hashes and local file modification times. It does not compare them with the stored hashes. The root `.gitignore` covers downloads and the environment. Timestamps are not remote release dates. Preparation also fetches the paper XML, SupCode4 and the author repository tree. The author-code reference uses commit `5e51f9d9e4e0b196e8d64134b7605b3f12902787`. FTP-over-HTTPS GEO paths avoid the GEO webpage challenge. The processed matrix is 4,530,278 bytes in the stored inventory, not a raw-read download.
 
-`run_versions.json` records the observed platform and package versions. `requirements.txt` pins the installed environment. A single BLAS thread is also enforced in the script. Seed 230679; 200 condition-bootstrap draws. These are computational settings, not scientific acceptance thresholds. There are no configured repository gates.
+On October 8, 2026, environment creation, dependency installation and analysis passed using the existing processed inputs and sample map. Preparation was not rerun: the paper and author-code snapshots were absent from the cache, and data collection and GitHub requests were outside the review. The tracked analysis outputs matched the stored files.
+
+`run_versions.json` records platform and package versions and is rewritten by each analysis run. `requirements.txt` pins the installed environment. A single BLAS thread is also enforced in the script. Seed 230679; 200 condition-bootstrap draws. These are computational settings, not scientific acceptance thresholds. No success threshold was selected after inspecting the results.
 
 ## Source and mapping audit
 
-- Specification: `git show hp/indefinita/t-0009-synthesize-research-into-candidate-route:research/synthesis.md` (Route 1 and first experiment); synthesis read in full before analysis coding.
+- Analysis specification: [PLAN.md](PLAN.md), including the post-run diagnostic amendment. No internal branch is required.
 - Nardou et al. 2023, DOI [10.1038/s41586-023-06204-3](https://doi.org/10.1038/s41586-023-06204-3), [PMC10284704](https://pmc.ncbi.nlm.nih.gov/articles/PMC10284704/). Main text and methods read for behavioral, electrophysiological and RNA-state definitions. Europe PMC full-text XML is the retrieved copy.
 - [GSE230679](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE230nnn/GSE230679/): processed matrix, complete critical-period DE table and series SOFT. **Not raw reads or kallisto bootstraps.**
 - [Author code](https://github.com/genesofeve/DolenPsychedelicOpenState): SupCode4 read in full. Its local CSV includes RNA-isolation batch, slice count, extraction order and concentration; these values and local cache/helper dependencies are absent from the retrieved inputs. The repository tree contains no metadata mapping. No batch labels are inferred.
 
 The matrix's names (e.g. `19ketamine2`) are sample IDs, not GEO accessions or replicate numbers. SOFT titles supply drug/day/replicate, characteristics independently confirm drug/day/state, and descriptions explicitly associate the matrix IDs with those titles. The join is one-to-one on **drug, day and replicate**, not position. Lexicographic matrix column order is never interpreted as design. `samples.tsv` contains every sample's join fields, full characteristics, source, and unknown covariates. Three samples in each of nine conditions; 27 total; 12 open-state labels.
 
-State is behavioral-condition membership, not a sequenced animal's measured learning ability. Open: LSD day 2 and 14, ketamine day 2, MDMA day 2. Closed: saline/cocaine day 2 and 14, ketamine day 14. Only MDMA day 2 is represented. The paper's RNA methods omit MDMA in one treatment sentence, but its results and GEO explicitly include it. Age is a protocol range P98–P112, not an individual covariate. Batch is **RNA isolation**, not sequencing flowcell; a single reported flowcell does not supply the missing batch.
+State is behavioral-condition membership, not a sequenced animal's measured learning ability. Open: LSD day 2 and 14, ketamine day 2, MDMA day 2. Closed: saline/cocaine day 2 and 14, ketamine day 14. Only MDMA day 2 is represented. The paper's RNA methods omit MDMA in one treatment sentence, but its results and GEO explicitly include it. Age is a protocol range P98 to P112, not an individual covariate. Batch is **RNA isolation**, not sequencing flowcell; a single reported flowcell does not supply the missing batch.
 
 Supplied TPM column sums range from about 805,096 to 1,663,060. We use these processed values as supplied. Their upstream normalization dependencies cannot be reconstructed from these inputs; fold-local processing here does not establish fold isolation of the authors' upstream generation. This is explicitly not a raw-count or sleuth reproduction.
 
@@ -58,4 +60,4 @@ Fixed sensitivities: ridge penalty ×0.1/×10; training-fitted day-expression re
 | `published_DE_reference.tsv`, `reproduction_reference.json` | 65 q ≤ 0.1 rows recovered from supplied table; original inference not independently reproduced |
 | `run_versions.json`, `requirements.txt`, `PLAN.md`, `VERDICT.md` | Execution environment, choices/amendment and bounded decision |
 
-Condition bootstrap resamples training drug/day blocks within open/closed strata, with all three replicates traveling together. Stratification retains both states; it does not add new perturbations. Test animals are not resampled, no label-permutation significance is claimed, and no sample-level inferential p-value treats correlated replicates as independent conditions. Gene-rank stability is sensitivity of this predictor, not causal gene prioritization. Candidate doses, synthesis, sourcing and self-experimentation are outside this analysis.
+Condition bootstrap resamples training drug/day blocks within open/closed strata, with all three replicates traveling together. Stratification retains both states; it does not add new perturbations. Test animals are not resampled, no label-permutation significance is claimed, and no sample-level inferential p-value treats correlated replicates as independent conditions. Gene-rank stability is sensitivity of this predictor, not causal gene prioritization. Interventions and beneficial manipulation directions are outside this analysis. Source data and author code retain their own terms; the root MIT license covers original implementation only. See [source terms](../../docs/DATA_TERMS.md).

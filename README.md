@@ -1,114 +1,94 @@
-# Cognition-gene data layer
+# indefinita
 
-Local, reproducible preparation for Project 1 in [`research/drylab-routes.md`](research/drylab-routes.md). **All outputs are hypothesis lists, not findings or intervention targets.** No individual-level data, cloud jobs, drug design or experiments are involved.
+A Python data layer that joins cognition GWAS, rare-variant evidence and gene-knownness annotations into ranked hypothesis lists.
 
-## Run
+It exists to study understudied genes tied to human cognition without treating low knownness as evidence of causation. **Outputs are hypotheses, not findings or intervention targets.** The pipeline uses public summary data, not individual records.
 
-From this repository on Rolf's MacBook, with `uv` installed:
+## What the stored results show
+
+The core tables retain the October 4, 2026 snapshot. Counts are recorded in `derived/analysis-summary.json` and the TSVs:
+
+- The evidence ledger contains 1,339 genes, including 1,332 with direct common-variant support.
+- Four rare-variant genes pass the implemented significance and QC filters: ADAMTS6, KDM5B, NACC1 and AC011448.1 (ENSG00000258674).
+- **Zero genes meet both direct-cognition common-variant and qualifying rare-variant criteria.** `derived/cognition-hypotheses.tsv` has a header and no data rows.
+- A separate educational-attainment proxy contains three association rows for KDM5B and NACC1. Neither is Pharos Tdark. This is not direct-cognition convergence.
+
+Two implemented experiments are separate from the core join:
+
+| Component | Stored outcome | Reproduction scope |
+| --- | --- | --- |
+| [Route 1: mouse expression prediction](experiments/route1/README.md) | Inconclusive. A 27-sample withheld-treatment predictor extrapolates badly. Missing batch information and condition-defined labels prevent a causal interpretation. | Processed GEO matrix and metadata, CPU ridge fits and condition resampling. Not raw-read reproduction. |
+| [Route 2: cognition-locus alternatives](experiments/route2/README.md) | 406 conservative gene-body associations among 18,913 tested genes. Three pilot regions contain 199 alternatives. No poorly understood causal cognition gene is resolved. | Roughly 4.8 GB of inputs/extracted references, one adult frontal-cortex QTL context and a limited perturbation-access audit. |
+
+The experiment verdicts preserve negative results and uncertainty. The repo contains tables, not a validated mechanism or a demonstrated change in cognitive performance.
+
+## Run from a clean clone
+
+Requirements: Python 3.13 or newer and `uv` on PATH. The stored run used Python 3.13.15. The locked core environment uses httpx, openpyxl and pypdf. Run all commands from the repository root. No paid account, cloud service or GPU is needed.
+
+### Install and inspect without downloading data
 
 ```sh
 uv sync --frozen
+uv run --frozen python - <<'PY'
+import csv
+import json
+from pathlib import Path
+summary = json.loads(Path('derived/analysis-summary.json').read_text())
+print(json.dumps(summary, indent=2))
+for name in ('cognition-hypotheses.tsv', 'ea-proxy-hypotheses.tsv', 'gene-evidence.tsv'):
+    with (Path('derived') / name).open() as handle:
+        print(name, sum(1 for _ in csv.DictReader(handle, delimiter='\t')), 'rows')
+PY
+```
+
+This inspects the committed snapshot. It does not reproduce the analysis.
+
+### Reproduce the core join with downloads
+
+```sh
 uv run --frozen python scripts/pipeline.py
 ```
 
-No account, institutional application, billing project or browser interaction is needed for the selected inputs. The first run fetches about **2.447 GB**; later runs verify and reuse the exact cached bytes. Downloaded data and response snapshots stay in ignored `data/`. The downloader enforces the requested **20 GB decimal** budget, including partial files and existing files in that directory. Do not run two pipeline instances against the same directory.
+The stored fetch inventory totals about 2.447 GB. Raw responses and partial downloads stay in ignored `data/`. The downloader caps that directory at 20 GB decimal, including existing files. Do not run two instances against the same cache. Successful cached responses are hash-checked and reused.
 
-`derived/fetch-manifest.json` records requested/final URLs, observation time, HTTP status, exact response size, SHA-256, ETag and Last-Modified where available. `derived/access-inventory.tsv` is the readable inventory. `sha256` covers the exact saved response bytes, including Genebass's gzip envelope. For Genebass JSON, `payload_sha256` additionally covers the decoded JSON bytes: the API changes its gzip timestamp on each request even when the data is identical. Savage's publisher MD5 is checked as well. All committed derived files are below 5 MB; no raw input is committed.
+The downloader reads and rewrites `derived/fetch-manifest.json`. It records changed-source hashes alongside the prior expected hash. The join rejects unavailable or changed required inputs. Genebass JSON uses a decoded payload hash because its gzip envelope can change. Cached responses retain their stored observation times.
 
-The committed manifest also pins clean refetches. If a required live resource's payload changes, the new response is retained and analysis stops rather than silently claiming to reproduce this snapshot. Genebass pins use the decoded JSON checksum, so transport-only gzip changes do not block a clean run. Cached observations keep their original observation times: a cached run is not a new network access check. The script prints failures and preserves error responses in the inventory; HTTP 200 alone does not mean access to a portal's underlying dataset.
+HGNC and NCBI gene2pubmed use changing source URLs. The original literature and VEP pins are retained. No literature or VEP refresh is part of this cleanup. Current source bytes may differ from the stored snapshot and block reproduction. A fresh run is not guaranteed to reproduce an older download.
 
-## First result — 2026-10-04
+A completed run regenerates `derived/` tables and `derived/source-method-excerpts.txt`. The source excerpts are ignored generated files. Dataset URLs are declared in `scripts/fetch.py` and `scripts/fetch_genebass.py`; no credentials or environment secrets are required.
 
-**No gene meets both direct-cognition common-variant evidence and the selected rare-variant criteria.** The strict `cognition-hypotheses.tsv` therefore has a header and zero rows. This is a result of this particular mapping/data scope, not evidence that convergence does not exist. A nonempty direct-cognition shortlist is **not established**.
+For the experiments, use the exact dependency and run commands in their READMEs. Route 1 downloads into `experiments/route1/data/`. Route 2 uses both the core cache and `experiments/route2/data/`, and reads the committed core knownness/evidence tables without rebuilding that join. Its complete gene-association export is generated at `experiments/route2/gene-associations.tsv`. This 5.8 MB export is ignored and can be regenerated with the Route 2 command. The smaller association summary and ranked evidence remain committed.
 
-The evidence ledger covers **1,339 genes**, including 1,332 with common-variant support and seven genes with a rare p-value crossing a paper threshold before QC. Four rare genes pass the implemented QC: ADAMTS6, KDM5B, NACC1 and the source identifier AC011448.1 (ENSG00000258674). None is in the direct common-variant set. ANKRD12, ASAP1 and BRPF1 cross a rare p-value threshold but fail the paper's expected-allele-count minimum of 50; they are not promoted into the shortlist.
+## Project layout
 
-A **separate educational-attainment proxy** table has KDM5B and NACC1 (three association rows). It uses published EA3 gene results from Lee 2018, **not cognitive-performance gene results** and not inaccessible EA4. KDM5B is Pharos Tchem with 253 human gene2pubmed publications; NACC1 is Tbio with 124. Neither is Tdark. This proxy table does not satisfy the stronger direct-cognition convergence claim.
+- `scripts/`: core fetch, Genebass retrieval, join and pipeline entry point.
+- `derived/`: small result tables, source pins, access inventory and analysis summary.
+- `experiments/route1/`: mouse expression analysis, fixed plan, outputs and verdict.
+- `experiments/route2/`: gene-body association analysis, LD/QTL follow-up, alternatives and verdict.
+- `docs/METHODS.md`: exact core mapping choices, thresholds and coverage limits.
+- `docs/DATA_TERMS.md`: source attribution and separate data restrictions.
+- `research/`: archived scientific reviews and source evidence, not implemented workflows.
+- `data/` and experiment `data/` directories: ignored downloads and environments.
 
-### Outputs
+## Limits and known gaps
 
-| File in `derived/` | Meaning |
-|---|---|
-| `cognition-hypotheses.tsv` | Strict direct-cognition intersection; empty in this snapshot |
-| `gene-evidence.tsv` | Joined evidence ledger; explicit common/rare significance flags; nonsignificant rare scores do not count as convergence |
-| `rare-threshold-audit.tsv` | Every rare threshold-crossing row, including QC failures and all three masks |
-| `ea-proxy-hypotheses.tsv` | Separately labelled EA3 proxy intersection; hypothesis only |
-| `knownness-ranks.tsv` | Unknome-derived ranks for 19,271 uniquely HGNC-mapped human genes |
-| `genebass-coverage.tsv` | Exact phenotype, mask, sample size, fetched row count and phenotype-QC flags |
-| `mapping-issues.tsv` | Ambiguous HGNC IDs, missing historical Entrez mappings and unmapped evidence IDs; no guessed symbols |
-| `analysis-summary.json` | Source thresholds and coverage/result counts |
-| `source-method-excerpts.txt` | Lee MAGMA methods and Savage S15 threshold note (text preserved; trailing extraction whitespace removed) |
-| `access-inventory.tsv`, `fetch-manifest.json` | Observed access, sizes, checksums and URLs |
+Body overlap is not causal gene assignment. Common/rare studies overlap in participants and are not independent replications. The rare API cannot support every paper QC step, including SE=0 exclusion. Missing annotations are unavailable, not zero knownness. Educational attainment stays separate from direct cognition. Population effects, ancestry limits, indirect genetic effects and annotation bias remain.
 
-For genes without Unknome coverage, a literature-count rank is supplied when an unambiguous HGNC Entrez mapping exists. Unknome covers 1,050 ledger genes and literature ranks cover 1,195. `NA` annotations/ranks mean unavailable, **not unknown biology or zero knownness**. A gene without a unique HGNC match retains its Ensembl identifier; a missing canonical constraint row is not imputed.
+Route 1 cannot reconstruct upstream TPM generation or missing RNA-isolation batch metadata. Route 2 does not perform conditional multiple-signal fine-mapping, all-tissue colocalization or genome-wide perturbation coverage. Its unavailable neuronal target/phenotype tables are not biological negatives.
 
-## Exact mappings and thresholds
+This cleanup retains the original pins and scientific tables. On October 8, 2026, `uv sync --frozen` and the snapshot inspection above passed. The inspected tables had 0 direct-convergence rows, 3 proxy rows and 1,339 evidence rows. Route 1 environment creation, its pinned dependency installation and `analyze.py` passed using the existing processed inputs and sample map. Its tracked outputs matched the stored files.
 
-### Common variants
+The core pipeline and Route 2 entry point were skipped because they collect data and need multi-GB inputs. Route 1 preparation was skipped because uncached paper and author-code inputs would trigger collection, including GitHub requests. No paid account, GPU or GitHub operation was used. This is not a fresh clean-clone reproduction.
 
-* **Lee 2018 cognitive performance**, GCST006572: all 10,098,325 SNP rows fetched from the Catalog; 13,714 have `Pval < 5e-8`, the threshold in Supplementary Table 13. Positions are used as GRCh37, consistent with the study's build and same-rsID positions in the GRCh37 Savage file. No liftover is performed.
-* **Savage 2018 intelligence**: all 9,295,118 SNP rows fetched from the public CNCR share; 12,110 have `P < 5e-8`. GRCh37 is explicitly documented in the downloaded source README.
-* Significant SNPs from either study are mapped to **overlapping GENCODE v19 GRCh37 gene bodies**, inclusive start/end, with **no flanking window**. All overlapping genes are kept; no nearest-gene assignment, LD expansion, fine-mapping or causal assignment is claimed. This is a transparent positional hypothesis mapping, **not a rerun of MAGMA or the papers' complete FUMA mapping**. The SNP threshold is the papers' threshold; the body-only mapping is our conservative mapping choice, not a source-defined statistical test of the gene.
-* Also use Savage Supplementary **S15** published MAGMA results: `P < 2.76e-6` (paper's Bonferroni threshold for 18,128 genes). Map historical integer Entrez IDs through the downloaded current HGNC table to unambiguous Ensembl gene IDs. Preserve missing mappings in `mapping-issues.tsv`.
-* Also retain published Savage **S12** FUMA positional/eQTL/chromatin assignments from genome-wide-significant loci, without inventing a new eQTL threshold. The mapping type and source minimum GWAS p-value are retained. Loci 8, 40, 66, 82, 124, 134, 197 and 200 flagged low-confidence in S7 are excluded from S12 if they are the gene's only mapped loci, and from our Savage SNP-body mapping using the S5 locus intervals. Published S15 MAGMA results are a distinct gene test and remain as reported.
-* Ensembl **gene** IDs (version suffix removed) are the join key. No coordinate join is made to the GRCh38 Genebass positions.
+Future revisions of required sources can still stop reproduction, especially unversioned literature links and API annotations. Independent biological replication and a comprehensive third-party redistribution review are not documented. Public download access does not waive source terms.
 
-### Rare variants
+## How this was built
 
-Use the anonymous API underlying the current Genebass browser, not its requester-pays Hail MatrixTable. The archived UI JavaScript identifies the API base and version `0.13.0-43c83cc-202402232123`. Retrieve every gene row returned by `gene-manhattan`, not just plotted top hits or per-gene searches.
+AI coding agents did much of the implementation under Rolf's direction. Rolf set the research direction and the public scope around understudied genes tied to human cognition. Repository review checked runnable setup and agreement between stored counts and documentation. The repo does not document an independent check by Rolf of every scientific claim or a biological validation of these hypotheses. Plans distinguish initial choices from post-run diagnostics.
 
-All four **continuous phenotypes in the browser metadata's Cognitive function categories** are included:
+## License and citation
 
-* 20016: assessment-centre fluid intelligence, N=128,302;
-* 20018: prospective memory result, N=131,007;
-* 20023: mean time to correctly identify matches (reaction time), N=392,194;
-* 20191: online fluid intelligence, N=100,900.
+Original code and original documentation are under the [MIT License](LICENSE), copyright 2026 Rolf. Source data and source-derived tables are not relicensed by MIT. See [data terms](docs/DATA_TERMS.md), including the recorded CNCR noncommercial/share-alike restrictions.
 
-Masks are `pLoF`, `missense|LC`, and `pLoF|missense|LC`. `LC` includes low-confidence loss-of-function calls, so the missense mask is not exclusively missense. The paper's grouping uses MAF ≤1%. Synonymous masks are not taken as protein-altering evidence. Categorical attempted-test participation is not performance and is excluded. An additional custom fluid-intelligence variable exists without a description/category and is not interpreted here. Other cognitive domains absent from these metadata are not established as covered. These phenotypes, masks, and the common GWAS overlap in participants; they are **not independent replications**.
-
-Thresholds come from Karczewski et al. 2022, DOI `10.1016/j.xgen.2022.100168`:
-
-* **SKAT-O `Pvalue < 2.5e-7`**, or **burden `Pvalue_Burden < 6.7e-7`**. SKAT p-values are retained raw but not used to select a hit. These are empirical per-phenotype thresholds, not a correction over this entire joint search.
-* Require source coverage and variant-count flags: at least 20× coverage and at least two variants.
-* Calculate expected allele count as source `CAF × n_cases` (N with defined values for these continuous traits); require **≥50**.
-* For the qualifying test require source synonymous gene lambda GC **≥0.75**, the paper's lower bound, and a passing source phenotype-QC flag. The latter is available only as a boolean in the endpoint. The browser flags also apply a gene lambda upper bound of 1.5; those flags are preserved separately, not mislabelled as a paper threshold.
-
-**QC limitation:** the gene-Manhattan endpoint does not expose standard errors, so the paper's SE=0 exclusion cannot be independently repeated. Raw variant/carrier checks are not possible from these endpoints either. These are browser-summary hypotheses passing the implemented filters, not a claim to recreate every paper QC operation. Each pLoF/missense/combined association is retained in the audit. A single representative rare row in the main ledger is selected from qualifying rows if present, otherwise by the lowest available p-value; it is not a new combined significance statistic.
-
-### Knownness and constraint
-
-* **Unknome 18 March 2026** protein table: retain taxon 9606, join UniProt accessions to unique approved HGNC Ensembl IDs. The published score is already the maximum weighted GO knowledge over an orthologue cluster. Across matched proteins of a human gene, take the **maximum** score (conservative against calling a gene poorly known). Rank all 19,271 mapped human genes ascending, with competition ranks for ties (`1 + number with a lower score`). No invented dark-gene cutoff is applied.
-* **Pharos 4.0 canonical proteins**, May 2026 release: join `ncbi_id` through HGNC, retaining all canonical-protein TDL labels and accessions. The CSV's `ensembl_id` column actually contains **ENSP protein IDs**, not ENSG gene IDs, and is not used as a gene key. Tdark remains the source category, not a label assigned from our counts.
-* **NCBI gene2pubmed**: taxon 9606 only; count unique PMIDs per Entrez gene across all literature, not just neuroscience. Rank across current, uniquely HGNC-mapped Ensembl genes with an Entrez ID, least-published first; ties share rank. A mapped gene absent from this file has zero links in this snapshot, not necessarily zero publications in reality. No text-mining score is invented.
-* **gnomAD v4.1**: retain canonical **Ensembl** transcript rows and report source LOF observed/expected upper bounds and flags. The file also contains RefSeq/Entrez rows; those are not mistaken for Ensembl rows. Constraint is annotation only: it is **not cognition association evidence**, and there is no invented constraint cutoff.
-
-## Access actually observed and differences from the research report
-
-Every response below was checked by anonymous GET on 2026-10-04; exact dates/bytes/hashes are in the inventory.
-
-| Resource | Observed status / action |
-|---|---|
-| Catalog GCST006572 | 200; downloaded original `GWAS_CP_all.txt`, **601,075,032 bytes**. No account required. |
-| CNCR Savage share | Public share redirects from `vu.data.surfsara.nl` to `vu.data.surf.nl`; 200 file GET, **1,254,191,070 bytes**, plus README and publisher checksum. Research report had only opened the share page; actual files now verified. |
-| Published supplements | Savage XLSX **7,366,575 bytes**; Lee XLSX **3,453,892 bytes**; Lee methods PDF **6,648,378 bytes**, all 200. Lee's published MAGMA table is EA3, not cognitive performance: kept separate. |
-| Genebass bulk | **400**, body explicitly says requester-pays and no user project. No billing project or Hail bulk compute used. |
-| Genebass browser API | **200**, all selected phenotype/mask tables and QC tables downloaded anonymously, roughly 1–2 MB each. This usable small-data path was not established in the research report. |
-| gnomAD v4.1 | 200; **95,546,041 bytes**. Mixed Ensembl and RefSeq IDs require explicit selection. |
-| Unknome | 200; pinned dated protein table, **59,959,093 bytes**. No 5.9 GiB SQLite download needed. |
-| Pharos canonical proteins | 200 with browser user-agent; **44,614,999 bytes**. ENSP-versus-ENSG column mismatch handled as above. |
-| gene2pubmed | 200; **288,318,983 bytes**. Human links filtered while streaming. |
-| HGNC / GENCODE | 200; mapping inputs **16,963,116 / 37,991,892 bytes**. Historical/ambiguous identifiers are listed, not guessed. |
-| SSGAC / EA4 | 200 **login page**, not a data file. Registration/accepted terms required; no sign-up attempted. **EA4 skipped.** Publicly published EA3 gene scores are an explicitly labelled proxy, not an EA4 substitute. |
-| SCHEMA | 200 JavaScript shell; downloadable table **not established**. No schizophrenia results substituted for cognition. |
-| MetaBrain | 200 homepage links to name/email/institute/use form and emailed download link; not submitted. eQTL analysis deferred. |
-| GTEx | 200 anonymous bucket listing includes bulk-qtl v10/v11. Actual brain eQTL files not fetched; colocalization deferred. |
-| ABC Atlas | 200 anonymous release listing: 17 releases, latest 20260711. Expression matrices not fetched. Siletti/Census coverage not rechecked in this lane. |
-| 1000 Genomes / MAGMA | 200 CNCR download page; data-file access not established here. No new MAGMA, LD, PoPS or fine-mapping run; published gene results and body mappings suffice for this first join. |
-
-No selected summary dataset needed an institution. UK Biobank individual records, ABCD, All of Us and controlled PsychENCODE are outside this fetch and their institutional access was **not rechecked**. neXtProt is not used. Contextual expression/eQTL/LD work remains deferred, not completed Project 1 coverage.
-
-## Source use and limits
-
-Cite Lee et al. 2018 (`10.1038/s41588-018-0147-3`), Savage et al. 2018 (`10.1038/s41588-018-0152-6`), Karczewski et al. 2022 (above), gnomAD, HGNC, GENCODE v19, Rocha et al. 2023 Unknome (`10.1371/journal.pbio.3002222`), Pharos/TCRD 4.0 and NCBI when reusing these tables. CNCR data are for non-commercial use under CC BY-NC-SA 4.0 with no re-identification or stigmatizing use. Unknome is CC BY 4.0. Genebass's archived browser terms identify CC BY 4.0 and request attribution to the paper and UK Biobank applications 26041/48511. SSGAC data were not accessed or redistributed. A resource being anonymously downloadable does not remove its terms.
-
-Population/indirect genetic effects, annotation bias, ancestry limits and gene-mapping uncertainty remain. These tables establish neither causation, direction of a useful perturbation, cognition enhancement nor a biological mechanism. No intervention or wet-lab experiment has been launched.
+No project paper or preprint is included. When using this work, cite the repository and the underlying sources listed in `docs/DATA_TERMS.md` and the experiment READMEs. Do not cite its hypothesis lists as confirmed findings.

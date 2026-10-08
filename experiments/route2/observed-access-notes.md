@@ -1,10 +1,16 @@
-# Actual access and research scope — 5 October 2026
+# Actual access and research scope
 
-`fetch-manifest.json` / `access-inventory.tsv` record the selected source responses; `qtl-access.json` and its history record indexed summary-statistics access. Raw snapshots and error bodies remain ignored, not distributed. Access was anonymous on Rolf's laptop. No SSGAC sign-in, institutional application, billing project/requester-pays access, Modal job, GPU job or expression-atlas mirror was used.
+## Scope review: October 8, 2026
+
+The original core and Route 2 pins, outputs and downloader behavior are retained. The full workflows were not rerun in this review. Data collection, multi-GB inputs and GitHub requests were skipped. The notes below preserve the October 5 source inspection, not a fresh access check.
+
+## Original audit: October 5, 2026
+
+`fetch-manifest.json` / `access-inventory.tsv` record the stored source snapshot; fetching rewrites the manifests. `qtl-access.json` and its history record indexed summary-statistics access. Raw snapshots and error bodies remain ignored, not distributed. Access was anonymous on Rolf's laptop. No SSGAC sign-in, institutional application, billing project/requester-pays access, Modal job, GPU job or expression-atlas mirror was used.
 
 ## Core layer reused, not reconstructed
 
-Fresh GETs here retrieved Lee original CP (601,075,032 bytes), GENCODE v19 (37,991,892), HGNC (16,963,116), Pharos 4.0 (44,614,999), and Lee methods PDF (6,648,378). All were HTTP 200 and matched the existing committed pins. Core `derived/fetch-manifest.json` is retained unchanged; its observation times refer to the original data-layer run, **not these new GETs**. `input-provenance.tsv` marks that inheritance and records local file timestamps as local timestamps, not precise network observation times. Existing knownness/constraint/Savage/Genebass/PubMed joins were read from committed TSVs, not newly fetched or treated as independent verification.
+Fresh GETs here retrieved Lee original CP (601,075,032 bytes), GENCODE v19 (37,991,892), HGNC (16,963,116), Pharos 4.0 (44,614,999), and Lee methods PDF (6,648,378). All were HTTP 200 and matched the existing committed pins. At that audit, core `derived/fetch-manifest.json` was retained unchanged; its observation times referred to the original data-layer run, **not those new GETs**. The stored `input-provenance.tsv` marks that inheritance and records local file timestamps as local timestamps, not precise network observation times. New runs read the core fetch manifest and rewrite source observations through the existing downloader. Existing knownness/constraint/Savage/Genebass/PubMed joins were read from committed TSVs, not newly fetched or treated as independent verification.
 
 The fresh CNCR MAGMA page GET was HTTP 200, 123,718 bytes, differing from the earlier website snapshot. This is a changed website, not changed GWAS bytes. Its public EUR-reference link was followed; the actual ZIP was HTTP 200, SHA-256 `83a48fd9dcaa0b9a874b18c63143a4ede93f05505b215b0bd8790130a0d7a954`. Embedded README identifies phase 3 release 20130502, conversion provenance and the SNP-only reference. Extracted BED/BIM/FAM remain ignored.
 
@@ -26,4 +32,4 @@ Search/discovery-only calls also opened the public Catalogue root/sumstats index
 
 **Partial:** three-region LD/QTL follow-up, one adult bulk-brain QTL dataset, HPA consensus expression, VEP for three lead variants, matched descriptive bias checks, overlapping Savage/Genebass interpretation and one neuronal-screen access audit. This is not fine-mapping all loci, all-tissue colocalization, a perturbation census or a causal direction analysis. Alternative GENCODE boundaries are audited through competing gene bodies and separate VEP lead annotation (not independent genetic evidence), but a full gene-association rerun against another annotation release was **not performed**: the pilot already fails causal resolution and changing windows/releases until a dark gene wins would not resolve that.
 
-**Unavailable/not established:** candidate-level neuronal target/phenotype tables behind the HTML challenge; conditional/multiple-signal CP–QTL fine-mapping; exclusive gene assignments; cohort-independent replication; developmental-versus-adult causality; enhancement, manipulation direction, acute onset/reversibility and the requested broad large-scale state. Unavailability is not a biological null. The remaining 157 regions/35 Tdark associations were not fully followed; no global negative claim is made about them.
+**Unavailable/not established:** candidate-level neuronal target/phenotype tables behind the HTML challenge; conditional/multiple-signal CP/QTL fine-mapping; exclusive gene assignments; cohort-independent replication; developmental-versus-adult causality; beneficial manipulation direction, intervention efficacy and safety. Unavailability is not a biological null. The remaining 157 regions/35 Tdark associations were not fully followed; no global negative claim is made about them.

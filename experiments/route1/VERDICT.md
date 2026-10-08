@@ -2,7 +2,7 @@
 
 **This run does not establish a transferable plasticity-state program, and does not justify candidate interpretation. It is not a biological null.**
 
-The specification says: "If metadata or design cannot distinguish explanations, record inconclusive, not a biological null." RNA-isolation batch is missing; condition-level state and plausible tissue-composition/time differences remain inseparable. The primary predictor also fails as a useful out-of-treatment predictor because of severe expression extrapolation. Missing information and a failed predictor must not be turned into absent biology.
+The [plan](PLAN.md) requires an inconclusive verdict when metadata or design cannot distinguish explanations. RNA-isolation batch is missing; condition-level state and plausible tissue-composition/time differences remain inseparable. The primary predictor also fails as a useful out-of-treatment predictor because of severe expression extrapolation. Missing information and a failed predictor must not be turned into absent biology.
 
 ## Reproduced facts
 
@@ -22,11 +22,11 @@ Primary continuous score contrasts (target drug mean minus its same-day held-out
 
 These are **not probabilities, biological magnitudes, or evidence of enormous effects**. Individual training gene SDs approach 1e-10 log-expression units. Almost-unexpressed training genes dominate held-out scores: Gm8271 contributes roughly +9,256 to one ketamine day-2 sample and +2,747 to one day-14 sample. LSD day 14 is dominated by Gm8127 in one sample. `primary_extrapolation_diagnostics.tsv` exposes this failure rather than filtering it away after seeing labels.
 
-The ketamine mean temporal difference is +2,169.75 before controls and +2,062.37 after saline's time difference. That apparent direction is not reliable: the training-condition bootstrap's control-adjusted 2.5th–97.5th quantiles span **−14,202.34 to +3,504.03**. Deleting LSD day 2 reverses the adjusted contrast to −8,477.03. These are conditional sensitivity ranges, not confidence about independent new perturbations. Optimistic seen-training MSE is 0.040–0.060 while primary withheld-drug MSE ranges from about 3,698 to 114 million. Gene-wise scaling has broken extrapolation; numerical prediction failure is not mechanistic falsification.
+The ketamine mean temporal difference is +2,169.75 before controls and +2,062.37 after saline's time difference. That apparent direction is not reliable: the training-condition bootstrap's control-adjusted 2.5th to 97.5th quantiles span **-14,202.34 to +3,504.03**. Deleting LSD day 2 reverses the adjusted contrast to −8,477.03. These are conditional sensitivity ranges, not confidence about independent new perturbations. Optimistic seen-training MSE is 0.040 to 0.060 while primary withheld-drug MSE ranges from about 3,698 to 114 million. Gene-wise scaling has broken extrapolation; numerical prediction failure is not mechanistic falsification.
 
 The transparent, data-informed **center-only exploratory diagnostic** has ordinary-sized scores but does not rescue the temporal question. Ketamine scores are 0.60436 (day 2) and 0.60345 (day 14), a difference of 0.00091; saline's corresponding difference is 0.15365, yielding an adjusted contrast of **−0.15274**. MDMA remains below same-day saline (−0.01359); LSD is slightly above saline on both days. This diagnostic is not a newly selected winning primary model.
 
-Full gene-rank stability is supplied for every fold, not a retrospectively selected gene list. Cross-fold absolute-coefficient rank correlations are 0.51–0.68. Some coefficient signs remain stable conditionally, but ranks can move widely (ketamine-fold Tinagl1 rank 4; bootstrap rank quantiles 2–409). A coefficient's rank is not its contribution when held-out expression lies far beyond training. No gene mechanism or intervention direction is established.
+Full gene-rank stability is supplied for every fold, not a retrospectively selected gene list. Cross-fold absolute-coefficient rank correlations are 0.51 to 0.68. Some coefficient signs remain stable conditionally, but ranks can move widely (ketamine-fold Tinagl1 rank 4; bootstrap rank quantiles 2 to 409). A coefficient's rank is not its contribution when held-out expression lies far beyond training. No gene mechanism or intervention direction is established.
 
 ## Nuisance explanations checked
 
@@ -43,4 +43,4 @@ All learned processing and fitting in this analysis remain inside training folds
 
 Coverage is **complete** for the named processed inputs, sample audit, fixed folds, rank outputs and listed implementable nuisance sensitivities; **partial** for composition and latent technical explanations; **unavailable** for original batch metadata, cached author inputs, individual behavioral measurements and independent biological replication. No independent-data search or candidate dossier was run.
 
-The specification's "continue" condition—cross-treatment prediction and the temporal contrast supporting the same program—is **not established**. The fixed predictor failed its practical prerequisite, while the design prevents a biological verdict. Save this state for the coordinator; do not optimize new splits or proceed to another route in this lane. This establishes no healthy-human efficacy, broad cognition, acute onset, reversibility, causal enhancer or cognitive enhancement claim.
+The plan's interpretation condition (cross-treatment prediction and a supporting temporal contrast) is **not established**. The fixed predictor failed its practical prerequisite, while the design prevents a biological verdict. These results establish neither a causal mechanism nor human efficacy or a beneficial intervention direction.
